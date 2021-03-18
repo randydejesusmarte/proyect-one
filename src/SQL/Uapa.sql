@@ -53,19 +53,19 @@ BEGIN
 	where Uname = @Nombre and Contraceña = @Contraceña 
 	--select Tip_Usuario from Usuarios 
 	--where Uname=@Nombre and Contraceña=@Contraceña 
-	/*
-	 inicio inicio = new inicio();
-     SqlCommand sexquery = new SqlCommand($"select nombre, sexo, puesto from usuarios where uname='{txtname.Text.Trim().ToLower()}';", conectar.SqlConnection);
-     SqlDataReader sqlData = sexquery.ExecuteReader();
-     if (sqlData.Read())
-     {
-          inicio.puesto = sqlData["puesto"].ToString();
-          inicio.nombre = sqlData["nombre"].ToString();
-          inicio.sexo = sqlData["sexo"].ToString();
-     }
-          inicio.Show();
-          Hide();
-	*/
+	
+	-- inicio inicio = new inicio();
+    -- SqlCommand sexquery = new SqlCommand($"select nombre, sexo, puesto from usuarios where uname='{txtname.Text.Trim().ToLower()}';", conectar.SqlConnection);
+    -- SqlDataReader sqlData = sexquery.ExecuteReader();
+    -- if (sqlData.Read())
+    -- {
+    --      inicio.puesto = sqlData["puesto"].ToString();
+    --      inicio.nombre = sqlData["nombre"].ToString();
+    --      inicio.sexo = sqlData["sexo"].ToString();
+    -- }
+    --      inicio.Show();
+    --      Hide();
+	--
 	select Tip_Usuario from Usuarios 
 	where Uname = @Nombre and Contraceña = @Contraceña 
 END
