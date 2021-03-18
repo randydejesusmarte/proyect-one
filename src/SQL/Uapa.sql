@@ -219,8 +219,10 @@ end
 GO
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------
-go
-    create procedure Eliminar_fac
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'SP_Eliminar_fac') AND type in (N'U'))
+DROP PROCEDURE SP_Eliminar_fac
+GO
+    create procedure SP_Eliminar_fac
         @id int
 
 as 
@@ -229,8 +231,10 @@ begin
 end
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------
-go
-    create procedure Eliminar_par
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'SP_Eliminar_par') AND type in (N'U'))
+DROP PROCEDURE SP_Eliminar_par
+GO
+    create procedure SP_Eliminar_par
         @id int
 
 as 
@@ -239,7 +243,9 @@ begin
 end
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------
-go
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'SP_Eliminar_asig') AND type in (N'U'))
+DROP PROCEDURE SP_Eliminar_asig
+GO
     create procedure Eliminar_asig
         @id int
 
@@ -249,3 +255,63 @@ begin
 end
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'Registro') AND type in (N'U'))
+DROP TABLE Registro
+
+GO
+create table Registro(
+    Id_reg int identity not null primary key,
+    nom_par varchar (25),
+    par_Mat varchar(15) ,
+    matria varchar(25),
+    sec varchar (5),
+    fecha date,
+    calificacion varchar (5))
+
+go 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'SP_Act_regis') AND type in (N'U'))
+DROP PROCEDURE SP_Act_regis
+GO
+create procedure SP_Act_regis
+    @id int,
+    @nom varchar(25),
+    @mat varchar(15),
+    @mater varchar(25),
+    @se varchar(5),
+    @cal varchar(5)
+as 
+begin 
+
+    if exists (select * from Registro where Id_reg= @id)
+        update Registro set 
+        nom_par=@nom,
+        par_Mat=@mat,
+        matria=@mater,
+        sec=@se,
+        fecha=GETDATE(),
+        calificacion=@cal 
+        where Id_reg=@id
+
+    else 
+    insert into Registro (nom_par,par_Mat,matria,sec,fecha,calificacion) values (@nom,@mat,@mater,@se,GETDATE(),@cal)
+end
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'SP_Eliminar_reg') AND type in (N'U'))
+DROP PROCEDURE SP_Eliminar_reg
+GO
+create procedure SP_Eliminar_reg
+    @id int
+
+as 
+begin 
+    delete from Registro where Id_reg= @id
+end
+GO
+
+
+
+
+
+
+INSERT INTO Usuarios (Nombre,Uname,Contraceña,Tip_Usuario)VALUES('randy','root','root','participante')
+GO
