@@ -11,7 +11,6 @@ using Thot_Librery;
 using WindowsFormsApp1;
 using Thot_Librery.Codigo_del_Login;
 using thot.Properties;
-using Proecto_Final;
 
 namespace thot
 {
@@ -25,17 +24,7 @@ namespace thot
         private readonly Login_conect login = new Login_conect();
         private void bt_Entrar_Click(object sender, EventArgs e)
         {
-            int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
-            if (result == 1)
-            {
-                guardar();
-                new Participante().Show();
-                Hide();
-            }
-            else if (result == 0)
-            {
-                MessageBox.Show("Contraseña o Usuario son incorrecto");
-            }
+            enter();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -61,5 +50,28 @@ namespace thot
 
         private void checkit_CheckedChanged(object sender, EventArgs e) => txt_Contraseña.Focus();
 
+        private void txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                enter();
+            }
+        }
+        private void enter()
+        {
+            int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
+            if (result == 1)
+            {
+                guardar();
+                Form1 form = new Form1();
+                //form.id = ;
+                form.Show();
+                Hide();
+            }
+            else if (result == 0)
+            {
+                MessageBox.Show("Contraseña o Usuario son incorrecto");
+            }
+        }
     }
 }

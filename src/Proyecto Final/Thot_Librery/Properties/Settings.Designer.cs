@@ -26,8 +26,8 @@ namespace Thot_Librery.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=Uapa;Integrated Security=True;Connect Ti" +
-            "meout=30;Encrypt=False;TrustServerCertificate=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=hidra;Integrated Security=True;Connect T" +
+            "imeout=30;Encrypt=False;TrustServerCertificate=False")]
         public string Conecctionstring {
             get {
                 return ((string)(this["Conecctionstring"]));

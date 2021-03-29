@@ -87,10 +87,6 @@
     <None Include="Resources\j.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Proecto Final\Proecto Final\Proecto Final.csproj">
-      <Project>{25e8e0ce-da41-48ad-9d11-a7a264eeea4b}</Project>
-      <Name>Proecto Final</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Thot_Librery\Thot_Librery.csproj">
       <Project>{92fbd9ee-a703-4928-8906-3011c91efd52}</Project>
       <Name>Thot_Librery</Name>

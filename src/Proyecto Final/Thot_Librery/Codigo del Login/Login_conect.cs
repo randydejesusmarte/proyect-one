@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using Thot_Librery.Conexiones;
 
 namespace Thot_Librery.Codigo_del_Login
 {
@@ -13,10 +14,10 @@ namespace Thot_Librery.Codigo_del_Login
             try
             {
                 conexion.Open();
-                SqlCommand command = new SqlCommand("SP_Login", conexion.SqlConnectio);
+                SqlCommand command = new SqlCommand("sp_Login", conexion.SqlConnectio);
                 command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@Nombre", Nombre);
-                command.Parameters.AddWithValue("@Contraceña", Contraceña);
+                command.Parameters.AddWithValue("@Clave", Contraceña);
 
                 SqlDataReader dataReader = command.ExecuteReader();
                 if (dataReader.Read())

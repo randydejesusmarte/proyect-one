@@ -2,19 +2,18 @@
 using System.Data;
 using System.Data.SqlClient;
 
-
-namespace Thot_Librery
+namespace Thot_Librery.Conexiones
 {
     internal class Conexion : Attribute
     {
         internal SqlConnection SqlConnectio = new SqlConnection();
-        internal string cadena =  Properties.Settings.Default.Conecctionstring;
+        private string cadena =  Properties.Settings.Default.Conecctionstring;
         
         internal Conexion()
         {
             SqlConnectio.ConnectionString = cadena;
         }
-        public SqlConnection Open()
+        internal SqlConnection Open()
         {
             if (SqlConnectio.State == ConnectionState.Closed)
             {
@@ -23,7 +22,7 @@ namespace Thot_Librery
             return SqlConnectio;
         }
 
-        public SqlConnection Close()
+        internal SqlConnection Close()
         {
             if (SqlConnectio.State == ConnectionState.Open)
             {
