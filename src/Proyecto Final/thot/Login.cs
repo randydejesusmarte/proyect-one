@@ -22,6 +22,7 @@ namespace thot
         }
 
         private readonly Login_conect login = new Login_conect();
+        private readonly Id_Login id_Login = new Id_Login();
         private void bt_Entrar_Click(object sender, EventArgs e)
         {
             enter();
@@ -63,8 +64,9 @@ namespace thot
             if (result == 1)
             {
                 guardar();
-                Form1 form = new Form1();
-                //form.id = ;
+                WindowsFormsApp1.Menu form = new WindowsFormsApp1.Menu();
+                int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
+                form.id = id;
                 form.Show();
                 Hide();
             }
