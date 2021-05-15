@@ -73,13 +73,10 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            List<Ventrada> entradas = new List<Ventrada>();
             foreach(DataRow row in dt.Rows)
             {
                 Ventrada entrada = new Ventrada();
-                entrada.Sas = row["sas"].ToString();
-                entrada.Sopa = row["sopa"].ToString();
-                entradas.Add(entrada);
+                entrada.Insetar(row);
             }
         }
     }

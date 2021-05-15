@@ -16,21 +16,16 @@ namespace Thot_Librery.Entrada
         public string Sas { get; set; }
         public string Sopa { get; set; }
 
-        public void Insetar(List<Ventrada> ventradas)
+        public void Insetar(DataRow entrada)
         {
-            MessageBox.Show(Sas);
-            MessageBox.Show(Sopa);
             Conexiones.Open();
-            foreach(Ventrada entradas in ventradas)
-            {
 
-                SqlCommand command = new SqlCommand("SP_Entradas", Conexiones.SqlConnectio);
-                command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@sas", Sas);
-                command.Parameters.AddWithValue("@sopa", Sopa);
-                command.ExecuteNonQuery();
-                command.Parameters.Clear();
-            }
+            SqlCommand command = new SqlCommand("SP_Entradas", Conexiones.SqlConnectio);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@sas", entrada["Sas"]);
+            command.Parameters.AddWithValue("@sopa", entrada["Sopa"]);
+            command.ExecuteNonQuery();
+            command.Parameters.Clear();
             Conexiones.Close();
         }
     }
