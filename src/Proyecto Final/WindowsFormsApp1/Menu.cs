@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using System.Timers;
 using System.Windows.Forms;
 using Thot_Librery.Menu;
+using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
@@ -27,7 +29,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(id.ToString());
         }
 
         private void BtFactura_Click(object sender, EventArgs e)
@@ -44,6 +46,16 @@ namespace WindowsFormsApp1
             Entrada form = new Entrada();
             form.id_empleado = id;
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Menus().Limpiar(splitContainer1.Panel2);
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            Settings.Default.Idusuario = id;
         }
     }
 }
