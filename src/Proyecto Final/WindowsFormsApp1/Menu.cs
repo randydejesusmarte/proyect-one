@@ -57,5 +57,19 @@ namespace WindowsFormsApp1
         {
             Settings.Default.Idusuario = id;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            controdegastos form = new controdegastos();
+            //form.id_empleado = id;
+            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ctlservicios form = new ctlservicios();
+            //form.id_empleado = id;
+            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
     }
 }

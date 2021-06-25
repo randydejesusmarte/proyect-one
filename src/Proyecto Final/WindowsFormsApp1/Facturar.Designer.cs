@@ -58,6 +58,8 @@ namespace WindowsFormsApp1
             // 
             // nomcli
             // 
+            this.nomcli.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.nomcli.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.nomcli.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.nomcli.Location = new System.Drawing.Point(171, 76);
@@ -76,6 +78,7 @@ namespace WindowsFormsApp1
             // 
             // precio
             // 
+            this.precio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.precio.Location = new System.Drawing.Point(679, 32);
             this.precio.Margin = new System.Windows.Forms.Padding(4);
             this.precio.Name = "precio";
@@ -84,6 +87,7 @@ namespace WindowsFormsApp1
             // 
             // cantidad
             // 
+            this.cantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cantidad.Location = new System.Drawing.Point(679, 76);
             this.cantidad.Margin = new System.Windows.Forms.Padding(4);
             this.cantidad.Name = "cantidad";
@@ -92,6 +96,7 @@ namespace WindowsFormsApp1
             // 
             // monto
             // 
+            this.monto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.monto.Location = new System.Drawing.Point(679, 120);
             this.monto.Margin = new System.Windows.Forms.Padding(4);
             this.monto.Name = "monto";
@@ -100,6 +105,7 @@ namespace WindowsFormsApp1
             // 
             // Add
             // 
+            this.Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.Image = global::WindowsFormsApp1.Properties.Resources.icons8_receipt_50px;
             this.Add.Location = new System.Drawing.Point(812, 92);
@@ -142,6 +148,7 @@ namespace WindowsFormsApp1
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(585, 36);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -152,6 +159,7 @@ namespace WindowsFormsApp1
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(585, 80);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -162,6 +170,7 @@ namespace WindowsFormsApp1
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(585, 124);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -172,6 +181,7 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::WindowsFormsApp1.Properties.Resources.icons8_add_user_male_50px;
             this.button1.Location = new System.Drawing.Point(812, 32);

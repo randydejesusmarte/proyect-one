@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             e.Graphics.DrawString("Tecnica 3", new Font("Century Gothic", 14, FontStyle.Bold), Brushes.Black, new Point(0 + 65, y += 25));
             e.Graphics.DrawString("Llegando a la rotonda", font, Brushes.Black, new Point(0 + 40, y += 25));
             e.Graphics.DrawString("Santiago, Rep Dom. Tel:849-216-1333", font, Brushes.Black, new Point(0, y += 25));
-           // e.Graphics.DrawString(textBox1.Text, font, Brushes.Black, new Point(x + 80, y += 25));
+           // e.Graphics.DrawString("b0000045", font, Brushes.Black, new Point(0, y += 25));
             e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
             e.Graphics.DrawString("Factura de contado", font, Brushes.Black, new Point(0 + 25, y += 5));
             //contar los servisios a entrados + 1 

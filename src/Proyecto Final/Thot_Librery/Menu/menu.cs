@@ -7,6 +7,7 @@ namespace Thot_Librery.Menu
     {
         public void Form_Heredado(Form form, Panel panel)
         {
+            Limpiar(panel);
             form.TopLevel = false;
             //form.Dock = DockStyle.Fill;
             panel.Controls.Add(form);

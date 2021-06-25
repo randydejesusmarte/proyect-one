@@ -64,11 +64,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controdegastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controdegastos.Designer.cs">
+      <DependentUpon>controdegastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlservicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ctlservicios.Designer.cs">
+      <DependentUpon>ctlservicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Facturar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturar.Designer.cs">
       <DependentUpon>Facturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gastos.Designer.cs">
+      <DependentUpon>gastos.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -84,8 +102,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="controdegastos.resx">
+      <DependentUpon>controdegastos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturar.resx">
       <DependentUpon>Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gastos.resx">
+      <DependentUpon>gastos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
