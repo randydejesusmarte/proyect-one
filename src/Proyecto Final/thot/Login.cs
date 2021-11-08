@@ -25,7 +25,7 @@ namespace thot
         private readonly Id_Login id_Login = new Id_Login();
         private void bt_Entrar_Click(object sender, EventArgs e)
         {
-            enter();
+            Enter();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace thot
             txt_Contraseña.Text = Settings.Default.Pass;
             checkit.Checked = Settings.Default.checkit;
         }
-        private void guardar()
+        private void Save()
         {
             Settings.Default.Uname = txt_Nombre.Text;
             Settings.Default.checkit = checkit.Checked;
@@ -55,18 +55,24 @@ namespace thot
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                enter();
+                Enter();
             }
         }
-        private void enter()
+        private new void Enter()
         {
             int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
             if (result == 1)
             {
-                guardar();
+                Save();
                 WindowsFormsApp1.Menu form = new WindowsFormsApp1.Menu();
                 int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
+
+
+                form.Text= id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
+
+
                 form.id = id;
+                form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
                 form.Show();
                 Hide();
             }

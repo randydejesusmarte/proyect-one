@@ -70,7 +70,7 @@ namespace thot
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 19);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 4;
             this.label1.Text = "Nombre";
             // 
             // label2
@@ -82,7 +82,7 @@ namespace thot
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 19);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Contraseña";
             // 
             // bt_Entrar
@@ -94,7 +94,7 @@ namespace thot
             this.bt_Entrar.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Entrar.Name = "bt_Entrar";
             this.bt_Entrar.Size = new System.Drawing.Size(477, 60);
-            this.bt_Entrar.TabIndex = 4;
+            this.bt_Entrar.TabIndex = 3;
             this.bt_Entrar.Text = "Entrar";
             this.bt_Entrar.UseVisualStyleBackColor = true;
             this.bt_Entrar.Click += new System.EventHandler(this.bt_Entrar_Click);
@@ -106,7 +106,7 @@ namespace thot
             this.checkit.Location = new System.Drawing.Point(13, 111);
             this.checkit.Name = "checkit";
             this.checkit.Size = new System.Drawing.Size(192, 23);
-            this.checkit.TabIndex = 6;
+            this.checkit.TabIndex = 2;
             this.checkit.Text = "Recordar Contraseña";
             this.checkit.UseVisualStyleBackColor = true;
             this.checkit.CheckedChanged += new System.EventHandler(this.checkit_CheckedChanged);

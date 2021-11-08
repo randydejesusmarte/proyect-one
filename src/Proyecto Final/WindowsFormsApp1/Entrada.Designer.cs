@@ -47,6 +47,8 @@ namespace WindowsFormsApp1
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +60,7 @@ namespace WindowsFormsApp1
             this.IDEnt.Name = "IDEnt";
             this.IDEnt.ReadOnly = true;
             this.IDEnt.Size = new System.Drawing.Size(106, 27);
-            this.IDEnt.TabIndex = 0;
+            this.IDEnt.TabIndex = 12;
             // 
             // button1
             // 
@@ -66,7 +68,7 @@ namespace WindowsFormsApp1
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -109,7 +111,7 @@ namespace WindowsFormsApp1
             this.txtmecanico.Margin = new System.Windows.Forms.Padding(4);
             this.txtmecanico.Name = "txtmecanico";
             this.txtmecanico.Size = new System.Drawing.Size(186, 27);
-            this.txtmecanico.TabIndex = 4;
+            this.txtmecanico.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -117,7 +119,8 @@ namespace WindowsFormsApp1
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(186, 27);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 3;
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
             // label3
             // 
@@ -146,7 +149,7 @@ namespace WindowsFormsApp1
             this.radioButton2.Location = new System.Drawing.Point(6, 51);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(99, 23);
-            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabIndex = 5;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "A Credito";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -158,7 +161,7 @@ namespace WindowsFormsApp1
             this.radioButton1.Location = new System.Drawing.Point(6, 26);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(113, 23);
-            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabIndex = 4;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Al contado";
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -169,7 +172,7 @@ namespace WindowsFormsApp1
             this.TxtCliente.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCliente.Name = "TxtCliente";
             this.TxtCliente.Size = new System.Drawing.Size(186, 27);
-            this.TxtCliente.TabIndex = 9;
+            this.TxtCliente.TabIndex = 2;
             // 
             // label4
             // 
@@ -211,11 +214,31 @@ namespace WindowsFormsApp1
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(265, 328);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 19);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "DB";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(266, 371);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 19);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Print test";
+            // 
             // Entrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 409);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -233,6 +256,7 @@ namespace WindowsFormsApp1
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Entrada";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Entrada_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -260,5 +284,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

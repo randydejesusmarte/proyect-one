@@ -25,17 +25,14 @@ namespace WindowsFormsApp1
         internal int id_empleado;
         private void button1_Click(object sender, EventArgs e)
         {
-            DataRow row = dt.NewRow();
-            row["Servicio"] = textBox3.Text;
-            dt.Rows.Add(row);
-
+            agregar();
         }
-        string CONDICION;
+        private string CONDICION;
         private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             var y = 5;
             Font font = new Font("Century Gothic", 10, FontStyle.Regular);
-            e.Graphics.DrawString("Tecnica 3", new Font("Century Gothic", 14, FontStyle.Bold), Brushes.Black, new Point(0 + 65, y += 25));
+            e.Graphics.DrawString(Settings.Default.Namesbusiness, new Font("Century Gothic", 14, FontStyle.Bold), Brushes.Black, new Point(0 + 65, y += 25));
             e.Graphics.DrawString("Llegando a la rotonda", font, Brushes.Black, new Point(0 + 40, y += 25));
             e.Graphics.DrawString("Santiago, Rep Dom. Tel:849-216-1333", font, Brushes.Black, new Point(0, y += 25));
            // e.Graphics.DrawString("b0000045", font, Brushes.Black, new Point(0, y += 25));
@@ -62,6 +59,8 @@ namespace WindowsFormsApp1
                 e.Graphics.DrawString(row["Servicio"].ToString(), font, Brushes.Black, new Point(0, y += 25));
                 //e.Graphics.DrawString(textBox4.Text, font, Brushes.Black, new Point(0, y += 25));
             }
+
+            e.Graphics.DrawString("Gracias por preferirnos",font,Brushes.Black,new Point(25,y));
             e.Graphics.Dispose();
             printPreviewDialog1.ClientSize = Screen.PrimaryScreen.WorkingArea.Size;
             printPreviewDialog1.DesktopLocation = Screen.PrimaryScreen.WorkingArea.Location;
@@ -91,10 +90,26 @@ namespace WindowsFormsApp1
                     TxtCliente.Text,
                     Settings.Default.Idusuario.ToString(),
                     txtmecanico.Text,
-                    CONDICION
-                    ,
+                    CONDICION,
                     row
                     );
+            }
+            entrada.cant(IDEnt.Text);
+        }
+        private void agregar()
+        {
+            var row = dt.NewRow();
+            row["Servicio"] = textBox3.Text;
+            dt.Rows.Add(row);
+            textBox3.Text = "";
+        }
+        private void Entrada_Load(object sender, EventArgs e) => IDEnt.Text = new Auto_increment().Cont().ToString();
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                agregar();
             }
         }
     }

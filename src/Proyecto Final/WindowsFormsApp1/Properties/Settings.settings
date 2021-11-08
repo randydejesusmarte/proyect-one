@@ -5,5 +5,8 @@
     <Setting Name="Idusuario" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">52</Value>
     </Setting>
+    <Setting Name="Namesbusiness" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

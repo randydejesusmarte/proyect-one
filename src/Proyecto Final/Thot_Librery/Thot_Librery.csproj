@@ -49,6 +49,7 @@
     <Compile Include="Codigo Factura\FillData.cs" />
     <Compile Include="Codigo Factura\textrefresh.cs" />
     <Compile Include="Conexiones\Conexion.cs" />
+    <Compile Include="Entrada\Auto_increment.cs" />
     <Compile Include="Entrada\Ventrada.cs" />
     <Compile Include="Menu\menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.L_Fecha = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@ namespace WindowsFormsApp1
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fecha = new System.Windows.Forms.Timer(this.components);
-            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -85,6 +85,19 @@ namespace WindowsFormsApp1
             this.panel1.Size = new System.Drawing.Size(116, 431);
             this.panel1.TabIndex = 2;
             // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(0, 229);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(116, 49);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "control de\r\nServicios";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -105,7 +118,7 @@ namespace WindowsFormsApp1
             this.L_Fecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L_Fecha.Location = new System.Drawing.Point(-1, 412);
             this.L_Fecha.Name = "L_Fecha";
-            this.L_Fecha.Size = new System.Drawing.Size(49, 16);
+            this.L_Fecha.Size = new System.Drawing.Size(48, 16);
             this.L_Fecha.TabIndex = 4;
             this.L_Fecha.Text = "label1";
             // 
@@ -177,19 +190,6 @@ namespace WindowsFormsApp1
             // fecha
             // 
             this.fecha.Tick += new System.EventHandler(this.fecha_Tick);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 229);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 49);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "control de\r\nServicios";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Menu
             // 

@@ -37,5 +37,15 @@ namespace Thot_Librery.Entrada
             command.Parameters.Clear();
             Conexiones.Close();
         }
+        public void cant(string num)
+        {
+            Conexiones.Open();
+            SqlCommand command = new SqlCommand("SP_CantEntradas", Conexiones.SqlConnectio);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@Num",Convert.ToInt32(num));
+            command.ExecuteNonQuery();
+            command.Parameters.Clear();
+            Conexiones.Close();
+        }
     }
 }

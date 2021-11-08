@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
-using System.Timers;
 using System.Windows.Forms;
 using Thot_Librery.Menu;
 using WindowsFormsApp1.Properties;
@@ -22,6 +19,8 @@ namespace WindowsFormsApp1
             fecha.Start();
         }
         public int id;
+        public string name_business;
+
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -29,7 +28,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(id.ToString());
+            MessageBox.Show(Settings.Default.Idusuario.ToString(),Settings.Default.Namesbusiness.ToString());
         }
 
         private void BtFactura_Click(object sender, EventArgs e)
@@ -56,6 +55,8 @@ namespace WindowsFormsApp1
         private void Menu_Load(object sender, EventArgs e)
         {
             Settings.Default.Idusuario = id;
+            Settings.Default.Namesbusiness = name_business;
+            Settings.Default.Save();
         }
 
         private void button2_Click(object sender, EventArgs e)
