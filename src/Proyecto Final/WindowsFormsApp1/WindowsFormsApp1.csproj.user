@@ -14,4 +14,24 @@
     <FallbackCulture>es-ES</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="controdegastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ctlservicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Entrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Facturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
