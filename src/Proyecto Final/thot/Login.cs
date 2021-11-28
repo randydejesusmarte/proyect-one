@@ -53,10 +53,8 @@ namespace thot
         private new void Enter()
         {
             int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
-            switch (result)
+            if (result == 1)
             {
-                case 1:
-                    {
                         Save();
                         WindowsFormsApp1.Menu form = new();
                         int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
@@ -65,13 +63,9 @@ namespace thot
                         form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
                         form.Show();
                         Hide();
-                        break;
-                    }
-
-                case 0:
-                    MessageBox.Show("Contraseña o Usuario son incorrecto");
-                    break;
             }
+                else if(result == 0) 
+                    MessageBox.Show("Contraseña o Usuario son incorrecto");
         }
     }
 }
