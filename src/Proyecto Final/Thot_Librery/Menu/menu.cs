@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace Thot_Librery.Menu
+﻿namespace Thot_Librery.Menu
 {
     public class Menus : Attribute
     {

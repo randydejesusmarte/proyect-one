@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Thot_Librery.Conexiones;
 
 namespace Thot_Librery.Codigo_del_Login
@@ -18,8 +12,10 @@ namespace Thot_Librery.Codigo_del_Login
             try
             {
                 conexion.Open();
-                SqlCommand command = new SqlCommand("sp_get_id", conexion.SqlConnectio);
-                command.CommandType = CommandType.StoredProcedure;
+                SqlCommand command = new("sp_get_id", conexion.SqlConnectio)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 command.Parameters.AddWithValue("@Nombre", Nombre);
                 command.Parameters.AddWithValue("@Clave", Contraceña);
                 SqlDataReader DataReader = command.ExecuteReader();
@@ -28,7 +24,7 @@ namespace Thot_Librery.Codigo_del_Login
                     return DataReader.GetInt32(0);
                 }
             }
-            catch(Exception es)
+            catch (Exception es)
             {
                 MessageBox.Show(es.Message);
             }
@@ -43,8 +39,10 @@ namespace Thot_Librery.Codigo_del_Login
             try
             {
                 conexion.Open();
-                SqlCommand command = new SqlCommand("sp_get_id", conexion.SqlConnectio);
-                command.CommandType = CommandType.StoredProcedure;
+                SqlCommand command = new SqlCommand("sp_get_id", conexion.SqlConnectio)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 command.Parameters.AddWithValue("@Nombre", Nombre);
                 command.Parameters.AddWithValue("@Clave", Contraceña);
                 SqlDataReader DataReader = command.ExecuteReader();

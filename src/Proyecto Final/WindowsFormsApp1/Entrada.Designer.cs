@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 6;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // printPreviewDialog1
             // 
@@ -110,7 +110,7 @@ namespace WindowsFormsApp1
             this.txtmecanico.Location = new System.Drawing.Point(99, 74);
             this.txtmecanico.Margin = new System.Windows.Forms.Padding(4);
             this.txtmecanico.Name = "txtmecanico";
-            this.txtmecanico.Size = new System.Drawing.Size(186, 27);
+            this.txtmecanico.Size = new System.Drawing.Size(266, 27);
             this.txtmecanico.TabIndex = 1;
             // 
             // textBox3
@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
             this.textBox3.Location = new System.Drawing.Point(99, 144);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 27);
+            this.textBox3.Size = new System.Drawing.Size(266, 27);
             this.textBox3.TabIndex = 3;
             this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
@@ -171,7 +171,7 @@ namespace WindowsFormsApp1
             this.TxtCliente.Location = new System.Drawing.Point(99, 109);
             this.TxtCliente.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCliente.Name = "TxtCliente";
-            this.TxtCliente.Size = new System.Drawing.Size(186, 27);
+            this.TxtCliente.Size = new System.Drawing.Size(266, 27);
             this.TxtCliente.TabIndex = 2;
             // 
             // label4
@@ -252,10 +252,10 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.IDEnt);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Entrada";
-            this.Text = "Form2";
+            this.Text = "Entrada";
             this.Load += new System.EventHandler(this.Entrada_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 namespace SqlServerTypes
 {
@@ -21,7 +19,7 @@ namespace SqlServerTypes
         /// </param>
         public static void LoadNativeAssemblies(string rootApplicationPath)
         {
-            var nativeBinaryPath = IntPtr.Size > 4
+            string? nativeBinaryPath = IntPtr.Size > 4
                 ? Path.Combine(rootApplicationPath, @"SqlServerTypes\x64\")
                 : Path.Combine(rootApplicationPath, @"SqlServerTypes\x86\");
 
@@ -31,8 +29,8 @@ namespace SqlServerTypes
 
         private static void LoadNativeAssembly(string nativeBinaryPath, string assemblyName)
         {
-            var path = Path.Combine(nativeBinaryPath, assemblyName);
-            var ptr = LoadLibrary(path);
+            string? path = Path.Combine(nativeBinaryPath, assemblyName);
+            IntPtr ptr = LoadLibrary(path);
             if (ptr == IntPtr.Zero)
             {
                 throw new Exception(string.Format(

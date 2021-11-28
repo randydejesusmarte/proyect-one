@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Thot_Librery;
-using WindowsFormsApp1;
+﻿using thot.Properties;
 using Thot_Librery.Codigo_del_Login;
-using thot.Properties;
 
 namespace thot
 {
@@ -49,7 +38,10 @@ namespace thot
             Settings.Default.Save();
         }
 
-        private void checkit_CheckedChanged(object sender, EventArgs e) => txt_Contraseña.Focus();
+        private void checkit_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Contraseña.Focus();
+        }
 
         private void txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -61,24 +53,24 @@ namespace thot
         private new void Enter()
         {
             int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
-            if (result == 1)
+            switch (result)
             {
-                Save();
-                WindowsFormsApp1.Menu form = new WindowsFormsApp1.Menu();
-                int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
+                case 1:
+                    {
+                        Save();
+                        WindowsFormsApp1.Menu form = new();
+                        int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
+                        form.Text = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
+                        form.id = id;
+                        form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
+                        form.Show();
+                        Hide();
+                        break;
+                    }
 
-
-                form.Text= id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
-
-
-                form.id = id;
-                form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
-                form.Show();
-                Hide();
-            }
-            else if (result == 0)
-            {
-                MessageBox.Show("Contraseña o Usuario son incorrecto");
+                case 0:
+                    MessageBox.Show("Contraseña o Usuario son incorrecto");
+                    break;
             }
         }
     }

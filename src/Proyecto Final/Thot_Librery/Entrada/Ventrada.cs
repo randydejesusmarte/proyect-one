@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Data;
-using Thot_Librery.Conexiones;
+﻿using System.Data;
 using System.Data.SqlClient;
+using Thot_Librery.Conexiones;
 
 namespace Thot_Librery.Entrada
 {
@@ -20,12 +15,14 @@ namespace Thot_Librery.Entrada
         public string condicion { get; set; }
         public string Servicio { get; set; }
 
-        public void Insetar(string num,string cliente,string atendido,string trabajado,string condicion, DataRow entrada)
+        public void Insetar(string num, string cliente, string atendido, string trabajado, string condicion, DataRow entrada)
         {
             Conexiones.Open();
 
-            SqlCommand command = new SqlCommand("SP_Entradas", Conexiones.SqlConnectio);
-            command.CommandType = CommandType.StoredProcedure;
+            SqlCommand command = new SqlCommand("SP_Entradas", Conexiones.SqlConnectio)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
             command.Parameters.AddWithValue("@Num", num);
             command.Parameters.AddWithValue("@Cliente", cliente);
             command.Parameters.AddWithValue("@Atendido", atendido);
@@ -40,9 +37,11 @@ namespace Thot_Librery.Entrada
         public void cant(string num)
         {
             Conexiones.Open();
-            SqlCommand command = new SqlCommand("SP_CantEntradas", Conexiones.SqlConnectio);
-            command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@Num",Convert.ToInt32(num));
+            SqlCommand command = new SqlCommand("SP_CantEntradas", Conexiones.SqlConnectio)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            command.Parameters.AddWithValue("@Num", Convert.ToInt32(num));
             command.ExecuteNonQuery();
             command.Parameters.Clear();
             Conexiones.Close();

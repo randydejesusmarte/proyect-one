@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Thot_Librery.Conexiones;
 
 namespace Thot_Librery.Entrada
@@ -19,8 +13,10 @@ namespace Thot_Librery.Entrada
             try
             {
                 Conexiones.Open();
-                SqlCommand command = new SqlCommand("SP_auto_increment_Id", Conexiones.SqlConnectio);
-                command.CommandType = CommandType.StoredProcedure;
+                SqlCommand command = new SqlCommand("SP_auto_increment_Id", Conexiones.SqlConnectio)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 SqlDataReader DataReader = command.ExecuteReader();
                 if (DataReader.Read())
                 {

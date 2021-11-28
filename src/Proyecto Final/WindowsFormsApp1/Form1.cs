@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
-using System.Windows.Forms;
-using Thot_Librery.Menu;
+﻿using Thot_Librery.Menu;
 
 namespace WindowsFormsApp1
 {
@@ -32,11 +22,13 @@ namespace WindowsFormsApp1
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
-            Facturar form = new Facturar();
-            form.id_empleado = id;
+            using Facturar form = new() { id_empleado = id };
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
-        private void fecha_Tick(object sender, EventArgs e) => L_Fecha.Text = DateTime.Now.ToString();
+        private void fecha_Tick(object sender, EventArgs e)
+        {
+            L_Fecha.Text = DateTime.Now.ToString();
+        }
     }
 }

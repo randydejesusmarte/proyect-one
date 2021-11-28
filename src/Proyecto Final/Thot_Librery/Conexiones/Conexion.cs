@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace Thot_Librery.Conexiones
@@ -7,8 +6,8 @@ namespace Thot_Librery.Conexiones
     internal class Conexion : Attribute
     {
         internal SqlConnection SqlConnectio = new SqlConnection();
-        private string cadena =  Properties.Settings.Default.Conecctionstring;
-        
+        private readonly string cadena = Properties.Settings.Default.Conecctionstring;
+
         internal Conexion()
         {
             SqlConnectio.ConnectionString = cadena;

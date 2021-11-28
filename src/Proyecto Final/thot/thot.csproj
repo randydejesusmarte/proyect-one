@@ -15,11 +15,6 @@
     <Optimize>False</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Update="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Thot_Librery\Thot_Librery.csproj" />
     <ProjectReference Include="..\WindowsFormsApp1\WindowsFormsApp1.csproj" />
   </ItemGroup>
