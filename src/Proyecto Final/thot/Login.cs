@@ -27,23 +27,13 @@ namespace thot
         {
             Settings.Default.Uname = txt_Nombre.Text;
             Settings.Default.checkit = checkit.Checked;
-            if (checkit.Checked)
-            {
-                Settings.Default.Pass = txt_Contraseña.Text;
-            }
-            else
-            {
-                Settings.Default.Pass = "";
-            }
+            Settings.Default.Pass = checkit.Checked ? txt_Contraseña.Text : "";
             Settings.Default.Save();
         }
 
-        private void checkit_CheckedChanged(object sender, EventArgs e)
-        {
-            txt_Contraseña.Focus();
-        }
+        private void Checkit_CheckedChanged(object sender, EventArgs e) => txt_Contraseña.Focus();
 
-        private void txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
+        private void Txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {

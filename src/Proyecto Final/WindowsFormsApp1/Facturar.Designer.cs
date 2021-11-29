@@ -233,7 +233,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.producto);
             this.Controls.Add(this.nomcli);
             this.Controls.Add(this.idfactura);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Facturar";
             this.Text = "Facturar";

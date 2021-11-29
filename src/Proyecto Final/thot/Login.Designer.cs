@@ -47,7 +47,7 @@ namespace thot
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(367, 27);
             this.txt_Nombre.TabIndex = 0;
-            this.txt_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_KeyPress);
+            this.txt_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Nombre_KeyPress);
             // 
             // txt_Contraseña
             // 
@@ -59,7 +59,7 @@ namespace thot
             this.txt_Contraseña.Size = new System.Drawing.Size(367, 27);
             this.txt_Contraseña.TabIndex = 1;
             this.txt_Contraseña.UseSystemPasswordChar = true;
-            this.txt_Contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_KeyPress);
+            this.txt_Contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Nombre_KeyPress);
             // 
             // label1
             // 
@@ -109,7 +109,7 @@ namespace thot
             this.checkit.TabIndex = 2;
             this.checkit.Text = "Recordar Contraseña";
             this.checkit.UseVisualStyleBackColor = true;
-            this.checkit.CheckedChanged += new System.EventHandler(this.checkit_CheckedChanged);
+            this.checkit.CheckedChanged += new System.EventHandler(this.Checkit_CheckedChanged);
             // 
             // Login
             // 

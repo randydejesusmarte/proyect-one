@@ -8,6 +8,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             new textrefresh().Textrefresh(nomcli);
+            autoid();
         }
 
         private int idcliente;
@@ -22,7 +23,7 @@ namespace WindowsFormsApp1
             dataGridView1.AutoResizeColumns();
         }
 
-
+        private void autoid() => idfactura.Text = new Auto_increment().Cont().ToString();
 
     }
 }

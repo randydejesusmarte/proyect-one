@@ -1,19 +1,19 @@
-﻿using System.Data;
+﻿using Thot_Librery.Conexiones;
+using System.Data;
 using System.Data.SqlClient;
-using Thot_Librery.Conexiones;
 
-namespace Thot_Librery.Entrada
+namespace Thot_Librery.Codigo_Factura
 {
     public class Auto_increment : Attribute
     {
-        private readonly Conexion Conexiones = new();
+        private readonly Conexion Conexiones = new Conexion();
 
         public int Cont()
         {
             try
             {
                 Conexiones.Open();
-                SqlCommand command = new SqlCommand("SP_auto_increment_Id", Conexiones.SqlConnectio)
+                SqlCommand command = new SqlCommand("SP_auto_increment_FacId", Conexiones.SqlConnectio)
                 {
                     CommandType = CommandType.StoredProcedure
                 };

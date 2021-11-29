@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             e.Graphics.DrawString(Settings.Default.Namesbusiness, new(FamilyName, 14, FontStyle.Bold), Brushes.Black, new Point(0 + 65, y += space));
             e.Graphics.DrawString("Llegando a la rotonda", font, Brushes.Black, new Point(0 + 40, y += space));
             e.Graphics.DrawString("Santiago, Rep Dom. Tel:849-216-1333", font, Brushes.Black, new Point(0, y += space));
-            // e.Graphics.DrawString("b0000045", font, Brushes.Black, new Point(0, y += 25));
+
             e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
             e.Graphics.DrawString("Factura de contado", font, Brushes.Black, new Point(0 + 25, y += 5));
             //contar los servisios a entrados + 1 
@@ -60,11 +60,24 @@ namespace WindowsFormsApp1
             //optener nombre del usuario
             e.Graphics.DrawString("ATENDIDO POR.: " + Settings.Default.Idusuario, font, Brushes.Black, new Point(0, y += space));
             e.Graphics.DrawString("Tecnico.: " + txtmecanico.Text, font, Brushes.Black, new Point(0, y += space));
-            if (radioButton1.Checked == true)
-            { CONDICION = "Al Contado"; }
-            else { CONDICION = "A Credito"; }
+
+            CONDICION = radioButton1.Checked == true ? "Al Contado" : "A Credito";
+
+
+            /*
+              if (radioButton1.Checked == true)
+            { 
+                CONDICION = "Al Contado"; 
+            }
+              else 
+            {
+                CONDICION = "A Credito";
+            }
+            */
+
+
             e.Graphics.DrawString("CONDICION.: " + CONDICION, font, Brushes.Black, new Point(0, y += space));
-            e.Graphics.DrawString("CLIENTE.: " + TxtCliente.Text + "#0005", font, Brushes.Black, new Point(0, y += space));
+            e.Graphics.DrawString("CLIENTE.: " + TxtCliente.Text + "  #0005", font, Brushes.Black, new Point(0, y += space));
             e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
             e.Graphics.DrawString("Servicio", font, Brushes.Black, new Point(0, y));
             e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
@@ -118,18 +131,14 @@ namespace WindowsFormsApp1
             row["Servicio"] = textBox3.Text;
             dt.Rows.Add(row);
             textBox3.Text = "";
+            dataGridView1.AutoResizeColumn(0);
         }
-        private void Entrada_Load(object sender, EventArgs e)
-        {
-            IDEnt.Text = new Auto_increment().Cont().ToString();
-        }
+        private void Entrada_Load(object sender, EventArgs e) => IDEnt.Text = new Auto_increment().Cont().ToString();
 
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {
                 agregar();
-            }
         }
     }
 }
