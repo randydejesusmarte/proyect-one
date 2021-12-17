@@ -1,5 +1,5 @@
-﻿using System.Data;
-using System.Data.SqlClient;
+﻿global using System.Data;
+global using System.Data.SqlClient;
 
 namespace Thot_Librery.Conexiones
 {

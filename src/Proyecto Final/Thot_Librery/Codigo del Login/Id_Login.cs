@@ -1,6 +1,4 @@
-﻿using System.Data;
-using System.Data.SqlClient;
-using Thot_Librery.Conexiones;
+﻿using Thot_Librery.Conexiones;
 
 namespace Thot_Librery.Codigo_del_Login
 {

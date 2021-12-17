@@ -1,6 +1,4 @@
 ﻿using Thot_Librery.Conexiones;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace Thot_Librery.Codigo_Factura
 {

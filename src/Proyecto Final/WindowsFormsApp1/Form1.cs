@@ -2,6 +2,9 @@
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// Desabilitado
+    /// </summary>
     public partial class Form1 : Form
     {
         public Form1()
@@ -26,7 +29,7 @@ namespace WindowsFormsApp1
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
-        private void fecha_Tick(object sender, EventArgs e)
+        private void Fecha_Tick(object sender, EventArgs e)
         {
             L_Fecha.Text = DateTime.Now.ToString();
         }

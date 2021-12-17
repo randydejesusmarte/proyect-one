@@ -1,16 +1,15 @@
 ﻿using System.Data;
 using System.Drawing.Printing;
 using Thot_Librery.Entrada;
-using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
     public partial class Entrada : Form
     {
         private const string FamilyName = "Century Gothic";
-        private readonly Font font = new(FamilyName, 10, FontStyle.Regular);
+        private static readonly Font font = new(FamilyName, 10, FontStyle.Regular);
         private const int space = 25;
-        private readonly DataTable dt = new DataTable();
+
         public Entrada()
         {
             InitializeComponent();
@@ -45,6 +44,8 @@ namespace WindowsFormsApp1
         }
 
         private string CONDICION;
+        public static DataTable Dt { get; } = new();
+
         private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             int y = 5;
@@ -83,21 +84,21 @@ namespace WindowsFormsApp1
             e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
 
 
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in Dt.Rows)
             {
                 e.Graphics.DrawString(row["Servicio"].ToString(), font, Brushes.Black, new Point(0, y += space));
                 //e.Graphics.DrawString(textBox4.Text, font, Brushes.Black, new Point(0, y += space));
             }
 
-            e.Graphics.DrawString("Gracias por preferirnos", font, Brushes.Black, new Point(25, y+=space));
+            e.Graphics.DrawString("Gracias por preferirnos", font, Brushes.Black, new Point(25, y += space));
             e.Graphics.Dispose();
             printPreviewDialog1.ClientSize = Screen.PrimaryScreen.WorkingArea.Size;
             printPreviewDialog1.DesktopLocation = Screen.PrimaryScreen.WorkingArea.Location;
         }
         private void datatables()
         {
-            dt.Columns.Add("Servicio");
-            dataGridView1.DataSource = dt;
+            Dt.Columns.Add("Servicio");
+            dataGridView1.DataSource = Dt;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -112,7 +113,7 @@ namespace WindowsFormsApp1
             { CONDICION = "Al Contado"; }
             else { CONDICION = "A Credito"; }
             Ventrada entrada = new Ventrada();
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in Dt.Rows)
             {
                 entrada.Insetar(
                     IDEnt.Text,
@@ -127,18 +128,23 @@ namespace WindowsFormsApp1
         }
         private void agregar()
         {
-            DataRow? row = dt.NewRow();
+            DataRow? row = Dt.NewRow();
             row["Servicio"] = textBox3.Text;
-            dt.Rows.Add(row);
+            Dt.Rows.Add(row);
             textBox3.Text = "";
             dataGridView1.AutoResizeColumn(0);
         }
-        private void Entrada_Load(object sender, EventArgs e) => IDEnt.Text = new Auto_increment().Cont().ToString();
+        private void Entrada_Load(object sender, EventArgs e)
+        {
+            IDEnt.Text = new Auto_increment().Cont().ToString();
+        }
 
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
+            {
                 agregar();
+            }
         }
     }
 }

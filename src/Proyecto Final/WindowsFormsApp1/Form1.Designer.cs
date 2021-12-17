@@ -1,5 +1,4 @@
-﻿
-namespace WindowsFormsApp1
+﻿namespace WindowsFormsApp1
 {
     partial class Form1
     {
@@ -156,7 +155,7 @@ namespace WindowsFormsApp1
             // 
             // fecha
             // 
-            this.fecha.Tick += new System.EventHandler(this.fecha_Tick);
+            this.fecha.Tick += new System.EventHandler(this.Fecha_Tick);
             // 
             // Form1
             // 

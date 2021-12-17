@@ -31,7 +31,10 @@ namespace thot
             Settings.Default.Save();
         }
 
-        private void Checkit_CheckedChanged(object sender, EventArgs e) => txt_Contraseña.Focus();
+        private void Checkit_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Contraseña.Focus();
+        }
 
         private void Txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -45,17 +48,19 @@ namespace thot
             int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
             if (result == 1)
             {
-                        Save();
-                        WindowsFormsApp1.Menu form = new();
-                        int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
-                        form.Text = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
-                        form.id = id;
-                        form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
-                        form.Show();
-                        Hide();
+                Save();
+                WindowsFormsApp1.Menu form = new();
+                int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
+                form.Text = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
+                form.id = id;
+                form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
+                form.Show();
+                Hide();
             }
-                else if(result == 0) 
-                    MessageBox.Show("Contraseña o Usuario son incorrecto");
+            else if (result == 0)
+            {
+                MessageBox.Show("Contraseña o Usuario son incorrecto");
+            }
         }
     }
 }

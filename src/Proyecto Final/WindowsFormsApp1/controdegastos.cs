@@ -14,7 +14,7 @@
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow? row = (sender as DataGridView).CurrentRow;
+            DataGridViewRow? row = ((DataGridView)sender).CurrentRow;
             if (dataGridView1.Columns[e.ColumnIndex].Name == "Gasto")
             {
                 gastos g = new();

@@ -1,5 +1,5 @@
-﻿using Thot_Librery.Menu;
-using WindowsFormsApp1.Properties;
+﻿global using WindowsFormsApp1.Properties;
+using Thot_Librery.Menu;
 
 namespace WindowsFormsApp1
 {
@@ -18,9 +18,9 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString());
+            new Task(() => MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString())).Start();
         }
 
         private void BtFactura_Click(object sender, EventArgs e)
@@ -34,12 +34,12 @@ namespace WindowsFormsApp1
 
         private void fecha_Tick(object sender, EventArgs e)
         {
-            L_Fecha.Text = DateTime.Now.ToString();
+            new Task(() => L_Fecha.Text = DateTime.Now.ToString()).Start();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Entrada form = new Entrada
+            Entrada form = new()
             {
                 id_empleado = id
             };

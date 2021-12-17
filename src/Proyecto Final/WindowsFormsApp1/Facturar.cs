@@ -23,7 +23,9 @@ namespace WindowsFormsApp1
             dataGridView1.AutoResizeColumns();
         }
 
-        private void autoid() => idfactura.Text = new Auto_increment().Cont().ToString();
-
+        private void autoid()
+        {
+            idfactura.Text = new Auto_increment().Cont().ToString();
+        }
     }
 }
