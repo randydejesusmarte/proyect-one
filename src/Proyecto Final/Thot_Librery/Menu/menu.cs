@@ -13,10 +13,7 @@
         }
         public void Limpiar(Panel panel)
         {
-            if (panel.Controls.Count > 0)
-            {
-                panel.Controls.Clear();
-            }
+            panel.Controls.Clear();
         }
     }
 }

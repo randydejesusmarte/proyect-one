@@ -89,7 +89,7 @@ namespace thot
             // 
             this.bt_Entrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Entrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Entrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bt_Entrar.Location = new System.Drawing.Point(13, 141);
             this.bt_Entrar.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Entrar.Name = "bt_Entrar";
@@ -123,7 +123,7 @@ namespace thot
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_Contraseña);
             this.Controls.Add(this.txt_Nombre);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;

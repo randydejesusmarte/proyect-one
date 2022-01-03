@@ -53,7 +53,7 @@
             this.idfactura.Margin = new System.Windows.Forms.Padding(4);
             this.idfactura.Name = "idfactura";
             this.idfactura.Size = new System.Drawing.Size(85, 27);
-            this.idfactura.TabIndex = 0;
+            this.idfactura.TabIndex = 10;
             // 
             // nomcli
             // 
@@ -65,7 +65,7 @@
             this.nomcli.Margin = new System.Windows.Forms.Padding(4);
             this.nomcli.Name = "nomcli";
             this.nomcli.Size = new System.Drawing.Size(376, 27);
-            this.nomcli.TabIndex = 1;
+            this.nomcli.TabIndex = 0;
             // 
             // producto
             // 
@@ -189,6 +189,7 @@
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 

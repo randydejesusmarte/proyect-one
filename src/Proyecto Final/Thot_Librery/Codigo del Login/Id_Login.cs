@@ -30,7 +30,7 @@ namespace Thot_Librery.Codigo_del_Login
             {
                 conexion.Close();
             }
-            return -1;
+            return 0;
         }
         public string get_name(string Nombre, string Contraceña)
         {

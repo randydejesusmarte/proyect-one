@@ -8,11 +8,11 @@ namespace WindowsFormsApp1
         public Menu()
         {
             InitializeComponent();
-            fecha.Start();
         }
+
         public int id;
         public string name_business;
-
+        private static readonly object _lock = new();
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -20,21 +20,24 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            new Task(() => MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString())).Start();
+            lock (_lock)
+            {
+                new Thread(() => MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString())).Start();
+            }
         }
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
             Facturar form = new Facturar
             {
-                id_empleado = id
+                _id = id
             };
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
         private void fecha_Tick(object sender, EventArgs e)
         {
-            new Task(() => L_Fecha.Text = DateTime.Now.ToString()).Start();
+            L_Fecha.Text = DateTime.Now.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -56,6 +59,7 @@ namespace WindowsFormsApp1
             Settings.Default.Idusuario = id;
             Settings.Default.Namesbusiness = name_business;
             Settings.Default.Save();
+            fecha.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)

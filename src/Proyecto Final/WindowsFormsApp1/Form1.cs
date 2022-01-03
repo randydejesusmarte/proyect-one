@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
-            using Facturar form = new() { id_empleado = id };
+            using Facturar form = new() { _id = id };
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 

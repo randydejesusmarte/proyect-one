@@ -1,5 +1,4 @@
 ﻿using Thot_Librery.Conexiones;
-
 namespace Thot_Librery.Codigo_Factura
 {
     public class FillData

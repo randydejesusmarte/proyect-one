@@ -13,7 +13,14 @@ namespace WindowsFormsApp1
         public Entrada()
         {
             InitializeComponent();
-            datatables();
+            try
+            {
+                Datatables();
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show(es.Message);
+            }
         }
 
         internal int id_empleado;
@@ -43,7 +50,7 @@ namespace WindowsFormsApp1
             return lleno;
         }
 
-        private string CONDICION;
+        private string CONDICION = "Al Contado";
         public static DataTable Dt { get; } = new();
 
         private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
@@ -95,8 +102,9 @@ namespace WindowsFormsApp1
             printPreviewDialog1.ClientSize = Screen.PrimaryScreen.WorkingArea.Size;
             printPreviewDialog1.DesktopLocation = Screen.PrimaryScreen.WorkingArea.Location;
         }
-        private void datatables()
+        private void Datatables()
         {
+            Dt.Columns.Clear();
             Dt.Columns.Add("Servicio");
             dataGridView1.DataSource = Dt;
         }

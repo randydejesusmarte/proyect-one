@@ -1,2 +1,5 @@
 	Radmap
 -----------------------------------
+[x] correxion de bug en entrada
+[0] obtencion del numero de factura a imprimir
+[0] contar veses que se imprime una factura
