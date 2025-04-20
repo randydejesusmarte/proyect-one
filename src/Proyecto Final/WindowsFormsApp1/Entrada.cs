@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.Message);
+                _ = MessageBox.Show(es.Message);
             }
         }
 
@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
             if (validar(this))
             {
                 //si esta vacio
-                MessageBox.Show("Favor llenar todo", "Advertencia");
+                _ = MessageBox.Show("Favor llenar todo", "Advertencia");
             }
             else
             {
@@ -105,35 +105,51 @@ namespace WindowsFormsApp1
         private void Datatables()
         {
             Dt.Columns.Clear();
-            Dt.Columns.Add("Servicio");
+            _ = Dt.Columns.Add("Servicio");
             dataGridView1.DataSource = Dt;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             printPreviewDialog1.Document = printDocument1;
-            printPreviewDialog1.ShowDialog();
+            _ = printPreviewDialog1.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
-            { CONDICION = "Al Contado"; }
-            else { CONDICION = "A Credito"; }
-            Ventrada entrada = new Ventrada();
+            CONDICION = radioButton1.Checked == true ? "Al Contado" : "A Credito";
             foreach (DataRow row in Dt.Rows)
             {
+                Ventrada entrada = new()
+                {
+                    num = IDEnt.Text,
+                    clinte = TxtCliente.Text,
+                    atendido = Settings.Default.Idusuario.ToString(),
+                    trabajado = txtmecanico.Text,
+                    condicion = CONDICION,
+                    Servicio = row["Servicio"].ToString()
+                };
                 entrada.Insetar(
-                    IDEnt.Text,
-                    TxtCliente.Text,
-                    Settings.Default.Idusuario.ToString(),
-                    txtmecanico.Text,
-                    CONDICION,
+                    entrada.num,
+                    entrada.clinte,
+                    entrada.atendido,
+                    entrada.trabajado,
+                    entrada.condicion,
                     row
-                    );
+                );
             }
-            entrada.cant(IDEnt.Text);
+            Ventrada finalEntrada = new()
+            {
+                num = IDEnt.Text,
+                clinte = TxtCliente.Text,
+                atendido = Settings.Default.Idusuario.ToString(),
+                trabajado = txtmecanico.Text,
+                condicion = CONDICION,
+                Servicio = string.Empty // Servicio no es necesario para la llamada a cant()
+            };
+            finalEntrada.cant(IDEnt.Text);
         }
+
         private void agregar()
         {
             DataRow? row = Dt.NewRow();

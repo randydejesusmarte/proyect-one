@@ -28,79 +28,78 @@ namespace HttpNamespaceManager.UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelPrompt = new System.Windows.Forms.Label();
-            this.textInput = new System.Windows.Forms.TextBox();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonOK = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            labelPrompt = new Label();
+            textInput = new TextBox();
+            buttonCancel = new Button();
+            buttonOK = new Button();
+            SuspendLayout();
             // 
             // labelPrompt
             // 
-            this.labelPrompt.AutoSize = true;
-            this.labelPrompt.Location = new System.Drawing.Point(15, 1);
-            this.labelPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelPrompt.Name = "labelPrompt";
-            this.labelPrompt.Size = new System.Drawing.Size(50, 15);
-            this.labelPrompt.TabIndex = 0;
-            this.labelPrompt.Text = "Prompt:";
+            labelPrompt.AutoSize = true;
+            labelPrompt.Location = new Point(15, 1);
+            labelPrompt.Margin = new Padding(4, 0, 4, 0);
+            labelPrompt.Name = "labelPrompt";
+            labelPrompt.Size = new Size(50, 15);
+            labelPrompt.TabIndex = 0;
+            labelPrompt.Text = "Prompt:";
             // 
             // textInput
             // 
-            this.textInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textInput.Location = new System.Drawing.Point(14, 34);
-            this.textInput.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textInput.Name = "textInput";
-            this.textInput.Size = new System.Drawing.Size(303, 23);
-            this.textInput.TabIndex = 1;
+            textInput.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textInput.Location = new Point(14, 34);
+            textInput.Margin = new Padding(4, 3, 4, 3);
+            textInput.Name = "textInput";
+            textInput.Size = new Size(303, 23);
+            textInput.TabIndex = 1;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(230, 64);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(88, 27);
-            this.buttonCancel.TabIndex = 3;
-            this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
+            buttonCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonCancel.DialogResult = DialogResult.Cancel;
+            buttonCancel.Location = new Point(230, 64);
+            buttonCancel.Margin = new Padding(4, 3, 4, 3);
+            buttonCancel.Name = "buttonCancel";
+            buttonCancel.Size = new Size(88, 27);
+            buttonCancel.TabIndex = 3;
+            buttonCancel.Text = "Cancel";
+            buttonCancel.UseVisualStyleBackColor = true;
             // 
             // buttonOK
             // 
-            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(135, 64);
-            this.buttonOK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(88, 27);
-            this.buttonOK.TabIndex = 2;
-            this.buttonOK.Text = "OK";
-            this.buttonOK.UseVisualStyleBackColor = true;
+            buttonOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonOK.DialogResult = DialogResult.OK;
+            buttonOK.Location = new Point(135, 64);
+            buttonOK.Margin = new Padding(4, 3, 4, 3);
+            buttonOK.Name = "buttonOK";
+            buttonOK.Size = new Size(88, 27);
+            buttonOK.TabIndex = 2;
+            buttonOK.Text = "OK";
+            buttonOK.UseVisualStyleBackColor = true;
             // 
             // InputBox
             // 
-            this.AcceptButton = this.buttonOK;
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(331, 105);
-            this.Controls.Add(this.buttonOK);
-            this.Controls.Add(this.buttonCancel);
-            this.Controls.Add(this.textInput);
-            this.Controls.Add(this.labelPrompt);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(336, 128);
-            this.Name = "InputBox";
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Title";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = buttonOK;
+            AutoScaleMode = AutoScaleMode.None;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            CancelButton = buttonCancel;
+            ClientSize = new Size(331, 105);
+            Controls.Add(buttonOK);
+            Controls.Add(buttonCancel);
+            Controls.Add(textInput);
+            Controls.Add(labelPrompt);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            MinimumSize = new Size(336, 128);
+            Name = "InputBox";
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Title";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

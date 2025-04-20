@@ -10,8 +10,8 @@ namespace thot
             InitializeComponent();
         }
 
-        private readonly Login_conect login = new Login_conect();
-        private readonly Id_Login id_Login = new Id_Login();
+        private readonly Login_conect login = new();
+        private readonly Id_Login id_Login = new();
         private void bt_Entrar_Click(object sender, EventArgs e)
         {
             Enter();
@@ -33,7 +33,7 @@ namespace thot
 
         private void Checkit_CheckedChanged(object sender, EventArgs e)
         {
-            txt_Contraseña.Focus();
+            _ = txt_Contraseña.Focus();
         }
 
         private void Txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
@@ -59,7 +59,7 @@ namespace thot
             }
             else if (result == 0)
             {
-                MessageBox.Show("Contraseña o Usuario son incorrecto");
+                _ = MessageBox.Show("Contraseña o Usuario son incorrecto");
             }
         }
     }

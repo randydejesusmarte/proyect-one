@@ -4,18 +4,18 @@ namespace Thot_Librery.Codigo_del_Login
 {
     public class Login_conect : Attribute
     {
-        private readonly Conexion conexion = new Conexion();
+        private readonly Conexion conexion = new();
         public int Logear(string Nombre, string Contraceña)
         {
             try
             {
-                conexion.Open();
-                SqlCommand command = new SqlCommand("sp_Login", conexion.SqlConnectio)
+                _ = conexion.Open();
+                SqlCommand command = new("sp_Login", conexion.SqlConnectio)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                command.Parameters.AddWithValue("@Nombre", Nombre);
-                command.Parameters.AddWithValue("@Clave", Contraceña);
+                _ = command.Parameters.AddWithValue("@Nombre", Nombre);
+                _ = command.Parameters.AddWithValue("@Clave", Contraceña);
 
                 SqlDataReader dataReader = command.ExecuteReader();
                 if (dataReader.Read())
@@ -25,12 +25,12 @@ namespace Thot_Librery.Codigo_del_Login
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.Message);
+                _ = MessageBox.Show(es.Message);
 
             }
             finally
             {
-                conexion.Close();
+                _ = conexion.Close();
             }
             return -1;
         }

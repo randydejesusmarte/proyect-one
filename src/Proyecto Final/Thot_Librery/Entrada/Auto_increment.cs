@@ -10,8 +10,8 @@ namespace Thot_Librery.Entrada
         {
             try
             {
-                Conexiones.Open();
-                SqlCommand command = new SqlCommand("SP_auto_increment_Id", Conexiones.SqlConnectio)
+                _ = Conexiones.Open();
+                SqlCommand command = new("SP_auto_increment_Id", Conexiones.SqlConnectio)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -23,11 +23,11 @@ namespace Thot_Librery.Entrada
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.Message);
+                _ = MessageBox.Show(es.Message);
             }
             finally
             {
-                Conexiones.Close();
+                _ = Conexiones.Close();
             }
             return -1;
         }

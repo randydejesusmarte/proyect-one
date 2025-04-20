@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
-            Facturar form = new Facturar
+            Facturar form = new()
             {
                 _id = id
             };
@@ -64,14 +64,14 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            controdegastos form = new controdegastos();
+            controdegastos form = new();
             //form.id_empleado = id;
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            ctlservicios form = new ctlservicios();
+            ctlservicios form = new();
             //form.id_empleado = id;
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }

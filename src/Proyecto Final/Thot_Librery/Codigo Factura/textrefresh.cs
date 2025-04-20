@@ -3,21 +3,21 @@ namespace Thot_Librery.Codigo_Factura
 {
     public class textrefresh : Attribute
     {
-        private readonly Conexion conexion = new Conexion();
+        private readonly Conexion conexion = new();
         public void Textrefresh(TextBox text)
         {
-            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
-            conexion.Open();
-            SqlCommand command = new SqlCommand("sp_textrefresh", conexion.SqlConnectio)
+            AutoCompleteStringCollection collection = [];
+            _ = conexion.Open();
+            SqlCommand command = new("sp_textrefresh", conexion.SqlConnectio)
             {
                 CommandType = CommandType.StoredProcedure
             };
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                collection.Add(reader["Nom_cli"].ToString());
+                _ = collection.Add(reader["Nom_cli"].ToString());
             }
-            conexion.Close();
+            _ = conexion.Close();
             text.AutoCompleteCustomSource = collection;
         }
     }

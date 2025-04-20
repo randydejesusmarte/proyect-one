@@ -9,7 +9,7 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new gastos().ShowDialog();
+            _ = new gastos().ShowDialog();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -19,7 +19,7 @@
             {
                 gastos g = new();
                 g.textBox3.Text = row.Cells[0].Value.ToString();
-                g.ShowDialog();
+                _ = g.ShowDialog();
             }
         }
     }

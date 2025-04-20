@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             // precio.Text = Microsoft.VisualBasic.Interaction.InputBox("Texto de la pregunta","Titulo del diálogo", "Respuesta por defecto");
-            InputBox.Show("Buscar Entrada", "Numero de Entrada", out string texto);
+            _ = InputBox.Show("Buscar Entrada", "Numero de Entrada", out string texto);
             idfactura.Text = texto;
         }
     }

@@ -5,7 +5,7 @@ namespace Thot_Librery.Conexiones
 {
     internal class Conexion : Attribute
     {
-        internal SqlConnection SqlConnectio = new SqlConnection();
+        internal SqlConnection SqlConnectio = new();
         private readonly string cadena = Properties.Settings.Default.Conecctionstring;
 
         internal Conexion()

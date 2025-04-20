@@ -3,14 +3,14 @@ namespace Thot_Librery.Codigo_Factura
 {
     public class Auto_increment : Attribute
     {
-        private readonly Conexion Conexiones = new Conexion();
+        private readonly Conexion Conexiones = new();
 
         public int Cont()
         {
             try
             {
-                Conexiones.Open();
-                SqlCommand command = new SqlCommand("SP_auto_increment_FacId", Conexiones.SqlConnectio)
+                _ = Conexiones.Open();
+                SqlCommand command = new("SP_auto_increment_FacId", Conexiones.SqlConnectio)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -22,11 +22,11 @@ namespace Thot_Librery.Codigo_Factura
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.Message);
+                _ = MessageBox.Show(es.Message);
             }
             finally
             {
-                Conexiones.Close();
+                _ = Conexiones.Close();
             }
             return -1;
         }

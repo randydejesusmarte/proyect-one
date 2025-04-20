@@ -4,18 +4,18 @@ namespace Thot_Librery.Codigo_del_Login
 {
     public class Id_Login : Attribute
     {
-        private readonly Conexion conexion = new Conexion();
+        private readonly Conexion conexion = new();
         public int get_id(string Nombre, string Contraceña)
         {
             try
             {
-                conexion.Open();
+                _ = conexion.Open();
                 SqlCommand command = new("sp_get_id", conexion.SqlConnectio)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                command.Parameters.AddWithValue("@Nombre", Nombre);
-                command.Parameters.AddWithValue("@Clave", Contraceña);
+                _ = command.Parameters.AddWithValue("@Nombre", Nombre);
+                _ = command.Parameters.AddWithValue("@Clave", Contraceña);
                 SqlDataReader DataReader = command.ExecuteReader();
                 if (DataReader.Read())
                 {
@@ -24,11 +24,11 @@ namespace Thot_Librery.Codigo_del_Login
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.Message);
+                _ = MessageBox.Show(es.Message);
             }
             finally
             {
-                conexion.Close();
+                _ = conexion.Close();
             }
             return 0;
         }
@@ -36,13 +36,13 @@ namespace Thot_Librery.Codigo_del_Login
         {
             try
             {
-                conexion.Open();
-                SqlCommand command = new SqlCommand("sp_get_id", conexion.SqlConnectio)
+                _ = conexion.Open();
+                SqlCommand command = new("sp_get_id", conexion.SqlConnectio)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                command.Parameters.AddWithValue("@Nombre", Nombre);
-                command.Parameters.AddWithValue("@Clave", Contraceña);
+                _ = command.Parameters.AddWithValue("@Nombre", Nombre);
+                _ = command.Parameters.AddWithValue("@Clave", Contraceña);
                 SqlDataReader DataReader = command.ExecuteReader();
                 if (DataReader.Read())
                 {
@@ -51,11 +51,11 @@ namespace Thot_Librery.Codigo_del_Login
             }
             catch (Exception es)
             {
-                MessageBox.Show(es.Message);
+                _ = MessageBox.Show(es.Message);
             }
             finally
             {
-                conexion.Close();
+                _ = conexion.Close();
             }
             return "";
         }
