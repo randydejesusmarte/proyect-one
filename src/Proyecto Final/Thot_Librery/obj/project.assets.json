@@ -28,116 +28,1052 @@
           }
         }
       },
-      "Microsoft.Win32.Registry.AccessControl/6.0.0": {
+      "Microsoft.Win32.Registry.AccessControl/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Win32.Registry.AccessControl.dll": {
+          "lib/net9.0/Microsoft.Win32.Registry.AccessControl.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.Registry.AccessControl.dll": {
+          "lib/net9.0/Microsoft.Win32.Registry.AccessControl.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.Registry.AccessControl.dll": {
+          "runtimes/win/lib/net9.0/Microsoft.Win32.Registry.AccessControl.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {
+      "Microsoft.Win32.SystemEvents/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "Microsoft.Windows.Compatibility/6.0.0": {
+      "Microsoft.Windows.Compatibility/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.Registry.AccessControl": "6.0.0",
-          "Microsoft.Win32.SystemEvents": "6.0.0",
-          "System.CodeDom": "6.0.0",
-          "System.ComponentModel.Composition": "6.0.0",
-          "System.ComponentModel.Composition.Registration": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Data.Odbc": "6.0.0",
-          "System.Data.OleDb": "6.0.0",
-          "System.Data.SqlClient": "4.8.3",
-          "System.Diagnostics.EventLog": "6.0.0",
-          "System.Diagnostics.PerformanceCounter": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
-          "System.DirectoryServices.AccountManagement": "6.0.0",
-          "System.DirectoryServices.Protocols": "6.0.0",
-          "System.Drawing.Common": "6.0.0",
-          "System.IO.Packaging": "6.0.0",
-          "System.IO.Ports": "6.0.0",
-          "System.Management": "6.0.0",
-          "System.Reflection.Context": "6.0.0",
-          "System.Runtime.Caching": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.0",
-          "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Security.Cryptography.Xml": "6.0.0",
-          "System.Security.Permissions": "6.0.0",
-          "System.ServiceModel.Duplex": "4.9.0",
-          "System.ServiceModel.Http": "4.9.0",
-          "System.ServiceModel.NetTcp": "4.9.0",
-          "System.ServiceModel.Primitives": "4.9.0",
-          "System.ServiceModel.Security": "4.9.0",
-          "System.ServiceModel.Syndication": "6.0.0",
-          "System.ServiceProcess.ServiceController": "6.0.0",
-          "System.Speech": "6.0.0",
-          "System.Threading.AccessControl": "6.0.0",
-          "System.Web.Services.Description": "4.9.0"
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "Microsoft.Win32.Registry.AccessControl": "9.0.4",
+          "Microsoft.Win32.SystemEvents": "9.0.4",
+          "System.CodeDom": "9.0.4",
+          "System.ComponentModel.Composition": "9.0.4",
+          "System.ComponentModel.Composition.Registration": "9.0.4",
+          "System.Configuration.ConfigurationManager": "9.0.4",
+          "System.Data.Odbc": "9.0.4",
+          "System.Data.OleDb": "9.0.4",
+          "System.Data.SqlClient": "4.8.6",
+          "System.Diagnostics.EventLog": "9.0.4",
+          "System.Diagnostics.PerformanceCounter": "9.0.4",
+          "System.DirectoryServices": "9.0.4",
+          "System.DirectoryServices.AccountManagement": "9.0.4",
+          "System.DirectoryServices.Protocols": "9.0.4",
+          "System.Drawing.Common": "9.0.4",
+          "System.IO.Packaging": "9.0.4",
+          "System.IO.Ports": "9.0.4",
+          "System.Management": "9.0.4",
+          "System.Reflection.Context": "9.0.4",
+          "System.Runtime.Caching": "9.0.4",
+          "System.Security.Cryptography.Pkcs": "9.0.4",
+          "System.Security.Cryptography.ProtectedData": "9.0.4",
+          "System.Security.Cryptography.Xml": "9.0.4",
+          "System.Security.Permissions": "9.0.4",
+          "System.ServiceModel.Duplex": "4.10.0",
+          "System.ServiceModel.Http": "4.10.0",
+          "System.ServiceModel.NetTcp": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0",
+          "System.ServiceModel.Security": "4.10.0",
+          "System.ServiceModel.Syndication": "9.0.4",
+          "System.ServiceProcess.ServiceController": "9.0.4",
+          "System.Speech": "9.0.4",
+          "System.Threading.AccessControl": "9.0.4",
+          "System.Web.Services.Description": "4.10.0"
         }
       },
-      "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.android-arm.runtime.native.System.IO.Ports/9.0.4": {
         "type": "package",
         "runtimeTargets": {
+          "runtimes/android-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.android-x64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.android-x86.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
           "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
             "assetType": "native",
             "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
           }
         }
       },
-      "runtime.linux-arm64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/9.0.4": {
         "type": "package",
         "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
           "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
             "assetType": "native",
             "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
           }
         }
       },
-      "runtime.linux-x64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports/9.0.4": {
         "type": "package",
         "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.linux-bionic-x64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.linux-musl-arm.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.linux-musl-arm64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.linux-musl-x64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
           "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
             "assetType": "native",
             "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "runtime.maccatalyst-x64.runtime.native.System.IO.Ports/9.0.4": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
           }
         }
       },
@@ -149,28 +1085,159 @@
           "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
       },
-      "runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.native.System.IO.Ports/9.0.4": {
         "type": "package",
         "dependencies": {
-          "runtime.linux-arm.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.linux-arm64.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.linux-x64.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.osx-arm64.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.osx-x64.runtime.native.System.IO.Ports": "6.0.0"
+          "runtime.android-arm.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.android-arm64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.android-x64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.android-x86.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-bionic-x64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-musl-arm.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-musl-arm64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-musl-x64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.maccatalyst-x64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "9.0.4",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "9.0.4"
         }
       },
-      "runtime.osx-arm64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/9.0.4": {
         "type": "package",
         "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
           "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
             "assetType": "native",
             "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
           }
         }
       },
-      "runtime.osx-x64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.osx-x64.runtime.native.System.IO.Ports/9.0.4": {
         "type": "package",
         "runtimeTargets": {
+          "runtimes/android-arm/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/_._": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/_._": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/linux-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-bionic-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-arm64"
+          },
+          "runtimes/linux-bionic-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-bionic-x64"
+          },
+          "runtimes/linux-musl-arm/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/_._": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
           "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
@@ -204,155 +1271,131 @@
           }
         }
       },
-      "System.CodeDom/6.0.0": {
+      "System.CodeDom/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.CodeDom.dll": {
+          "lib/net9.0/System.CodeDom.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.CodeDom.dll": {
+          "lib/net9.0/System.CodeDom.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.ComponentModel.Composition/6.0.0": {
+      "System.ComponentModel.Composition/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.ComponentModel.Composition.dll": {
+          "lib/net9.0/System.ComponentModel.Composition.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.ComponentModel.Composition.dll": {
+          "lib/net9.0/System.ComponentModel.Composition.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.ComponentModel.Composition.Registration/6.0.0": {
+      "System.ComponentModel.Composition.Registration/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.ComponentModel.Composition": "6.0.0",
-          "System.Reflection.Context": "6.0.0"
+          "System.ComponentModel.Composition": "9.0.4",
+          "System.Reflection.Context": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.ComponentModel.Composition.Registration.dll": {
+          "lib/net9.0/System.ComponentModel.Composition.Registration.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.ComponentModel.Composition.Registration.dll": {
+          "lib/net9.0/System.ComponentModel.Composition.Registration.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/6.0.0": {
+      "System.Configuration.ConfigurationManager/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "6.0.0",
-          "System.Security.Permissions": "6.0.0"
+          "System.Diagnostics.EventLog": "9.0.4",
+          "System.Security.Cryptography.ProtectedData": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net9.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net9.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Data.Odbc.dll": {
+          "lib/net9.0/System.Data.Odbc.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Data.Odbc.dll": {
+          "lib/net9.0/System.Data.Odbc.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/freebsd/lib/net6.0/System.Data.Odbc.dll": {
+          "runtimes/unix/lib/net9.0/System.Data.Odbc.dll": {
             "assetType": "runtime",
-            "rid": "freebsd"
+            "rid": "unix"
           },
-          "runtimes/illumos/lib/net6.0/System.Data.Odbc.dll": {
-            "assetType": "runtime",
-            "rid": "illumos"
-          },
-          "runtimes/ios/lib/net6.0/System.Data.Odbc.dll": {
-            "assetType": "runtime",
-            "rid": "ios"
-          },
-          "runtimes/linux/lib/net6.0/System.Data.Odbc.dll": {
-            "assetType": "runtime",
-            "rid": "linux"
-          },
-          "runtimes/osx/lib/net6.0/System.Data.Odbc.dll": {
-            "assetType": "runtime",
-            "rid": "osx"
-          },
-          "runtimes/solaris/lib/net6.0/System.Data.Odbc.dll": {
-            "assetType": "runtime",
-            "rid": "solaris"
-          },
-          "runtimes/tvos/lib/net6.0/System.Data.Odbc.dll": {
-            "assetType": "runtime",
-            "rid": "tvos"
-          },
-          "runtimes/win/lib/net6.0/System.Data.Odbc.dll": {
+          "runtimes/win/lib/net9.0/System.Data.Odbc.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Data.OleDb/6.0.0": {
+      "System.Data.OleDb/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Diagnostics.PerformanceCounter": "6.0.0"
+          "System.Configuration.ConfigurationManager": "9.0.4",
+          "System.Diagnostics.PerformanceCounter": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Data.OleDb.dll": {
+          "lib/net9.0/System.Data.OleDb.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Data.OleDb.dll": {
+          "lib/net9.0/System.Data.OleDb.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Data.OleDb.dll": {
+          "runtimes/win/lib/net9.0/System.Data.OleDb.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Data.SqlClient/4.8.3": {
+      "System.Data.SqlClient/4.8.6": {
         "type": "package",
         "dependencies": {
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
@@ -378,239 +1421,232 @@
           }
         }
       },
-      "System.Diagnostics.EventLog/6.0.0": {
+      "System.Diagnostics.EventLog/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+          "lib/net9.0/System.Diagnostics.EventLog.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+          "lib/net9.0/System.Diagnostics.EventLog.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll": {
             "assetType": "runtime",
             "rid": "win"
           },
-          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Diagnostics.PerformanceCounter/6.0.0": {
+      "System.Diagnostics.PerformanceCounter/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "6.0.0"
+          "System.Configuration.ConfigurationManager": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+          "lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+          "lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.dll": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.DirectoryServices/6.0.0": {
+      "System.DirectoryServices/9.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.DirectoryServices.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.DirectoryServices.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.DirectoryServices.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.DirectoryServices.AccountManagement/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Security.Permissions": "6.0.0"
+          "System.Configuration.ConfigurationManager": "9.0.4",
+          "System.DirectoryServices": "9.0.4",
+          "System.DirectoryServices.Protocols": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.DirectoryServices.dll": {
+          "lib/net9.0/System.DirectoryServices.AccountManagement.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.DirectoryServices.dll": {
+          "lib/net9.0/System.DirectoryServices.AccountManagement.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.DirectoryServices.dll": {
+          "runtimes/win/lib/net9.0/System.DirectoryServices.AccountManagement.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.DirectoryServices.AccountManagement/6.0.0": {
+      "System.DirectoryServices.Protocols/9.0.4": {
         "type": "package",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.DirectoryServices": "6.0.0",
-          "System.DirectoryServices.Protocols": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.DirectoryServices.AccountManagement.dll": {
+          "lib/net9.0/System.DirectoryServices.Protocols.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.DirectoryServices.AccountManagement.dll": {
+          "lib/net9.0/System.DirectoryServices.Protocols.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.DirectoryServices.Protocols/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.DirectoryServices.Protocols.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.DirectoryServices.Protocols.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+          "runtimes/linux/lib/net9.0/System.DirectoryServices.Protocols.dll": {
             "assetType": "runtime",
             "rid": "linux"
           },
-          "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+          "runtimes/osx/lib/net9.0/System.DirectoryServices.Protocols.dll": {
             "assetType": "runtime",
             "rid": "osx"
           },
-          "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+          "runtimes/win/lib/net9.0/System.DirectoryServices.Protocols.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Drawing.Common.dll": {
+          "lib/net9.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net9.0/System.Private.Windows.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {
+          "lib/net9.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net9.0/System.Private.Windows.Core.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.IO.Packaging/9.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.IO.Ports/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "9.0.4"
+        },
+        "compile": {
+          "lib/net9.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+          "runtimes/unix/lib/net9.0/System.IO.Ports.dll": {
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+          "runtimes/win/lib/net9.0/System.IO.Ports.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.IO.Packaging/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.IO.Packaging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.IO.Packaging.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.IO.Ports/6.0.0": {
+      "System.Management/9.0.4": {
         "type": "package",
         "dependencies": {
-          "runtime.native.System.IO.Ports": "6.0.0"
+          "System.CodeDom": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {
+          "lib/net9.0/System.Management.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Ports.dll": {
+          "lib/net9.0/System.Management.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+          "runtimes/win/lib/net9.0/System.Management.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Management/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Management.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Private.ServiceModel/4.9.0": {
+      "System.Private.ServiceModel/4.10.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
@@ -667,134 +1703,128 @@
           }
         }
       },
-      "System.Reflection.Context/6.0.0": {
+      "System.Reflection.Context/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Reflection.Context.dll": {
+          "lib/net9.0/System.Reflection.Context.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Reflection.Context.dll": {
+          "lib/net9.0/System.Reflection.Context.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Runtime.Caching/6.0.0": {
+      "System.Runtime.Caching/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "6.0.0"
+          "System.Configuration.ConfigurationManager": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Runtime.Caching.dll": {
+          "lib/net9.0/System.Runtime.Caching.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.Caching.dll": {
+          "lib/net9.0/System.Runtime.Caching.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Runtime.Caching.dll": {
+          "runtimes/win/lib/net9.0/System.Runtime.Caching.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Security.Cryptography.Pkcs/6.0.0": {
+      "System.Security.Cryptography.Pkcs/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+          "lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+          "lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+          "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/6.0.0": {
+      "System.Security.Cryptography.ProtectedData/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+          "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+          "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Security.Cryptography.Xml/6.0.0": {
+      "System.Security.Cryptography.Xml/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.Pkcs": "6.0.0"
+          "System.Security.Cryptography.Pkcs": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Security.Cryptography.Xml.dll": {
+          "lib/net9.0/System.Security.Cryptography.Xml.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Security.Cryptography.Xml.dll": {
+          "lib/net9.0/System.Security.Cryptography.Xml.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Security.Permissions/6.0.0": {
+      "System.Security.Permissions/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Windows.Extensions": "6.0.0"
+          "System.Windows.Extensions": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.Security.Permissions.dll": {
+          "lib/net9.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Security.Permissions.dll": {
+          "lib/net9.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.ServiceModel.Duplex/4.9.0": {
+      "System.ServiceModel.Duplex/4.10.0": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.9.0",
-          "System.ServiceModel.Primitives": "4.9.0"
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
         },
         "compile": {
           "ref/net6.0/System.ServiceModel.Duplex.dll": {}
@@ -805,11 +1835,11 @@
           }
         }
       },
-      "System.ServiceModel.Http/4.9.0": {
+      "System.ServiceModel.Http/4.10.0": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.9.0",
-          "System.ServiceModel.Primitives": "4.9.0"
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
         },
         "compile": {
           "ref/net6.0/System.ServiceModel.Http.dll": {}
@@ -820,11 +1850,11 @@
           }
         }
       },
-      "System.ServiceModel.NetTcp/4.9.0": {
+      "System.ServiceModel.NetTcp/4.10.0": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.9.0",
-          "System.ServiceModel.Primitives": "4.9.0"
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
         },
         "compile": {
           "ref/net6.0/System.ServiceModel.NetTcp.dll": {}
@@ -835,10 +1865,10 @@
           }
         }
       },
-      "System.ServiceModel.Primitives/4.9.0": {
+      "System.ServiceModel.Primitives/4.10.0": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.9.0"
+          "System.Private.ServiceModel": "4.10.0"
         },
         "compile": {
           "ref/net6.0/System.ServiceModel.Primitives.dll": {},
@@ -853,11 +1883,11 @@
           }
         }
       },
-      "System.ServiceModel.Security/4.9.0": {
+      "System.ServiceModel.Security/4.10.0": {
         "type": "package",
         "dependencies": {
-          "System.Private.ServiceModel": "4.9.0",
-          "System.ServiceModel.Primitives": "4.9.0"
+          "System.Private.ServiceModel": "4.10.0",
+          "System.ServiceModel.Primitives": "4.10.0"
         },
         "compile": {
           "ref/net6.0/System.ServiceModel.Security.dll": {}
@@ -868,92 +1898,92 @@
           }
         }
       },
-      "System.ServiceModel.Syndication/6.0.0": {
+      "System.ServiceModel.Syndication/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.ServiceModel.Syndication.dll": {
+          "lib/net9.0/System.ServiceModel.Syndication.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.ServiceModel.Syndication.dll": {
+          "lib/net9.0/System.ServiceModel.Syndication.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.ServiceProcess.ServiceController/6.0.0": {
+      "System.ServiceProcess.ServiceController/9.0.4": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.EventLog": "6.0.0"
+          "System.Diagnostics.EventLog": "9.0.4"
         },
         "compile": {
-          "lib/net6.0/System.ServiceProcess.ServiceController.dll": {
+          "lib/net9.0/System.ServiceProcess.ServiceController.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.ServiceProcess.ServiceController.dll": {
+          "lib/net9.0/System.ServiceProcess.ServiceController.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.ServiceProcess.ServiceController.dll": {
+          "runtimes/win/lib/net9.0/System.ServiceProcess.ServiceController.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Speech/6.0.0": {
+      "System.Speech/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Speech.dll": {
+          "lib/net9.0/System.Speech.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Speech.dll": {
+          "lib/net9.0/System.Speech.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Speech.dll": {
+          "runtimes/win/lib/net9.0/System.Speech.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Threading.AccessControl/6.0.0": {
+      "System.Threading.AccessControl/9.0.4": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Threading.AccessControl.dll": {
+          "lib/net9.0/System.Threading.AccessControl.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Threading.AccessControl.dll": {
+          "lib/net9.0/System.Threading.AccessControl.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Threading.AccessControl.dll": {
+          "runtimes/win/lib/net9.0/System.Threading.AccessControl.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
         }
       },
-      "System.Web.Services.Description/4.9.0": {
+      "System.Web.Services.Description/4.10.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Web.Services.Description.dll": {
@@ -1007,23 +2037,20 @@
           }
         }
       },
-      "System.Windows.Extensions/6.0.0": {
+      "System.Windows.Extensions/9.0.4": {
         "type": "package",
-        "dependencies": {
-          "System.Drawing.Common": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Windows.Extensions.dll": {
+          "lib/net9.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Windows.Extensions.dll": {
+          "lib/net9.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Windows.Extensions.dll": {
+          "runtimes/win/lib/net9.0/System.Windows.Extensions.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -1073,126 +2100,528 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.Win32.Registry.AccessControl/6.0.0": {
-      "sha512": "UoE+eeuBKL+GFHxHV3FjHlY5K8Wr/IR7Ee/a2oDNqFodF1iMqyt5hIs0U9Z217AbWrHrNle4750kD03hv1IMZw==",
+    "Microsoft.Win32.Registry.AccessControl/9.0.4": {
+      "sha512": "ffgPu/Uts9O5lXBbzu6pOm5sxEuBMxq8dVpRPdj81327Ne0EDx4ZqpssWxaMzdYVGhG2pm4wzMhlsAB+Vv5M0Q==",
       "type": "package",
-      "path": "microsoft.win32.registry.accesscontrol/6.0.0",
+      "path": "microsoft.win32.registry.accesscontrol/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.Registry.AccessControl.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Win32.Registry.AccessControl.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Win32.Registry.AccessControl.dll",
-        "lib/net461/Microsoft.Win32.Registry.AccessControl.xml",
-        "lib/net6.0/Microsoft.Win32.Registry.AccessControl.dll",
-        "lib/net6.0/Microsoft.Win32.Registry.AccessControl.xml",
+        "lib/net462/Microsoft.Win32.Registry.AccessControl.dll",
+        "lib/net462/Microsoft.Win32.Registry.AccessControl.xml",
+        "lib/net8.0/Microsoft.Win32.Registry.AccessControl.dll",
+        "lib/net8.0/Microsoft.Win32.Registry.AccessControl.xml",
+        "lib/net9.0/Microsoft.Win32.Registry.AccessControl.dll",
+        "lib/net9.0/Microsoft.Win32.Registry.AccessControl.xml",
         "lib/netstandard2.0/Microsoft.Win32.Registry.AccessControl.dll",
         "lib/netstandard2.0/Microsoft.Win32.Registry.AccessControl.xml",
-        "microsoft.win32.registry.accesscontrol.6.0.0.nupkg.sha512",
+        "microsoft.win32.registry.accesscontrol.9.0.4.nupkg.sha512",
         "microsoft.win32.registry.accesscontrol.nuspec",
-        "runtimes/win/lib/net461/Microsoft.Win32.Registry.AccessControl.dll",
-        "runtimes/win/lib/net461/Microsoft.Win32.Registry.AccessControl.xml",
-        "runtimes/win/lib/net6.0/Microsoft.Win32.Registry.AccessControl.dll",
-        "runtimes/win/lib/net6.0/Microsoft.Win32.Registry.AccessControl.xml",
-        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.AccessControl.dll",
-        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.AccessControl.xml",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.Registry.AccessControl.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.Registry.AccessControl.xml",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.Registry.AccessControl.dll",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.Registry.AccessControl.xml",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
-      "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+    "Microsoft.Win32.SystemEvents/9.0.4": {
+      "sha512": "kHgtAkXhNEP8oGuAVe3Q5admxsdMlSdWE2rXcA9FfeGDZJQawPccmZgnOswgW3ugUPSJt7VH+TMQPz65mnhGSQ==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/6.0.0",
+      "path": "microsoft.win32.systemevents/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Win32.SystemEvents.dll",
-        "lib/net461/Microsoft.Win32.SystemEvents.xml",
-        "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
-        "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
-        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
-        "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net9.0/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.9.0.4.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
-        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Windows.Compatibility/6.0.0": {
-      "sha512": "9esuK5JqnjkDgO9/AHesyJSG0aKwpfLVzTw6nIGYhqE91VLxZyv3HKulNoPVy/NOuyAaf1kE4FKtdZDzdd/SLw==",
+    "Microsoft.Windows.Compatibility/9.0.4": {
+      "sha512": "kjKrBzxtBA0QeXZ9LGpQOXxPdq7o2Ns+grOalXjapf7KruZoco2pvkK6HKpb1zVF9G22ZUiWzYWHPcM6fyxtKg==",
       "type": "package",
-      "path": "microsoft.windows.compatibility/6.0.0",
+      "path": "microsoft.windows.compatibility/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "microsoft.windows.compatibility.9.0.4.nupkg.sha512",
+        "microsoft.windows.compatibility.nuspec"
+      ]
+    },
+    "runtime.android-arm.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "5nNvTbKRkrIYTm48h2n2gPR4Roat2W1ALkThnqeKuGYcnTVMnrAXi0IfLZR3IhIlQ3CfQ4zqjTWFHk3O2/cQDQ==",
+      "type": "package",
+      "path": "runtime.android-arm.runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/Microsoft.Windows.Compatibility.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "microsoft.windows.compatibility.6.0.0.nupkg.sha512",
-        "microsoft.windows.compatibility.nuspec",
+        "runtime.android-arm.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.android-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/libSystem.IO.Ports.Native.so",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
         "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
-      "sha512": "75q52H7CSpgIoIDwXb9o833EvBZIXJ0mdPhz1E6jSisEXUBlSCPalC29cj3EXsjpuDwr0dj1LRXZepIQH/oL4Q==",
+    "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "zSIn0tjbcEMj8SCerMo1UGq1dKWbTXTM2qtu0O8h+C0QsPh6L0DZKd92kHuVe3DsryotKVdqHivbQv3JCUHX6A==",
       "type": "package",
-      "path": "runtime.linux-arm.runtime.native.system.io.ports/6.0.0",
+      "path": "runtime.android-arm64.runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+        "runtime.android-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.android-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.android-x64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "Ut0XmnR22XEhVH9niETFA5MX18ri8Hj273iC2v4B4GxVdczjdIdoCV/NXEqr0Krq9ngK5IQr2bZ8cGu9l4i1Yg==",
+      "type": "package",
+      "path": "runtime.android-x64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.android-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.android-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.android-x86.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "t194lL5QZ9wYU5DmR8YApguB7bshAngwi89sttOPcGwBZxUdW9Zxg30VXAnecPwy2f0kulHyfhyHac216rABKw==",
+      "type": "package",
+      "path": "runtime.android-x86.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.android-x86.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.android-x86.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "45EPNw3aK3C/LNb/n3J4fLoDAZHMBpQJ/c1wcsJQZXp/w4s7MIHceYB9xqhYjCmtSOE2pBhDgogtRzfETHfriw==",
+      "type": "package",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
         "runtime.linux-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
         "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
         "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.linux-arm64.runtime.native.System.IO.Ports/6.0.0": {
-      "sha512": "xn2bMThmXr3CsvOYmS8ex2Yz1xo+kcnhVg2iVhS9PlmqjZPAkrEo/I40wjrBZH/tU4kvH0s1AE8opAvQ3KIS8g==",
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "27N/9PkhBqSGKtdop6Qg4AOdcAtWeGQSUeBVF+oijFPTAZvlcugmtxLZRldovEjd2SZL30PiOjoVIQWKD6kR1w==",
       "type": "package",
-      "path": "runtime.linux-arm64.runtime.native.system.io.ports/6.0.0",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+        "runtime.linux-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
         "runtime.linux-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
         "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
         "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.linux-x64.runtime.native.System.IO.Ports/6.0.0": {
-      "sha512": "16nbNXwv0sC+gLGIuecri0skjuh6R1maIJggsaNP7MQBcbVcEfWFUOkEnsnvoLEjy0XerfibuRptfQ8AmdIcWA==",
+    "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "T7Z3P/NjvCetnKBvb3/azngU7KvN9i9iNZaywK4Gptoi/OZNUT1Zh2btwSFC3p8dKtG7YdtSASG556bVPGWMCA==",
       "type": "package",
-      "path": "runtime.linux-x64.runtime.native.system.io.ports/6.0.0",
+      "path": "runtime.linux-bionic-arm64.runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+        "runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.linux-bionic-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-bionic-x64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "dbf+R8kZcJo0hAbQhcDjRZKBO5b8Nge8hJVCe/U8yo5cZY8ryDlwGfDkUemFeKdI6cxzcV6t+B6YsO6HzwzZvw==",
+      "type": "package",
+      "path": "runtime.linux-bionic-x64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.linux-bionic-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-musl-arm.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "H9ObF2A79dVfVKwNQ9zEOlIgAr6Cufsz+eMALq8CQUcn3MX1F4tBlhtP5nE2JEK6ERTeIgKJ3Jt59tZ6Il1p5A==",
+      "type": "package",
+      "path": "runtime.linux-musl-arm.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.linux-musl-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-musl-arm64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "zgqN6GKr/8mRQb1I3sLzHdCbxv01eXrWEorDu6dg2AktYX4ICsGiHzpm+SkeLxznIM68hMkslGr4A8FF1VLf6Q==",
+      "type": "package",
+      "path": "runtime.linux-musl-arm64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.linux-musl-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-musl-x64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "ol6VYfBYGqSfqzcIPdIM6LOC8xnJjuJg3MUczi0vuSA0PfTYweep5DDyP3qmglh7wrSvvnaedAP6505Kp2jjPg==",
+      "type": "package",
+      "path": "runtime.linux-musl-x64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.linux-musl-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "/YaCelKLkIC57MAZ/1l7ctBG1q2CbwQxRwjjKLGt7eSqsX+A3IIG41hMsxFTCqIJisEPC8ov3zVTtnSKfop3vg==",
+      "type": "package",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
         "runtime.linux-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
         "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.maccatalyst-arm64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "3aVVHiHrK0iA3KhC+9k3H2kFccEZtzp9Q5qVB4WYPMx75+bvKq7YG/f8eImrnXY+0CawwdU4T2F1N/yyd3P1zw==",
+      "type": "package",
+      "path": "runtime.maccatalyst-arm64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.maccatalyst-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.maccatalyst-x64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "mY8meyI74mHWD8C+YD5T4glgH1moe/QYIvOjKoJp68oUa9H2hAq7KTvVD74u9ZMOU0Ectt7pj1jINziduYaXHg==",
+      "type": "package",
+      "path": "runtime.maccatalyst-x64.runtime.native.system.io.ports/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
+        "runtime.maccatalyst-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/libSystem.IO.Ports.Native.dylib",
+        "runtimes/osx-arm64/native/_._",
+        "runtimes/osx-x64/native/_._",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -1211,49 +2640,82 @@
         "version.txt"
       ]
     },
-    "runtime.native.System.IO.Ports/6.0.0": {
-      "sha512": "KaaXlpOcuZjMdmyF5wzzx3b+PRKIzt6A5Ax9dKenPDQbVJAFpev+casD0BIig1pBcbs3zx7CqWemzUJKAeHdSQ==",
+    "runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "8acFIuku7gZytPQ8IQXikr5gpYY+OmRL0hUQth6vUxTSgWHxTHt8O17BD+dnuSJTrT+oVjqcvFuE7y+GHZVu5A==",
       "type": "package",
-      "path": "runtime.native.system.io.ports/6.0.0",
+      "path": "runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+        "runtime.native.system.io.ports.9.0.4.nupkg.sha512",
         "runtime.native.system.io.ports.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.osx-arm64.runtime.native.System.IO.Ports/6.0.0": {
-      "sha512": "fXG12NodG1QrCdoaeSQ1gVnk/koi4WYY4jZtarMkZeQMyReBm1nZlSRoPnUjLr2ZR36TiMjpcGnQfxymieUe7w==",
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "aLNRjefYluZLbXK7vxU3CezR+Nrimff1OQivr71SoZCS5nLXPi8cSKib8apgdwiooR2fHOlGF+FR6k2D0l2B1A==",
       "type": "package",
-      "path": "runtime.osx-arm64.runtime.native.system.io.ports/6.0.0",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+        "runtime.osx-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
         "runtime.osx-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
         "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "runtimes/osx-x64/native/_._",
         "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.osx-x64.runtime.native.System.IO.Ports/6.0.0": {
-      "sha512": "/As+zPY49+dSUXkh+fTUbyPhqrdGN//evLxo4Vue88pfh1BHZgF7q4kMblTkxYvwR6Vi03zSYxysSFktO8/SDQ==",
+    "runtime.osx-x64.runtime.native.System.IO.Ports/9.0.4": {
+      "sha512": "b4Ik3pgeaGXmy3J3+fa3QmZatpq0ikWq6toEQYKTHuGIL/0dzYWYIoUNvSTEbsr3IF7XZPrNOKTxK7tcIsMqWA==",
       "type": "package",
-      "path": "runtime.osx-x64.runtime.native.system.io.ports/6.0.0",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+        "runtime.osx-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
         "runtime.osx-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/android-arm/native/_._",
+        "runtimes/android-arm64/native/_._",
+        "runtimes/android-x64/native/_._",
+        "runtimes/android-x86/native/_._",
+        "runtimes/linux-arm/native/_._",
+        "runtimes/linux-arm64/native/_._",
+        "runtimes/linux-bionic-arm64/native/_._",
+        "runtimes/linux-bionic-x64/native/_._",
+        "runtimes/linux-musl-arm/native/_._",
+        "runtimes/linux-musl-arm64/native/_._",
+        "runtimes/linux-musl-x64/native/_._",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/maccatalyst-arm64/native/_._",
+        "runtimes/maccatalyst-x64/native/_._",
+        "runtimes/osx-arm64/native/_._",
         "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib",
         "useSharedDesignerContext.txt"
       ]
@@ -1306,184 +2768,182 @@
         "version.txt"
       ]
     },
-    "System.CodeDom/6.0.0": {
-      "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+    "System.CodeDom/9.0.4": {
+      "sha512": "aJdv7Z87PoPW8ijvGIincocooYRbH3Umtlz7OrJKf6GDInbdu1bvk5X1fFlmbl7WP+9ntoIBd7NjKz+siVFdHA==",
       "type": "package",
-      "path": "system.codedom/6.0.0",
+      "path": "system.codedom/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.CodeDom.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.CodeDom.dll",
-        "lib/net461/System.CodeDom.xml",
-        "lib/net6.0/System.CodeDom.dll",
-        "lib/net6.0/System.CodeDom.xml",
+        "lib/net462/System.CodeDom.dll",
+        "lib/net462/System.CodeDom.xml",
+        "lib/net8.0/System.CodeDom.dll",
+        "lib/net8.0/System.CodeDom.xml",
+        "lib/net9.0/System.CodeDom.dll",
+        "lib/net9.0/System.CodeDom.xml",
         "lib/netstandard2.0/System.CodeDom.dll",
         "lib/netstandard2.0/System.CodeDom.xml",
-        "system.codedom.6.0.0.nupkg.sha512",
+        "system.codedom.9.0.4.nupkg.sha512",
         "system.codedom.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.ComponentModel.Composition/6.0.0": {
-      "sha512": "60Qv+F7oxomOjJeTDA5Z4iCyFbQ0B/2Mi5HT+13pxxq0lVnu2ipbWMzFB+RWKr3wWKA8BSncXr9PH/fECwMX5Q==",
+    "System.ComponentModel.Composition/9.0.4": {
+      "sha512": "8iLE2dR3kQuj8vOQFBIGXwSb9oDCwlbO6YskpS3nbxb58xtombuqmILuw1u3GNWREOiQa9VleGBQh7hgU9Gc2w==",
       "type": "package",
-      "path": "system.componentmodel.composition/6.0.0",
+      "path": "system.componentmodel.composition/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.ComponentModel.Composition.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.ComponentModel.Composition.dll",
-        "lib/net6.0/System.ComponentModel.Composition.xml",
-        "lib/netcoreapp3.1/System.ComponentModel.Composition.dll",
-        "lib/netcoreapp3.1/System.ComponentModel.Composition.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.ComponentModel.Composition.dll",
+        "lib/net8.0/System.ComponentModel.Composition.xml",
+        "lib/net9.0/System.ComponentModel.Composition.dll",
+        "lib/net9.0/System.ComponentModel.Composition.xml",
         "lib/netstandard2.0/System.ComponentModel.Composition.dll",
         "lib/netstandard2.0/System.ComponentModel.Composition.xml",
-        "system.componentmodel.composition.6.0.0.nupkg.sha512",
+        "system.componentmodel.composition.9.0.4.nupkg.sha512",
         "system.componentmodel.composition.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.ComponentModel.Composition.Registration/6.0.0": {
-      "sha512": "+i3RLlOgTsf15VeADBPpzPyRiXq71aLSuzdHeNtmq9f6BwpF3OWhB76p0WDUNCa3Z+SLD4dJbBM9yAep7kQCGA==",
+    "System.ComponentModel.Composition.Registration/9.0.4": {
+      "sha512": "Ie1WC0asrNchZ+t1HgN2W/DL+7AcFrK3MYy7Orf/1fefnTD5ED40M6sfkT0Mfgmq/qK16fkTV09Ld5tRiD0h7Q==",
       "type": "package",
-      "path": "system.componentmodel.composition.registration/6.0.0",
+      "path": "system.componentmodel.composition.registration/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.ComponentModel.Composition.Registration.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.ComponentModel.Composition.Registration.dll",
-        "lib/net6.0/System.ComponentModel.Composition.Registration.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.ComponentModel.Composition.Registration.dll",
+        "lib/net8.0/System.ComponentModel.Composition.Registration.xml",
+        "lib/net9.0/System.ComponentModel.Composition.Registration.dll",
+        "lib/net9.0/System.ComponentModel.Composition.Registration.xml",
         "lib/netstandard2.1/System.ComponentModel.Composition.Registration.dll",
         "lib/netstandard2.1/System.ComponentModel.Composition.Registration.xml",
-        "system.componentmodel.composition.registration.6.0.0.nupkg.sha512",
+        "system.componentmodel.composition.registration.9.0.4.nupkg.sha512",
         "system.componentmodel.composition.registration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Configuration.ConfigurationManager/6.0.0": {
-      "sha512": "7T+m0kDSlIPTHIkPMIu6m6tV6qsMqJpvQWW2jIc2qi7sn40qxFo0q+7mEQAhMPXZHMKnWrnv47ntGlM/ejvw3g==",
+    "System.Configuration.ConfigurationManager/9.0.4": {
+      "sha512": "dvjqKp+2LpGid6phzrdrS/2mmEPxFl3jE1+L7614q4ZChKbLJCpHXg6sBILlCCED1t//EE+un/UdAetzIMpqnw==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/6.0.0",
+      "path": "system.configuration.configurationmanager/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Configuration.ConfigurationManager.dll",
-        "lib/net461/System.Configuration.ConfigurationManager.xml",
-        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net9.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net9.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll",
-        "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.9.0.4.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Data.Odbc/6.0.0": {
-      "sha512": "pnZjwe0Qwr1Rnp7NExd5zz4YwXJrYuAbWNKjEQpTzCEg6f/L5DYJS7w3hG3vgSj1t/r79UL390YzXIklf1VuQQ==",
+    "System.Data.Odbc/9.0.4": {
+      "sha512": "fxBPK4Tq/0ZIBqwFKQCqUHli0fDuwIwr/u+J0wS9qtQTWxXvAT0xfhfybktCkm97zJ8FJVGS9IuSBsfMWxRjEw==",
       "type": "package",
-      "path": "system.data.odbc/6.0.0",
+      "path": "system.data.odbc/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Data.Odbc.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Data.Odbc.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Data.Odbc.dll",
-        "lib/net461/System.Data.Odbc.xml",
-        "lib/net6.0/System.Data.Odbc.dll",
-        "lib/net6.0/System.Data.Odbc.xml",
-        "lib/netcoreapp3.1/System.Data.Odbc.dll",
-        "lib/netcoreapp3.1/System.Data.Odbc.xml",
+        "lib/net462/System.Data.Odbc.dll",
+        "lib/net462/System.Data.Odbc.xml",
+        "lib/net8.0/System.Data.Odbc.dll",
+        "lib/net8.0/System.Data.Odbc.xml",
+        "lib/net9.0/System.Data.Odbc.dll",
+        "lib/net9.0/System.Data.Odbc.xml",
         "lib/netstandard2.0/System.Data.Odbc.dll",
         "lib/netstandard2.0/System.Data.Odbc.xml",
-        "runtimes/freebsd/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/freebsd/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/freebsd/lib/netcoreapp3.1/System.Data.Odbc.dll",
-        "runtimes/freebsd/lib/netcoreapp3.1/System.Data.Odbc.xml",
-        "runtimes/illumos/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/illumos/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/ios/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/ios/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/linux/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/linux/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/linux/lib/netcoreapp3.1/System.Data.Odbc.dll",
-        "runtimes/linux/lib/netcoreapp3.1/System.Data.Odbc.xml",
-        "runtimes/osx/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/osx/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/osx/lib/netcoreapp3.1/System.Data.Odbc.dll",
-        "runtimes/osx/lib/netcoreapp3.1/System.Data.Odbc.xml",
-        "runtimes/solaris/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/solaris/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/tvos/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/tvos/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/win/lib/net461/System.Data.Odbc.dll",
-        "runtimes/win/lib/net461/System.Data.Odbc.xml",
-        "runtimes/win/lib/net6.0/System.Data.Odbc.dll",
-        "runtimes/win/lib/net6.0/System.Data.Odbc.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Data.Odbc.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Data.Odbc.xml",
-        "system.data.odbc.6.0.0.nupkg.sha512",
+        "runtimes/unix/lib/net8.0/System.Data.Odbc.dll",
+        "runtimes/unix/lib/net8.0/System.Data.Odbc.xml",
+        "runtimes/unix/lib/net9.0/System.Data.Odbc.dll",
+        "runtimes/unix/lib/net9.0/System.Data.Odbc.xml",
+        "runtimes/win/lib/net8.0/System.Data.Odbc.dll",
+        "runtimes/win/lib/net8.0/System.Data.Odbc.xml",
+        "runtimes/win/lib/net9.0/System.Data.Odbc.dll",
+        "runtimes/win/lib/net9.0/System.Data.Odbc.xml",
+        "system.data.odbc.9.0.4.nupkg.sha512",
         "system.data.odbc.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Data.OleDb/6.0.0": {
-      "sha512": "LQ8PjTIF1LtrrlGiyiTVjAkQtTWKm9GSNnygIlWjhN9y88s7xhy6DUNDDkmQQ9f6ex7mA4k0Tl97lz/CklaiLg==",
+    "System.Data.OleDb/9.0.4": {
+      "sha512": "b4n3L1M67SpXLcbAknhv4sOMoki3u21MFyv93nI8TiuiWFk2HAiXSh3kNQtQ3BPPk5Xm9rRcNTSYTgXd5T5yFA==",
       "type": "package",
-      "path": "system.data.oledb/6.0.0",
+      "path": "system.data.oledb/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Data.OleDb.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Data.OleDb.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Data.OleDb.dll",
-        "lib/net461/System.Data.OleDb.xml",
-        "lib/net6.0/System.Data.OleDb.dll",
-        "lib/net6.0/System.Data.OleDb.xml",
+        "lib/net462/System.Data.OleDb.dll",
+        "lib/net462/System.Data.OleDb.xml",
+        "lib/net8.0/System.Data.OleDb.dll",
+        "lib/net8.0/System.Data.OleDb.xml",
+        "lib/net9.0/System.Data.OleDb.dll",
+        "lib/net9.0/System.Data.OleDb.xml",
         "lib/netstandard2.0/System.Data.OleDb.dll",
         "lib/netstandard2.0/System.Data.OleDb.xml",
-        "runtimes/win/lib/net461/System.Data.OleDb.dll",
-        "runtimes/win/lib/net461/System.Data.OleDb.xml",
-        "runtimes/win/lib/net6.0/System.Data.OleDb.dll",
-        "runtimes/win/lib/net6.0/System.Data.OleDb.xml",
-        "runtimes/win/lib/netstandard2.0/System.Data.OleDb.dll",
-        "runtimes/win/lib/netstandard2.0/System.Data.OleDb.xml",
-        "system.data.oledb.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Data.OleDb.dll",
+        "runtimes/win/lib/net8.0/System.Data.OleDb.xml",
+        "runtimes/win/lib/net9.0/System.Data.OleDb.dll",
+        "runtimes/win/lib/net9.0/System.Data.OleDb.xml",
+        "system.data.oledb.9.0.4.nupkg.sha512",
         "system.data.oledb.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Data.SqlClient/4.8.3": {
-      "sha512": "yERfVLXAY0QbylAgaGLByYN0hFxX28aeEQ0hUgJO+Ntn1AfmWl5HHUoYJA0Yl9HhIUUJHVaS/Sw/RLZr5aaC+A==",
+    "System.Data.SqlClient/4.8.6": {
+      "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
       "type": "package",
-      "path": "system.data.sqlclient/4.8.3",
+      "path": "system.data.sqlclient/4.8.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1560,291 +3020,311 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.8.3.nupkg.sha512",
+        "system.data.sqlclient.4.8.6.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
-    "System.Diagnostics.EventLog/6.0.0": {
-      "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+    "System.Diagnostics.EventLog/9.0.4": {
+      "sha512": "getRQEXD8idlpb1KW56XuxImMy0FKp2WJPDf3Qr0kI/QKxxJSftqfDFVo0DZ3HCJRLU73qHSruv5q2l5O47jQQ==",
       "type": "package",
-      "path": "system.diagnostics.eventlog/6.0.0",
+      "path": "system.diagnostics.eventlog/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.EventLog.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Diagnostics.EventLog.dll",
-        "lib/net461/System.Diagnostics.EventLog.xml",
-        "lib/net6.0/System.Diagnostics.EventLog.dll",
-        "lib/net6.0/System.Diagnostics.EventLog.xml",
-        "lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
-        "lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "lib/net462/System.Diagnostics.EventLog.dll",
+        "lib/net462/System.Diagnostics.EventLog.xml",
+        "lib/net8.0/System.Diagnostics.EventLog.dll",
+        "lib/net8.0/System.Diagnostics.EventLog.xml",
+        "lib/net9.0/System.Diagnostics.EventLog.dll",
+        "lib/net9.0/System.Diagnostics.EventLog.xml",
         "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
         "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
-        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
-        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
-        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.Messages.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
-        "system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.9.0.4.nupkg.sha512",
         "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Diagnostics.PerformanceCounter/6.0.0": {
-      "sha512": "gbeE5tNp/oB7O8kTTLh3wPPJCxpNOphXPTWVs1BsYuFOYapFijWuh0LYw1qnDo4gwDUYPXOmpTIhvtxisGsYOQ==",
+    "System.Diagnostics.PerformanceCounter/9.0.4": {
+      "sha512": "dPtvbm/WuXQHFHzi/lC0bO+AJAEx5m/Gdk9A0JSXjAD/AQtXKCEOInP9VhADovaf595pjCGV0jqRFzkqDUzrqw==",
       "type": "package",
-      "path": "system.diagnostics.performancecounter/6.0.0",
+      "path": "system.diagnostics.performancecounter/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.PerformanceCounter.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Diagnostics.PerformanceCounter.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net461/System.Diagnostics.PerformanceCounter.xml",
-        "lib/net6.0/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
-        "lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll",
-        "lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.xml",
+        "lib/net462/System.Diagnostics.PerformanceCounter.dll",
+        "lib/net462/System.Diagnostics.PerformanceCounter.xml",
+        "lib/net8.0/System.Diagnostics.PerformanceCounter.dll",
+        "lib/net8.0/System.Diagnostics.PerformanceCounter.xml",
+        "lib/net9.0/System.Diagnostics.PerformanceCounter.dll",
+        "lib/net9.0/System.Diagnostics.PerformanceCounter.xml",
         "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
         "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
-        "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.dll",
-        "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.PerformanceCounter.xml",
-        "system.diagnostics.performancecounter.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.xml",
+        "runtimes/win/lib/net9.0/System.Diagnostics.PerformanceCounter.dll",
+        "runtimes/win/lib/net9.0/System.Diagnostics.PerformanceCounter.xml",
+        "system.diagnostics.performancecounter.9.0.4.nupkg.sha512",
         "system.diagnostics.performancecounter.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.DirectoryServices/6.0.0": {
-      "sha512": "kp/Op0nxDVGlElDKh8TsXO0GKXftQgAB6sJk0wUetZK1Rr0Pbd86Tn7AllLLlROFZa4BTl/LVHakljtGELFzCg==",
+    "System.DirectoryServices/9.0.4": {
+      "sha512": "qYUtcmdjVXnr8i7I8CrTovmFWLiaKexmsONERt3+SUiAwjAiPmjFe5n56Jh2J44LP1mCIAQOEmpDNQ0e0DWBwQ==",
       "type": "package",
-      "path": "system.directoryservices/6.0.0",
+      "path": "system.directoryservices/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.DirectoryServices.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.DirectoryServices.dll",
-        "lib/net6.0/System.DirectoryServices.xml",
-        "lib/netcoreapp3.1/System.DirectoryServices.dll",
-        "lib/netcoreapp3.1/System.DirectoryServices.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.DirectoryServices.dll",
+        "lib/net8.0/System.DirectoryServices.xml",
+        "lib/net9.0/System.DirectoryServices.dll",
+        "lib/net9.0/System.DirectoryServices.xml",
         "lib/netstandard2.0/System.DirectoryServices.dll",
         "lib/netstandard2.0/System.DirectoryServices.xml",
-        "runtimes/win/lib/net6.0/System.DirectoryServices.dll",
-        "runtimes/win/lib/net6.0/System.DirectoryServices.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.xml",
-        "system.directoryservices.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.dll",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.xml",
+        "runtimes/win/lib/net9.0/System.DirectoryServices.dll",
+        "runtimes/win/lib/net9.0/System.DirectoryServices.xml",
+        "system.directoryservices.9.0.4.nupkg.sha512",
         "system.directoryservices.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.DirectoryServices.AccountManagement/6.0.0": {
-      "sha512": "2iKkY6VC4WX6H13N8WhH2SRUfWCwg2KZR5w9JIS9cw9N8cZhT7VXxHX0L6OX6Po419aSu2LWrJE9tu6b+cUnPA==",
+    "System.DirectoryServices.AccountManagement/9.0.4": {
+      "sha512": "rQH+PhZS91rupPW5NpM2DmgI0QClrdWqGMOGphvBTvb1gnqG/1EbYnNzP8rSIzDJgWEEILXyLHaw2BeBPH2NkQ==",
       "type": "package",
-      "path": "system.directoryservices.accountmanagement/6.0.0",
+      "path": "system.directoryservices.accountmanagement/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.DirectoryServices.AccountManagement.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.DirectoryServices.AccountManagement.dll",
-        "lib/net6.0/System.DirectoryServices.AccountManagement.xml",
-        "lib/netcoreapp3.1/System.DirectoryServices.AccountManagement.dll",
-        "lib/netcoreapp3.1/System.DirectoryServices.AccountManagement.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.DirectoryServices.AccountManagement.dll",
+        "lib/net8.0/System.DirectoryServices.AccountManagement.xml",
+        "lib/net9.0/System.DirectoryServices.AccountManagement.dll",
+        "lib/net9.0/System.DirectoryServices.AccountManagement.xml",
         "lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll",
         "lib/netstandard2.0/System.DirectoryServices.AccountManagement.xml",
-        "runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.dll",
-        "runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.AccountManagement.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.AccountManagement.xml",
-        "system.directoryservices.accountmanagement.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.AccountManagement.dll",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.AccountManagement.xml",
+        "runtimes/win/lib/net9.0/System.DirectoryServices.AccountManagement.dll",
+        "runtimes/win/lib/net9.0/System.DirectoryServices.AccountManagement.xml",
+        "system.directoryservices.accountmanagement.9.0.4.nupkg.sha512",
         "system.directoryservices.accountmanagement.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.DirectoryServices.Protocols/6.0.0": {
-      "sha512": "++WKU7HQPo/FJdhywWw+q2lLjcVAGVw5XLH9kRCV+4DvkhVAcHCksh0ezIqwNROmaU9LMJN0d/LAdeWXu3pi6Q==",
+    "System.DirectoryServices.Protocols/9.0.4": {
+      "sha512": "fGdiJme2/nN4xKV6sP67bN4HBz+EdoTYECFH5YVIiIRm/AJwCB+Y/4NW/7xtOFR2h6STlTY+e2/VztiaSI+ZaA==",
       "type": "package",
-      "path": "system.directoryservices.protocols/6.0.0",
+      "path": "system.directoryservices.protocols/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.DirectoryServices.Protocols.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.DirectoryServices.Protocols.dll",
-        "lib/net6.0/System.DirectoryServices.Protocols.xml",
-        "lib/netcoreapp3.1/System.DirectoryServices.Protocols.dll",
-        "lib/netcoreapp3.1/System.DirectoryServices.Protocols.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "lib/net8.0/System.DirectoryServices.Protocols.xml",
+        "lib/net9.0/System.DirectoryServices.Protocols.dll",
+        "lib/net9.0/System.DirectoryServices.Protocols.xml",
         "lib/netstandard2.0/System.DirectoryServices.Protocols.dll",
         "lib/netstandard2.0/System.DirectoryServices.Protocols.xml",
-        "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.dll",
-        "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.xml",
-        "runtimes/linux/lib/netcoreapp3.1/System.DirectoryServices.Protocols.dll",
-        "runtimes/linux/lib/netcoreapp3.1/System.DirectoryServices.Protocols.xml",
-        "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.dll",
-        "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.xml",
-        "runtimes/osx/lib/netcoreapp3.1/System.DirectoryServices.Protocols.dll",
-        "runtimes/osx/lib/netcoreapp3.1/System.DirectoryServices.Protocols.xml",
-        "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll",
-        "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.Protocols.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.DirectoryServices.Protocols.xml",
-        "system.directoryservices.protocols.6.0.0.nupkg.sha512",
+        "runtimes/linux/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/linux/lib/net8.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/linux/lib/net9.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/linux/lib/net9.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/osx/lib/net9.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/osx/lib/net9.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/win/lib/net9.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/win/lib/net9.0/System.DirectoryServices.Protocols.xml",
+        "system.directoryservices.protocols.9.0.4.nupkg.sha512",
         "system.directoryservices.protocols.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Drawing.Common/6.0.0": {
-      "sha512": "NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+    "System.Drawing.Common/9.0.4": {
+      "sha512": "SbtusMUT1bCxZ14904ZPo2GZyelze0rwUni9wXrp8KX9Zlsda8idqpxra1RBvOA85WM0wW+fCI4GLrlCTYiE6A==",
       "type": "package",
-      "path": "system.drawing.common/6.0.0",
+      "path": "system.drawing.common/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Drawing.Common.dll",
-        "lib/net461/System.Drawing.Common.xml",
-        "lib/net6.0/System.Drawing.Common.dll",
-        "lib/net6.0/System.Drawing.Common.xml",
-        "lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "lib/netcoreapp3.1/System.Drawing.Common.xml",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Private.Windows.Core.dll",
+        "lib/net8.0/System.Private.Windows.Core.xml",
+        "lib/net9.0/System.Drawing.Common.dll",
+        "lib/net9.0/System.Drawing.Common.pdb",
+        "lib/net9.0/System.Drawing.Common.xml",
+        "lib/net9.0/System.Private.Windows.Core.dll",
+        "lib/net9.0/System.Private.Windows.Core.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
         "lib/netstandard2.0/System.Drawing.Common.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/unix/lib/net6.0/System.Drawing.Common.dll",
-        "runtimes/unix/lib/net6.0/System.Drawing.Common.xml",
-        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.xml",
-        "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
-        "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.xml",
-        "system.drawing.common.6.0.0.nupkg.sha512",
+        "system.drawing.common.9.0.4.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.IO.Packaging/6.0.0": {
-      "sha512": "C7OkTRIjqIjAKu6ef/fuj8ynCZTPcTYZnvHaq48bniACgXXJogmEoIc56YCDNTc14xhsbLmgpS3KP+evbsUa2g==",
+    "System.IO.Packaging/9.0.4": {
+      "sha512": "p4E6xqW9T8zTgS1NoB3oYkeuNp75bKMK11YuArrkg52wygxcQjbcPB8Ryh9E5ohLu+ZRCqmsg7flE9F9fUeeyA==",
       "type": "package",
-      "path": "system.io.packaging/6.0.0",
+      "path": "system.io.packaging/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Packaging.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Packaging.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Packaging.dll",
-        "lib/net461/System.IO.Packaging.xml",
-        "lib/net6.0/System.IO.Packaging.dll",
-        "lib/net6.0/System.IO.Packaging.xml",
+        "lib/net462/System.IO.Packaging.dll",
+        "lib/net462/System.IO.Packaging.xml",
+        "lib/net8.0/System.IO.Packaging.dll",
+        "lib/net8.0/System.IO.Packaging.xml",
+        "lib/net9.0/System.IO.Packaging.dll",
+        "lib/net9.0/System.IO.Packaging.xml",
         "lib/netstandard2.0/System.IO.Packaging.dll",
         "lib/netstandard2.0/System.IO.Packaging.xml",
-        "system.io.packaging.6.0.0.nupkg.sha512",
+        "system.io.packaging.9.0.4.nupkg.sha512",
         "system.io.packaging.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.IO.Ports/6.0.0": {
-      "sha512": "dRyGI7fUESar5ZLIpiBOaaNLW7YyOBGftjj5Of+xcduC/Rjl7RjhEnWDvvNBmHuF3d0tdXoqdVI/yrVA8f00XA==",
+    "System.IO.Ports/9.0.4": {
+      "sha512": "3YWwrBYZg2MabN7QYAOLToYJn551a+lXHsLW9biyXi+162+BjrkXrRsXioPSAoc+7mSim8B/iFPlOYc1BKnOhA==",
       "type": "package",
-      "path": "system.io.ports/6.0.0",
+      "path": "system.io.ports/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Ports.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Ports.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Ports.dll",
-        "lib/net461/System.IO.Ports.xml",
-        "lib/net6.0/System.IO.Ports.dll",
-        "lib/net6.0/System.IO.Ports.xml",
+        "lib/net462/System.IO.Ports.dll",
+        "lib/net462/System.IO.Ports.xml",
+        "lib/net8.0/System.IO.Ports.dll",
+        "lib/net8.0/System.IO.Ports.xml",
+        "lib/net9.0/System.IO.Ports.dll",
+        "lib/net9.0/System.IO.Ports.xml",
         "lib/netstandard2.0/System.IO.Ports.dll",
         "lib/netstandard2.0/System.IO.Ports.xml",
-        "runtimes/unix/lib/net6.0/System.IO.Ports.dll",
-        "runtimes/unix/lib/net6.0/System.IO.Ports.xml",
-        "runtimes/unix/lib/netstandard2.0/System.IO.Ports.dll",
-        "runtimes/unix/lib/netstandard2.0/System.IO.Ports.xml",
-        "runtimes/win/lib/net461/System.IO.Ports.dll",
-        "runtimes/win/lib/net461/System.IO.Ports.xml",
-        "runtimes/win/lib/net6.0/System.IO.Ports.dll",
-        "runtimes/win/lib/net6.0/System.IO.Ports.xml",
-        "runtimes/win/lib/netstandard2.0/System.IO.Ports.dll",
-        "runtimes/win/lib/netstandard2.0/System.IO.Ports.xml",
-        "system.io.ports.6.0.0.nupkg.sha512",
+        "runtimes/unix/lib/net8.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net8.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net9.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net9.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net8.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net8.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net9.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net9.0/System.IO.Ports.xml",
+        "system.io.ports.9.0.4.nupkg.sha512",
         "system.io.ports.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Management/6.0.0": {
-      "sha512": "sHsESYMmPDhQuOC66h6AEOs/XowzKsbT9srMbX71TCXP58hkpn1BqBjdmKj1+DCA/WlBETX1K5WjQHwmV0Txrg==",
+    "System.Management/9.0.4": {
+      "sha512": "MfY9+SrkSvchAoFiChTkhQYCAjBaQQ9u3LwiKmho7oTbujucnxCzORlPgLhId/ChLSptsQ/1UmtPGLZaKYVdsA==",
       "type": "package",
-      "path": "system.management/6.0.0",
+      "path": "system.management/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Management.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.Management.dll",
-        "lib/net6.0/System.Management.xml",
-        "lib/netcoreapp3.1/System.Management.dll",
-        "lib/netcoreapp3.1/System.Management.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Management.dll",
+        "lib/net8.0/System.Management.xml",
+        "lib/net9.0/System.Management.dll",
+        "lib/net9.0/System.Management.xml",
         "lib/netstandard2.0/System.Management.dll",
         "lib/netstandard2.0/System.Management.xml",
-        "runtimes/win/lib/net6.0/System.Management.dll",
-        "runtimes/win/lib/net6.0/System.Management.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Management.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Management.xml",
-        "system.management.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Management.dll",
+        "runtimes/win/lib/net8.0/System.Management.xml",
+        "runtimes/win/lib/net9.0/System.Management.dll",
+        "runtimes/win/lib/net9.0/System.Management.xml",
+        "system.management.9.0.4.nupkg.sha512",
         "system.management.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Private.ServiceModel/4.9.0": {
-      "sha512": "d3RjkrtpjUQ63PzFmm/SZ4aOXeJNP+8YW5QeP0lCJy8iX4xlHdlNLWTF9sRn9SmrFTK757kQXT9Op/R4l858uw==",
+    "System.Private.ServiceModel/4.10.0": {
+      "sha512": "dB4hD50X7FaCCPoMJ+TShvSVXEHWBD/GKEd494N4a3V+avJmNFmKK7bM40J1zsj+QWt66DG2YkwWlRf/OHx8zw==",
       "type": "package",
-      "path": "system.private.servicemodel/4.9.0",
+      "path": "system.private.servicemodel/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1867,201 +3347,197 @@
         "lib/netstandard2.0/zh-Hans/System.Private.ServiceModel.resources.dll",
         "lib/netstandard2.0/zh-Hant/System.Private.ServiceModel.resources.dll",
         "ref/netstandard2.0/_._",
-        "system.private.servicemodel.4.9.0.nupkg.sha512",
+        "system.private.servicemodel.4.10.0.nupkg.sha512",
         "system.private.servicemodel.nuspec"
       ]
     },
-    "System.Reflection.Context/6.0.0": {
-      "sha512": "Vi+Gb41oyOYie7uLSsjRmfRg3bryUg5DssJvj3gDUl0D8z6ipSm6/yi/XNx2rcS5iVMvHcwRUHjcx7ixv0K3/w==",
+    "System.Reflection.Context/9.0.4": {
+      "sha512": "5ai+AIAVXlXC60uPbLILi9HFmaaFz2kjOVSBxgNbKNR3dNtcpa3WEQTnOo7UzFK+xJZBrmxlQ3KSHIFfnW0bwQ==",
       "type": "package",
-      "path": "system.reflection.context/6.0.0",
+      "path": "system.reflection.context/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Reflection.Context.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.Reflection.Context.dll",
-        "lib/net6.0/System.Reflection.Context.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Reflection.Context.dll",
+        "lib/net8.0/System.Reflection.Context.xml",
+        "lib/net9.0/System.Reflection.Context.dll",
+        "lib/net9.0/System.Reflection.Context.xml",
         "lib/netstandard2.0/System.Reflection.Context.dll",
         "lib/netstandard2.0/System.Reflection.Context.xml",
         "lib/netstandard2.1/System.Reflection.Context.dll",
         "lib/netstandard2.1/System.Reflection.Context.xml",
-        "system.reflection.context.6.0.0.nupkg.sha512",
+        "system.reflection.context.9.0.4.nupkg.sha512",
         "system.reflection.context.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Runtime.Caching/6.0.0": {
-      "sha512": "E0e03kUp5X2k+UAoVl6efmI7uU7JRBWi5EIdlQ7cr0NpBGjHG4fWII35PgsBY9T4fJQ8E4QPsL0rKksU9gcL5A==",
+    "System.Runtime.Caching/9.0.4": {
+      "sha512": "ePDc9MvE/9QXeY6lU4Y85hjOSRzqdDF1XlqINhpThLKV33PYC2fLu/fadwDCWplq3mSef7Fof3vui3FUWpUp6w==",
       "type": "package",
-      "path": "system.runtime.caching/6.0.0",
+      "path": "system.runtime.caching/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Runtime.Caching.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.Runtime.Caching.dll",
-        "lib/net6.0/System.Runtime.Caching.xml",
-        "lib/netcoreapp3.1/System.Runtime.Caching.dll",
-        "lib/netcoreapp3.1/System.Runtime.Caching.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Runtime.Caching.dll",
+        "lib/net8.0/System.Runtime.Caching.xml",
+        "lib/net9.0/System.Runtime.Caching.dll",
+        "lib/net9.0/System.Runtime.Caching.xml",
         "lib/netstandard2.0/System.Runtime.Caching.dll",
         "lib/netstandard2.0/System.Runtime.Caching.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/_._",
-        "runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
-        "runtimes/win/lib/net6.0/System.Runtime.Caching.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Runtime.Caching.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Runtime.Caching.xml",
-        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
-        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.xml",
-        "system.runtime.caching.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Runtime.Caching.dll",
+        "runtimes/win/lib/net8.0/System.Runtime.Caching.xml",
+        "runtimes/win/lib/net9.0/System.Runtime.Caching.dll",
+        "runtimes/win/lib/net9.0/System.Runtime.Caching.xml",
+        "system.runtime.caching.9.0.4.nupkg.sha512",
         "system.runtime.caching.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.Pkcs/6.0.0": {
-      "sha512": "elM3x+xSRhzQysiqo85SbidJJ2YbZlnvmh+53TuSZHsD7dNuuEWser+9EFtY+rYupBwkq2avc6ZCO3/6qACgmg==",
+    "System.Security.Cryptography.Pkcs/9.0.4": {
+      "sha512": "cUFTcMlz/Qw9s90b2wnWSCvHdjv51Bau9FQqhsr4TlwSe1OX+7SoXUqphis5G74MLOvMOCghxPPlEqOdCrVVGA==",
       "type": "package",
-      "path": "system.security.cryptography.pkcs/6.0.0",
+      "path": "system.security.cryptography.pkcs/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.Pkcs.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Security.Cryptography.Pkcs.dll",
-        "lib/net461/System.Security.Cryptography.Pkcs.xml",
-        "lib/net6.0/System.Security.Cryptography.Pkcs.dll",
-        "lib/net6.0/System.Security.Cryptography.Pkcs.xml",
-        "lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll",
-        "lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.xml",
+        "lib/net462/System.Security.Cryptography.Pkcs.dll",
+        "lib/net462/System.Security.Cryptography.Pkcs.xml",
+        "lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/net9.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net9.0/System.Security.Cryptography.Pkcs.xml",
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
-        "system.security.cryptography.pkcs.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.xml",
+        "system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
         "system.security.cryptography.pkcs.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/6.0.0": {
-      "sha512": "rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
+    "System.Security.Cryptography.ProtectedData/9.0.4": {
+      "sha512": "o94k2RKuAce3GeDMlUvIXlhVa1kWpJw95E6C9LwW0KlG0nj5+SgCiIxJ2Eroqb9sLtG1mEMbFttZIBZ13EJPvQ==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/6.0.0",
+      "path": "system.security.cryptography.protecteddata/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net461/System.Security.Cryptography.ProtectedData.xml",
-        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net9.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net9.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
-        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.9.0.4.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.Xml/6.0.0": {
-      "sha512": "puJ4UCh9JVRwOCyCIcq71JY6Axr8Sp8E2GjTIU1Fj8hm4+oX6NEoyGFGa/+pBG8SrVxbQPSj7hvtaREyTHHsmw==",
+    "System.Security.Cryptography.Xml/9.0.4": {
+      "sha512": "YXQBGO+rIp142WrIVqq5HyOx6fTKDMHxhGWNeSYZDSMH6AnCEmx6ue6GMokdg+LTWEqtomPguRMiL3KT0LUeAg==",
       "type": "package",
-      "path": "system.security.cryptography.xml/6.0.0",
+      "path": "system.security.cryptography.xml/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.Xml.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Xml.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Security.Cryptography.Xml.dll",
-        "lib/net461/System.Security.Cryptography.Xml.xml",
-        "lib/net6.0/System.Security.Cryptography.Xml.dll",
-        "lib/net6.0/System.Security.Cryptography.Xml.xml",
+        "lib/net462/System.Security.Cryptography.Xml.dll",
+        "lib/net462/System.Security.Cryptography.Xml.xml",
+        "lib/net8.0/System.Security.Cryptography.Xml.dll",
+        "lib/net8.0/System.Security.Cryptography.Xml.xml",
+        "lib/net9.0/System.Security.Cryptography.Xml.dll",
+        "lib/net9.0/System.Security.Cryptography.Xml.xml",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Xml.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.6.0.0.nupkg.sha512",
+        "system.security.cryptography.xml.9.0.4.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Permissions/6.0.0": {
-      "sha512": "T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg==",
+    "System.Security.Permissions/9.0.4": {
+      "sha512": "klHa+d7n6Nc7IjaJygnbqgTMoYOQCaCP/G38T0vjIDuls9uatPsyofrTc3OQBdcKk/rjGDSIzIFUX/OF4yxVlQ==",
       "type": "package",
-      "path": "system.security.permissions/6.0.0",
+      "path": "system.security.permissions/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Permissions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Permissions.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Security.Permissions.dll",
-        "lib/net461/System.Security.Permissions.xml",
-        "lib/net5.0/System.Security.Permissions.dll",
-        "lib/net5.0/System.Security.Permissions.xml",
-        "lib/net6.0/System.Security.Permissions.dll",
-        "lib/net6.0/System.Security.Permissions.xml",
-        "lib/netcoreapp3.1/System.Security.Permissions.dll",
-        "lib/netcoreapp3.1/System.Security.Permissions.xml",
+        "lib/net462/System.Security.Permissions.dll",
+        "lib/net462/System.Security.Permissions.xml",
+        "lib/net8.0/System.Security.Permissions.dll",
+        "lib/net8.0/System.Security.Permissions.xml",
+        "lib/net9.0/System.Security.Permissions.dll",
+        "lib/net9.0/System.Security.Permissions.xml",
         "lib/netstandard2.0/System.Security.Permissions.dll",
         "lib/netstandard2.0/System.Security.Permissions.xml",
-        "runtimes/win/lib/net461/System.Security.Permissions.dll",
-        "runtimes/win/lib/net461/System.Security.Permissions.xml",
-        "system.security.permissions.6.0.0.nupkg.sha512",
+        "system.security.permissions.9.0.4.nupkg.sha512",
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.ServiceModel.Duplex/4.9.0": {
-      "sha512": "Yb8MFiJxBBtm2JnfS/5SxYzm2HqkEmHu5xeaVIHXy83sNpty9wc30JifH2xgda821D6nr1UctbwbdZqN4LBUKQ==",
+    "System.ServiceModel.Duplex/4.10.0": {
+      "sha512": "4TiHY9zNCyU5++0hzgQQY8Lg2iUxBndRbo/xVWxljqekBiPSK037QASLD4ZZCKc/JcA4cpHUFDXZjzrdVVn6aw==",
       "type": "package",
-      "path": "system.servicemodel.duplex/4.9.0",
+      "path": "system.servicemodel.duplex/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2099,14 +3575,14 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.duplex.4.9.0.nupkg.sha512",
+        "system.servicemodel.duplex.4.10.0.nupkg.sha512",
         "system.servicemodel.duplex.nuspec"
       ]
     },
-    "System.ServiceModel.Http/4.9.0": {
-      "sha512": "Z+s3RkLNzJ31fDXAjqXdXp67FqsNG4V3Md3r7FOrzMkHmg61gY8faEfTFPBLxU9tax1HPWt6IHVAquXBKySJaw==",
+    "System.ServiceModel.Http/4.10.0": {
+      "sha512": "/PbmNSEwTQ7Vizor3F/Zp8bzR6L9YZNGIwGr1Tyc//ZZuAYDhiwiMbNpX3EnPZM63qD2bJmR/FWH9S5Ffp8K6g==",
       "type": "package",
-      "path": "system.servicemodel.http/4.9.0",
+      "path": "system.servicemodel.http/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2150,14 +3626,14 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.http.4.9.0.nupkg.sha512",
+        "system.servicemodel.http.4.10.0.nupkg.sha512",
         "system.servicemodel.http.nuspec"
       ]
     },
-    "System.ServiceModel.NetTcp/4.9.0": {
-      "sha512": "nXgnnkrZERUF/KwmoLwZPkc7fqgiq94DXkmUZBvDNh/LdZquDvjy2NbhJLElpApOa5x8zEoQoBZyJ2PqNC39qg==",
+    "System.ServiceModel.NetTcp/4.10.0": {
+      "sha512": "tG69H0sRdzEuOcdGzsZwbmPk54Akb3t1Db4SSXN6hSTOc2ZBFu1jLt5wJA6ATbIjJ5WqXA8beRNLhO77lBNIdA==",
       "type": "package",
-      "path": "system.servicemodel.nettcp/4.9.0",
+      "path": "system.servicemodel.nettcp/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2198,14 +3674,14 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.nettcp.4.9.0.nupkg.sha512",
+        "system.servicemodel.nettcp.4.10.0.nupkg.sha512",
         "system.servicemodel.nettcp.nuspec"
       ]
     },
-    "System.ServiceModel.Primitives/4.9.0": {
-      "sha512": "LTFPVdS8Nf76xg/wRZkDa+2Q+GnjTOmwkTlwuoetwX37mAfYnGkf7p8ydhpDwVmomNljpUOhUUGxfjQyd5YcOg==",
+    "System.ServiceModel.Primitives/4.10.0": {
+      "sha512": "BtrvvpgU2HolcC0tUf1g+n4Fk5kLhfbIBgRibcGe7TDHXcy6zTfkyXxR88rl2tO4KEPLkJXxWf/HW/LJmsI0Ew==",
       "type": "package",
-      "path": "system.servicemodel.primitives/4.9.0",
+      "path": "system.servicemodel.primitives/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2222,9 +3698,9 @@
         "lib/net6.0/System.ServiceModel.Primitives.pdb",
         "lib/net6.0/System.ServiceModel.dll",
         "lib/netcore50/System.ServiceModel.Primitives.dll",
-        "lib/netcoreapp2.1/System.ServiceModel.Primitives.dll",
-        "lib/netcoreapp2.1/System.ServiceModel.Primitives.pdb",
-        "lib/netcoreapp2.1/System.ServiceModel.dll",
+        "lib/netcoreapp3.1/System.ServiceModel.Primitives.dll",
+        "lib/netcoreapp3.1/System.ServiceModel.Primitives.pdb",
+        "lib/netcoreapp3.1/System.ServiceModel.dll",
         "lib/netstandard1.3/System.ServiceModel.Primitives.dll",
         "lib/netstandard2.0/System.ServiceModel.Primitives.dll",
         "lib/netstandard2.0/System.ServiceModel.Primitives.pdb",
@@ -2244,8 +3720,8 @@
         "ref/net6.0/System.ServiceModel.Primitives.dll",
         "ref/net6.0/System.ServiceModel.dll",
         "ref/netcore50/System.ServiceModel.Primitives.dll",
-        "ref/netcoreapp2.1/System.ServiceModel.Primitives.dll",
-        "ref/netcoreapp2.1/System.ServiceModel.dll",
+        "ref/netcoreapp3.1/System.ServiceModel.Primitives.dll",
+        "ref/netcoreapp3.1/System.ServiceModel.dll",
         "ref/netstandard1.0/System.ServiceModel.Primitives.dll",
         "ref/netstandard1.1/System.ServiceModel.Primitives.dll",
         "ref/netstandard1.3/System.ServiceModel.Primitives.dll",
@@ -2258,14 +3734,14 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.primitives.4.9.0.nupkg.sha512",
+        "system.servicemodel.primitives.4.10.0.nupkg.sha512",
         "system.servicemodel.primitives.nuspec"
       ]
     },
-    "System.ServiceModel.Security/4.9.0": {
-      "sha512": "iurpbSmPgotHps94VQ6acvL6hU2gjiuBmQI7PwLLN76jsbSpUcahT0PglccKIAwoMujATk/LWtAapBHpwCFn2g==",
+    "System.ServiceModel.Security/4.10.0": {
+      "sha512": "/COEfB7QqKW37DOfmzJG6rd0apH0uMMCYNDUir9ZVDQR/ulQHx12T/5jMTo25YgUUk++i0SfGDbzutMH3w/nQg==",
       "type": "package",
-      "path": "system.servicemodel.security/4.9.0",
+      "path": "system.servicemodel.security/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2306,129 +3782,135 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.servicemodel.security.4.9.0.nupkg.sha512",
+        "system.servicemodel.security.4.10.0.nupkg.sha512",
         "system.servicemodel.security.nuspec"
       ]
     },
-    "System.ServiceModel.Syndication/6.0.0": {
-      "sha512": "cp1mMNG87iJtE0oHXFtfWT6cfski2JNo5iU0siTPi/uN2k1CIJI6FE4jr4v3got2dzt7wBq17fSy44btun9GiA==",
+    "System.ServiceModel.Syndication/9.0.4": {
+      "sha512": "j7WkV38j0ZSjG716WPR8YQfOnSs2qCMgFzzZzQnwzmyJtimsploZ0kjahpZsQ82DHg1EoCdGlrs+9zseNBs1nA==",
       "type": "package",
-      "path": "system.servicemodel.syndication/6.0.0",
+      "path": "system.servicemodel.syndication/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.ServiceModel.Syndication.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.ServiceModel.Syndication.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.ServiceModel.Syndication.dll",
-        "lib/net461/System.ServiceModel.Syndication.xml",
-        "lib/net6.0/System.ServiceModel.Syndication.dll",
-        "lib/net6.0/System.ServiceModel.Syndication.xml",
-        "lib/netcoreapp3.1/System.ServiceModel.Syndication.dll",
-        "lib/netcoreapp3.1/System.ServiceModel.Syndication.xml",
+        "lib/net462/System.ServiceModel.Syndication.dll",
+        "lib/net462/System.ServiceModel.Syndication.xml",
+        "lib/net8.0/System.ServiceModel.Syndication.dll",
+        "lib/net8.0/System.ServiceModel.Syndication.xml",
+        "lib/net9.0/System.ServiceModel.Syndication.dll",
+        "lib/net9.0/System.ServiceModel.Syndication.xml",
         "lib/netstandard2.0/System.ServiceModel.Syndication.dll",
         "lib/netstandard2.0/System.ServiceModel.Syndication.xml",
-        "system.servicemodel.syndication.6.0.0.nupkg.sha512",
+        "system.servicemodel.syndication.9.0.4.nupkg.sha512",
         "system.servicemodel.syndication.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.ServiceProcess.ServiceController/6.0.0": {
-      "sha512": "qMBvG8ZFbkXoe0Z5/D7FAAadfPkH2v7vSuh2xsLf3U6jNoejpIdeV18A0htiASsLK1CCAc/p59kaLXlt2yB1gw==",
+    "System.ServiceProcess.ServiceController/9.0.4": {
+      "sha512": "j6Z+ED1d/yxe/Cm+UlFf+LNw2HSYBSgtFh71KnEEmUtHIwgoTVQxji5URvXPOAZ7iuKHItjMIzpCLyRZc8OmrQ==",
       "type": "package",
-      "path": "system.serviceprocess.servicecontroller/6.0.0",
+      "path": "system.serviceprocess.servicecontroller/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.ServiceProcess.ServiceController.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.ServiceProcess.ServiceController.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.ServiceProcess.ServiceController.dll",
-        "lib/net461/System.ServiceProcess.ServiceController.xml",
-        "lib/net6.0/System.ServiceProcess.ServiceController.dll",
-        "lib/net6.0/System.ServiceProcess.ServiceController.xml",
-        "lib/netcoreapp3.1/System.ServiceProcess.ServiceController.dll",
-        "lib/netcoreapp3.1/System.ServiceProcess.ServiceController.xml",
+        "lib/net462/System.ServiceProcess.ServiceController.dll",
+        "lib/net462/System.ServiceProcess.ServiceController.xml",
+        "lib/net8.0/System.ServiceProcess.ServiceController.dll",
+        "lib/net8.0/System.ServiceProcess.ServiceController.xml",
+        "lib/net9.0/System.ServiceProcess.ServiceController.dll",
+        "lib/net9.0/System.ServiceProcess.ServiceController.xml",
         "lib/netstandard2.0/System.ServiceProcess.ServiceController.dll",
         "lib/netstandard2.0/System.ServiceProcess.ServiceController.xml",
-        "runtimes/win/lib/net461/System.ServiceProcess.ServiceController.dll",
-        "runtimes/win/lib/net461/System.ServiceProcess.ServiceController.xml",
-        "runtimes/win/lib/net6.0/System.ServiceProcess.ServiceController.dll",
-        "runtimes/win/lib/net6.0/System.ServiceProcess.ServiceController.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.ServiceProcess.ServiceController.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.ServiceProcess.ServiceController.xml",
-        "runtimes/win/lib/netstandard2.0/System.ServiceProcess.ServiceController.dll",
-        "runtimes/win/lib/netstandard2.0/System.ServiceProcess.ServiceController.xml",
-        "system.serviceprocess.servicecontroller.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.ServiceProcess.ServiceController.dll",
+        "runtimes/win/lib/net8.0/System.ServiceProcess.ServiceController.xml",
+        "runtimes/win/lib/net9.0/System.ServiceProcess.ServiceController.dll",
+        "runtimes/win/lib/net9.0/System.ServiceProcess.ServiceController.xml",
+        "system.serviceprocess.servicecontroller.9.0.4.nupkg.sha512",
         "system.serviceprocess.servicecontroller.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Speech/6.0.0": {
-      "sha512": "GQovERMrNP0Vbtgk8LzH4PlFS6lqHgsL9WkUmv8Kkxa0m0vNakitytpHZlfJ9WR7n9WKLXh68nn2kyL9mflnLg==",
+    "System.Speech/9.0.4": {
+      "sha512": "XpRYztNXNwH84pwjUNXPTO5TptugoPGJUZNztilpHo4RQ8oBsAqbhy7RhMTEcoJ3tfGLtizezk0r2AiJczpUFA==",
       "type": "package",
-      "path": "system.speech/6.0.0",
+      "path": "system.speech/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Speech.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/_._",
-        "lib/net6.0/System.Speech.dll",
-        "lib/net6.0/System.Speech.xml",
-        "lib/netcoreapp3.1/System.Speech.dll",
-        "lib/netcoreapp3.1/System.Speech.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.xml",
+        "lib/net9.0/System.Speech.dll",
+        "lib/net9.0/System.Speech.xml",
         "lib/netstandard2.0/System.Speech.dll",
         "lib/netstandard2.0/System.Speech.xml",
-        "runtimes/win/lib/net6.0/System.Speech.dll",
-        "runtimes/win/lib/net6.0/System.Speech.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Speech.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Speech.xml",
-        "system.speech.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.xml",
+        "runtimes/win/lib/net9.0/System.Speech.dll",
+        "runtimes/win/lib/net9.0/System.Speech.xml",
+        "system.speech.9.0.4.nupkg.sha512",
         "system.speech.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Threading.AccessControl/6.0.0": {
-      "sha512": "2258mqWesMch/xCpcnjJBgJP33yhpZLGLbEOm01qwq0efG4b+NG8c9sxYOWNxmDQ82swXrnQRl1Yp2wC1NrfZA==",
+    "System.Threading.AccessControl/9.0.4": {
+      "sha512": "Zg3MqTbRI5z+vMpKCDzqDg+ct0DUWQBA/nHNVqDlpOV23rtNBvYwz3Mxuvzp7YCse1a/V6qbotvAbUMIN7CI4Q==",
       "type": "package",
-      "path": "system.threading.accesscontrol/6.0.0",
+      "path": "system.threading.accesscontrol/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Threading.AccessControl.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Threading.AccessControl.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Threading.AccessControl.dll",
-        "lib/net461/System.Threading.AccessControl.xml",
-        "lib/net6.0/System.Threading.AccessControl.dll",
-        "lib/net6.0/System.Threading.AccessControl.xml",
+        "lib/net462/System.Threading.AccessControl.dll",
+        "lib/net462/System.Threading.AccessControl.xml",
+        "lib/net8.0/System.Threading.AccessControl.dll",
+        "lib/net8.0/System.Threading.AccessControl.xml",
+        "lib/net9.0/System.Threading.AccessControl.dll",
+        "lib/net9.0/System.Threading.AccessControl.xml",
         "lib/netstandard2.0/System.Threading.AccessControl.dll",
         "lib/netstandard2.0/System.Threading.AccessControl.xml",
-        "runtimes/win/lib/net461/System.Threading.AccessControl.dll",
-        "runtimes/win/lib/net461/System.Threading.AccessControl.xml",
-        "runtimes/win/lib/net6.0/System.Threading.AccessControl.dll",
-        "runtimes/win/lib/net6.0/System.Threading.AccessControl.xml",
-        "runtimes/win/lib/netstandard2.0/System.Threading.AccessControl.dll",
-        "runtimes/win/lib/netstandard2.0/System.Threading.AccessControl.xml",
-        "system.threading.accesscontrol.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Threading.AccessControl.dll",
+        "runtimes/win/lib/net8.0/System.Threading.AccessControl.xml",
+        "runtimes/win/lib/net9.0/System.Threading.AccessControl.dll",
+        "runtimes/win/lib/net9.0/System.Threading.AccessControl.xml",
+        "system.threading.accesscontrol.9.0.4.nupkg.sha512",
         "system.threading.accesscontrol.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Web.Services.Description/4.9.0": {
-      "sha512": "d20B3upsWddwSG5xF3eQLs0cAV3tXDsBNqP4kh02ylfgZwqfpf4f/9KiZVIGIoxULt2cKqxWs+U4AdNAJ7L8cQ==",
+    "System.Web.Services.Description/4.10.0": {
+      "sha512": "Dwr64geRujAwnI+wPMJP1rf4pFaYRITrAS7EIGd0GVMwQ8OayM6ypwmnAPzQG4YTyN84w6KD5Rv8LJywYK+vUA==",
       "type": "package",
-      "path": "system.web.services.description/4.9.0",
+      "path": "system.web.services.description/4.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2452,29 +3934,30 @@
         "lib/netstandard2.0/tr/System.Web.Services.Description.resources.dll",
         "lib/netstandard2.0/zh-Hans/System.Web.Services.Description.resources.dll",
         "lib/netstandard2.0/zh-Hant/System.Web.Services.Description.resources.dll",
-        "system.web.services.description.4.9.0.nupkg.sha512",
+        "system.web.services.description.4.10.0.nupkg.sha512",
         "system.web.services.description.nuspec"
       ]
     },
-    "System.Windows.Extensions/6.0.0": {
-      "sha512": "IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
+    "System.Windows.Extensions/9.0.4": {
+      "sha512": "LBfgiBxCpJWch0PI7h55FyzlCdSXxBZM2/B/H+v1SBkhux/Da8L3fIP+r7WFwNuTfKiClNfB0Ne3BL12xiCEGw==",
       "type": "package",
-      "path": "system.windows.extensions/6.0.0",
+      "path": "system.windows.extensions/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net6.0/System.Windows.Extensions.dll",
-        "lib/net6.0/System.Windows.Extensions.xml",
-        "lib/netcoreapp3.1/System.Windows.Extensions.dll",
-        "lib/netcoreapp3.1/System.Windows.Extensions.xml",
-        "runtimes/win/lib/net6.0/System.Windows.Extensions.dll",
-        "runtimes/win/lib/net6.0/System.Windows.Extensions.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Windows.Extensions.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Windows.Extensions.xml",
-        "system.windows.extensions.6.0.0.nupkg.sha512",
+        "lib/net8.0/System.Windows.Extensions.dll",
+        "lib/net8.0/System.Windows.Extensions.xml",
+        "lib/net9.0/System.Windows.Extensions.dll",
+        "lib/net9.0/System.Windows.Extensions.xml",
+        "runtimes/win/lib/net8.0/System.Windows.Extensions.dll",
+        "runtimes/win/lib/net8.0/System.Windows.Extensions.xml",
+        "runtimes/win/lib/net9.0/System.Windows.Extensions.dll",
+        "runtimes/win/lib/net9.0/System.Windows.Extensions.xml",
+        "system.windows.extensions.9.0.4.nupkg.sha512",
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2482,7 +3965,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
-      "Microsoft.Windows.Compatibility >= 6.0.0"
+      "Microsoft.Windows.Compatibility >= 9.0.4"
     ]
   },
   "packageFolders": {
@@ -2538,7 +4021,7 @@
         "dependencies": {
           "Microsoft.Windows.Compatibility": {
             "target": "Package",
-            "version": "[6.0.0, )"
+            "version": "[9.0.4, )"
           }
         },
         "imports": [
@@ -2853,77 +4336,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Microsoft.Windows.Compatibility\" 6.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-555c-2p6r-68mm",
-      "libraryId": "Microsoft.Windows.Compatibility",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.Data.SqlClient\" 4.8.3 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.Data.SqlClient\" 4.8.3 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.IO.Packaging\" 6.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-f32c-w444-8ppv",
-      "libraryId": "System.IO.Packaging",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.IO.Packaging\" 6.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
-      "libraryId": "System.IO.Packaging",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.Security.Cryptography.Pkcs\" 6.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-555c-2p6r-68mm",
-      "libraryId": "System.Security.Cryptography.Pkcs",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"System.Security.Cryptography.Xml\" 6.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-vh55-786g-wjwj",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

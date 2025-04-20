@@ -41,4 +41,7 @@
   <ItemGroup>
     <Content Include="appsettings.json" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="9.0.4" />
+  </ItemGroup>
 </Project>

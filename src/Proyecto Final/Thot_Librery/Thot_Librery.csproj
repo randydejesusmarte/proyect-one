@@ -17,7 +17,7 @@
     <Optimize>False</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="9.0.4" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="appsettings.json" />

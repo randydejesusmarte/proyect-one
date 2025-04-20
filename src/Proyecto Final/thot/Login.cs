@@ -12,55 +12,80 @@ namespace thot
 
         private readonly Login_conect login = new();
         private readonly Id_Login id_Login = new();
+
         private void bt_Entrar_Click(object sender, EventArgs e)
         {
-            Enter();
+            HandleLogin();
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+            LoadUserSettings();
+        }
+
+        private void LoadUserSettings()
         {
             txt_Nombre.Text = Settings.Default.Uname;
             txt_Contraseña.Text = Settings.Default.Pass;
             checkit.Checked = Settings.Default.checkit;
         }
-        private void Save()
+
+        private void SaveUserSettings()
         {
             Settings.Default.Uname = txt_Nombre.Text;
             Settings.Default.checkit = checkit.Checked;
-            Settings.Default.Pass = checkit.Checked ? txt_Contraseña.Text : "";
+            Settings.Default.Pass = checkit.Checked ? txt_Contraseña.Text : string.Empty;
             Settings.Default.Save();
         }
 
         private void Checkit_CheckedChanged(object sender, EventArgs e)
         {
-            _ = txt_Contraseña.Focus();
+            txt_Contraseña.Focus();
         }
 
         private void Txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            if (e.KeyChar == (char)Keys.Enter)
             {
-                Enter();
+                HandleLogin();
             }
         }
-        private new void Enter()
+
+        private void HandleLogin()
         {
-            int result = login.Logear(txt_Nombre.Text, txt_Contraseña.Text);
-            if (result == 1)
+            string username = txt_Nombre.Text;
+            string password = txt_Contraseña.Text;
+
+            int loginResult = login.Logear(username, password);
+            if (loginResult == 1)
             {
-                Save();
-                WindowsFormsApp1.Menu form = new();
-                int id = id_Login.get_id(txt_Nombre.Text, txt_Contraseña.Text);
-                form.Text = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
-                form.id = id;
-                form.name_business = id_Login.get_name(txt_Nombre.Text, txt_Contraseña.Text).ToString();
-                form.Show();
-                Hide();
+                SaveUserSettings();
+                OpenMenu(username, password);
             }
-            else if (result == 0)
+            else
             {
-                _ = MessageBox.Show("Contraseña o Usuario son incorrecto");
+                ShowLoginError();
             }
+        }
+
+        private void ShowLoginError()
+        {
+            MessageBox.Show("Contraseña o Usuario son incorrecto", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void OpenMenu(string username, string password)
+        {
+            string userNameDisplay = id_Login.get_name(username, password);
+
+            WindowsFormsApp1.Menu form = new()
+            {
+                id = id_Login.get_id(username, password),
+                name_business = userNameDisplay,
+                Text = userNameDisplay
+            };
+
+            form.Show();
+            Hide();
         }
     }
 }

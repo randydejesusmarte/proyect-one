@@ -30,110 +30,108 @@ namespace thot
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.txt_Nombre = new System.Windows.Forms.TextBox();
-            this.txt_Contraseña = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.bt_Entrar = new System.Windows.Forms.Button();
-            this.checkit = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            txt_Nombre = new TextBox();
+            txt_Contraseña = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            bt_Entrar = new Button();
+            checkit = new CheckBox();
+            SuspendLayout();
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Nombre.Location = new System.Drawing.Point(123, 14);
-            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(367, 27);
-            this.txt_Nombre.TabIndex = 0;
-            this.txt_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Nombre_KeyPress);
+            txt_Nombre.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txt_Nombre.Location = new Point(123, 14);
+            txt_Nombre.Margin = new Padding(4);
+            txt_Nombre.Name = "txt_Nombre";
+            txt_Nombre.PlaceholderText = "Usuario";
+            txt_Nombre.Size = new Size(367, 26);
+            txt_Nombre.TabIndex = 0;
+            txt_Nombre.KeyPress += Txt_Nombre_KeyPress;
             // 
             // txt_Contraseña
             // 
-            this.txt_Contraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Contraseña.Location = new System.Drawing.Point(123, 62);
-            this.txt_Contraseña.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Contraseña.Name = "txt_Contraseña";
-            this.txt_Contraseña.Size = new System.Drawing.Size(367, 27);
-            this.txt_Contraseña.TabIndex = 1;
-            this.txt_Contraseña.UseSystemPasswordChar = true;
-            this.txt_Contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Nombre_KeyPress);
+            txt_Contraseña.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txt_Contraseña.Location = new Point(123, 62);
+            txt_Contraseña.Margin = new Padding(4);
+            txt_Contraseña.Name = "txt_Contraseña";
+            txt_Contraseña.PlaceholderText = "Contraseña";
+            txt_Contraseña.Size = new Size(367, 26);
+            txt_Contraseña.TabIndex = 1;
+            txt_Contraseña.UseSystemPasswordChar = true;
+            txt_Contraseña.KeyPress += Txt_Nombre_KeyPress;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nombre";
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Location = new Point(8, 14);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(71, 20);
+            label1.TabIndex = 4;
+            label1.Text = "Nombre";
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 62);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 19);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Contraseña";
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Location = new Point(8, 62);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(102, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Contraseña";
             // 
             // bt_Entrar
             // 
-            this.bt_Entrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.bt_Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Entrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_Entrar.Location = new System.Drawing.Point(13, 141);
-            this.bt_Entrar.Margin = new System.Windows.Forms.Padding(4);
-            this.bt_Entrar.Name = "bt_Entrar";
-            this.bt_Entrar.Size = new System.Drawing.Size(477, 60);
-            this.bt_Entrar.TabIndex = 3;
-            this.bt_Entrar.Text = "Entrar";
-            this.bt_Entrar.UseVisualStyleBackColor = true;
-            this.bt_Entrar.Click += new System.EventHandler(this.bt_Entrar_Click);
+            bt_Entrar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            bt_Entrar.FlatStyle = FlatStyle.Flat;
+            bt_Entrar.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            bt_Entrar.Location = new Point(13, 141);
+            bt_Entrar.Margin = new Padding(4);
+            bt_Entrar.Name = "bt_Entrar";
+            bt_Entrar.Size = new Size(477, 60);
+            bt_Entrar.TabIndex = 3;
+            bt_Entrar.Text = "Entrar";
+            bt_Entrar.UseVisualStyleBackColor = true;
+            bt_Entrar.Click += bt_Entrar_Click;
             // 
             // checkit
             // 
-            this.checkit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.checkit.AutoSize = true;
-            this.checkit.Location = new System.Drawing.Point(13, 111);
-            this.checkit.Name = "checkit";
-            this.checkit.Size = new System.Drawing.Size(192, 23);
-            this.checkit.TabIndex = 2;
-            this.checkit.Text = "Recordar Contraseña";
-            this.checkit.UseVisualStyleBackColor = true;
-            this.checkit.CheckedChanged += new System.EventHandler(this.Checkit_CheckedChanged);
+            checkit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            checkit.AutoSize = true;
+            checkit.Location = new Point(13, 110);
+            checkit.Name = "checkit";
+            checkit.Size = new Size(200, 24);
+            checkit.TabIndex = 2;
+            checkit.Text = "Recordar Contraseña";
+            checkit.UseVisualStyleBackColor = true;
+            checkit.CheckedChanged += Checkit_CheckedChanged;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(503, 214);
-            this.Controls.Add(this.checkit);
-            this.Controls.Add(this.bt_Entrar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_Contraseña);
-            this.Controls.Add(this.txt_Nombre);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(10F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(503, 214);
+            Controls.Add(checkit);
+            Controls.Add(bt_Entrar);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(txt_Contraseña);
+            Controls.Add(txt_Nombre);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Login";
+            Load += Login_Load;
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

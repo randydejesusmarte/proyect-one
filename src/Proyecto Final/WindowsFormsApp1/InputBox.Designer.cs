@@ -37,17 +37,18 @@ namespace HttpNamespaceManager.UI
             // labelPrompt
             // 
             labelPrompt.AutoSize = true;
-            labelPrompt.Location = new Point(15, 1);
+            labelPrompt.Location = new Point(15, 10);
             labelPrompt.Margin = new Padding(4, 0, 4, 0);
             labelPrompt.Name = "labelPrompt";
             labelPrompt.Size = new Size(50, 15);
             labelPrompt.TabIndex = 0;
             labelPrompt.Text = "Prompt:";
+            labelPrompt.MaximumSize = new Size(300, 0); // Permite que el texto se ajuste automáticamente
             // 
             // textInput
             // 
             textInput.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textInput.Location = new Point(14, 34);
+            textInput.Location = new Point(14, 50);
             textInput.Margin = new Padding(4, 3, 4, 3);
             textInput.Name = "textInput";
             textInput.Size = new Size(303, 23);
@@ -57,50 +58,49 @@ namespace HttpNamespaceManager.UI
             // 
             buttonCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonCancel.DialogResult = DialogResult.Cancel;
-            buttonCancel.Location = new Point(230, 64);
+            buttonCancel.Location = new Point(230, 85);
             buttonCancel.Margin = new Padding(4, 3, 4, 3);
             buttonCancel.Name = "buttonCancel";
             buttonCancel.Size = new Size(88, 27);
             buttonCancel.TabIndex = 3;
-            buttonCancel.Text = "Cancel";
+            buttonCancel.Text = "Cancelar";
             buttonCancel.UseVisualStyleBackColor = true;
             // 
             // buttonOK
             // 
             buttonOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonOK.DialogResult = DialogResult.OK;
-            buttonOK.Location = new Point(135, 64);
+            buttonOK.Location = new Point(135, 85);
             buttonOK.Margin = new Padding(4, 3, 4, 3);
             buttonOK.Name = "buttonOK";
             buttonOK.Size = new Size(88, 27);
             buttonOK.TabIndex = 2;
-            buttonOK.Text = "OK";
+            buttonOK.Text = "Aceptar";
             buttonOK.UseVisualStyleBackColor = true;
             // 
             // InputBox
             // 
             AcceptButton = buttonOK;
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             CancelButton = buttonCancel;
-            ClientSize = new Size(331, 105);
+            ClientSize = new Size(350, 130);
             Controls.Add(buttonOK);
             Controls.Add(buttonCancel);
             Controls.Add(textInput);
             Controls.Add(labelPrompt);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            FormBorderStyle = FormBorderStyle.FixedDialog; // Cambiado para evitar redimensionamiento
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             MinimizeBox = false;
-            MinimumSize = new Size(336, 128);
+            MinimumSize = new Size(360, 150);
             Name = "InputBox";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Title";
+            Text = "Título";
             ResumeLayout(false);
             PerformLayout();
-
         }
 
         #endregion

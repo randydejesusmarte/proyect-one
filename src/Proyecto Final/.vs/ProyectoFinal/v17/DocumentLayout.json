@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF3E66BA-4DB5-4EB6-8A48-0F6D30A50E33}|thot\\thot.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CF3E66BA-4DB5-4EB6-8A48-0F6D30A50E33}|thot\\thot.csproj|solutionrelative:thot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\thot\\Login.cs",
-              "RelativeDocumentMoniker": "thot\\Login.cs",
-              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\thot\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "thot\\Login.cs [Dise\u00F1o]",
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Menu.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T22:40:03.542Z",
+              "WhenOpened": "2025-04-20T23:22:25.051Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
