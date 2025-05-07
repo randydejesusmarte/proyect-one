@@ -15,159 +15,174 @@ namespace WindowsFormsApp1
             InitializeComponent();
             try
             {
-                Datatables();
+                InitializeDataTable();
             }
-            catch (Exception es)
+            catch (Exception ex)
             {
-                _ = MessageBox.Show(es.Message);
+                MessageBox.Show($"Error al inicializar la tabla: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         internal int id_empleado;
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            if (validar(this))
-            {
-                //si esta vacio
-                _ = MessageBox.Show("Favor llenar todo", "Advertencia");
-            }
-            else
-            {
-                //si esta lleno
-                agregar();
-            }
-        }
-        public bool lleno; // Variable utilizada para saber si hay algún TextBox vacio.
-        private bool validar(Form formulario)
-        {
-            foreach (Control oControls in formulario.Controls) // Buscamos en cada TextBox de nuestro Formulario.
-            {
-                if (oControls is TextBox & oControls.Text == string.Empty) // Verificamos que no este vacio.
-                {
-                    lleno = true; // Si esta vacio el TextBox asignamos el valor True a nuestra variable.
-                }
-            }
-            return lleno;
-        }
-
         private string CONDICION = "Al Contado";
         public static DataTable Dt { get; } = new();
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (ValidarFormulario(this))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                AgregarServicio();
+            }
+        }
+
+        private bool ValidarFormulario(Form formulario)
+        {
+            foreach (Control control in formulario.Controls)
+            {
+                if (control is TextBox textBox && string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    return true; // Si hay un TextBox vacío, retorna true
+                }
+            }
+            return false;
+        }
+
         private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            int y = 5;
-            e.Graphics.DrawString(Settings.Default.Namesbusiness, new(FamilyName, 14, FontStyle.Bold), Brushes.Black, new Point(0 + 65, y += space));
-            e.Graphics.DrawString("Llegando a la rotonda", font, Brushes.Black, new Point(0 + 40, y += space));
-            e.Graphics.DrawString("Santiago, Rep Dom. Tel:849-216-1333", font, Brushes.Black, new Point(0, y += space));
-
-            e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
-            e.Graphics.DrawString("Factura de contado", font, Brushes.Black, new Point(0 + 25, y += 5));
-            //contar los servisios a entrados + 1 
-            e.Graphics.DrawString("FACTURA.: " + "B000000043", font, Brushes.Black, new Point(0, y += space));
-            e.Graphics.DrawString("FECHA...: " + DateTime.Now.ToString(), font, Brushes.Black, new Point(0, y += space));
-            //optener nombre del usuario
-            e.Graphics.DrawString("ATENDIDO POR.: " + Settings.Default.Idusuario, font, Brushes.Black, new Point(0, y += space));
-            e.Graphics.DrawString("Tecnico.: " + txtmecanico.Text, font, Brushes.Black, new Point(0, y += space));
-
-            CONDICION = radioButton1.Checked == true ? "Al Contado" : "A Credito";
-
-
-            /*
-              if (radioButton1.Checked == true)
-            { 
-                CONDICION = "Al Contado"; 
-            }
-              else 
+            try
             {
-                CONDICION = "A Credito";
+                int y = 5;
+                e.Graphics.DrawString(Settings.Default.Namesbusiness, new Font(FamilyName, 14, FontStyle.Bold), Brushes.Black, new Point(65, y += space));
+                e.Graphics.DrawString("Llegando a la rotonda", font, Brushes.Black, new Point(40, y += space));
+                e.Graphics.DrawString("Santiago, Rep Dom. Tel:849-216-1333", font, Brushes.Black, new Point(0, y += space));
+
+                e.Graphics.DrawLine(Pens.Black, 0, y += 25, 500, y);
+                e.Graphics.DrawString("Factura de contado", font, Brushes.Black, new Point(25, y += 5));
+                e.Graphics.DrawString($"FACTURA.: B000000043", font, Brushes.Black, new Point(0, y += space));
+                e.Graphics.DrawString($"FECHA...: {DateTime.Now}", font, Brushes.Black, new Point(0, y += space));
+                e.Graphics.DrawString($"ATENDIDO POR.: {Settings.Default.Idusuario}", font, Brushes.Black, new Point(0, y += space));
+                e.Graphics.DrawString($"TÉCNICO.: {txtmecanico.Text}", font, Brushes.Black, new Point(0, y += space));
+
+                CONDICION = radioButton1.Checked ? "Al Contado" : "A Crédito";
+                e.Graphics.DrawString($"CONDICIÓN.: {CONDICION}", font, Brushes.Black, new Point(0, y += space));
+                e.Graphics.DrawString($"CLIENTE.: {TxtCliente.Text}  #0005", font, Brushes.Black, new Point(0, y += space));
+                e.Graphics.DrawLine(Pens.Black, 0, y += 25, 500, y);
+                e.Graphics.DrawString("Servicio", font, Brushes.Black, new Point(0, y));
+                e.Graphics.DrawLine(Pens.Black, 0, y += 25, 500, y);
+
+                foreach (DataRow row in Dt.Rows)
+                {
+                    e.Graphics.DrawString(row["Servicio"].ToString(), font, Brushes.Black, new Point(0, y += space));
+                }
+
+                e.Graphics.DrawString("Gracias por preferirnos", font, Brushes.Black, new Point(25, y += space));
             }
-            */
-
-
-            e.Graphics.DrawString("CONDICION.: " + CONDICION, font, Brushes.Black, new Point(0, y += space));
-            e.Graphics.DrawString("CLIENTE.: " + TxtCliente.Text + "  #0005", font, Brushes.Black, new Point(0, y += space));
-            e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
-            e.Graphics.DrawString("Servicio", font, Brushes.Black, new Point(0, y));
-            e.Graphics.DrawLine(new Pen(Color.Black, 2), 500, y += 25, 0, y);
-
-
-            foreach (DataRow row in Dt.Rows)
+            catch (Exception ex)
             {
-                e.Graphics.DrawString(row["Servicio"].ToString(), font, Brushes.Black, new Point(0, y += space));
-                //e.Graphics.DrawString(textBox4.Text, font, Brushes.Black, new Point(0, y += space));
+                MessageBox.Show($"Error al imprimir: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            e.Graphics.DrawString("Gracias por preferirnos", font, Brushes.Black, new Point(25, y += space));
-            e.Graphics.Dispose();
-            printPreviewDialog1.ClientSize = Screen.PrimaryScreen.WorkingArea.Size;
-            printPreviewDialog1.DesktopLocation = Screen.PrimaryScreen.WorkingArea.Location;
         }
-        private void Datatables()
+
+        private void InitializeDataTable()
         {
             Dt.Columns.Clear();
-            _ = Dt.Columns.Add("Servicio");
+            Dt.Columns.Add("Servicio");
             dataGridView1.DataSource = Dt;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            printPreviewDialog1.Document = printDocument1;
-            _ = printPreviewDialog1.ShowDialog();
+            try
+            {
+                printPreviewDialog1.Document = printDocument1;
+                printPreviewDialog1.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al mostrar la vista previa de impresión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CONDICION = radioButton1.Checked == true ? "Al Contado" : "A Credito";
-            foreach (DataRow row in Dt.Rows)
+            try
             {
-                Ventrada entrada = new()
+                CONDICION = radioButton1.Checked ? "Al Contado" : "A Crédito";
+                foreach (DataRow row in Dt.Rows)
+                {
+                    Ventrada entrada = new()
+                    {
+                        num = IDEnt.Text,
+                        clinte = TxtCliente.Text,
+                        atendido = Settings.Default.Idusuario.ToString(),
+                        trabajado = txtmecanico.Text,
+                        condicion = CONDICION,
+                        Servicio = row["Servicio"].ToString()
+                    };
+                    entrada.Insetar(
+                        entrada.num,
+                        entrada.clinte,
+                        entrada.atendido,
+                        entrada.trabajado,
+                        entrada.condicion,
+                        row
+                    );
+                }
+
+                Ventrada finalEntrada = new()
                 {
                     num = IDEnt.Text,
                     clinte = TxtCliente.Text,
                     atendido = Settings.Default.Idusuario.ToString(),
                     trabajado = txtmecanico.Text,
                     condicion = CONDICION,
-                    Servicio = row["Servicio"].ToString()
+                    Servicio = string.Empty // Asignar un valor predeterminado para cumplir con el requisito
                 };
-                entrada.Insetar(
-                    entrada.num,
-                    entrada.clinte,
-                    entrada.atendido,
-                    entrada.trabajado,
-                    entrada.condicion,
-                    row
-                );
+                finalEntrada.cant(IDEnt.Text);
             }
-            Ventrada finalEntrada = new()
+            catch (Exception ex)
             {
-                num = IDEnt.Text,
-                clinte = TxtCliente.Text,
-                atendido = Settings.Default.Idusuario.ToString(),
-                trabajado = txtmecanico.Text,
-                condicion = CONDICION,
-                Servicio = string.Empty // Servicio no es necesario para la llamada a cant()
-            };
-            finalEntrada.cant(IDEnt.Text);
+                MessageBox.Show($"Error al guardar la entrada: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void agregar()
+        private void AgregarServicio()
         {
-            DataRow? row = Dt.NewRow();
-            row["Servicio"] = textBox3.Text;
-            Dt.Rows.Add(row);
-            textBox3.Text = "";
-            dataGridView1.AutoResizeColumn(0);
+            try
+            {
+                DataRow row = Dt.NewRow();
+                row["Servicio"] = textBox3.Text;
+                Dt.Rows.Add(row);
+                textBox3.Clear();
+                dataGridView1.AutoResizeColumn(0);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al agregar el servicio: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
         private void Entrada_Load(object sender, EventArgs e)
         {
-            IDEnt.Text = new Auto_increment().Cont().ToString();
+            try
+            {
+                IDEnt.Text = new Auto_increment().Cont().ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar la entrada: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                agregar();
+                AgregarServicio();
             }
         }
     }

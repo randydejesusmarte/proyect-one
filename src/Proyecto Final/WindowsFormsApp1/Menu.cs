@@ -12,22 +12,22 @@ namespace WindowsFormsApp1
 
         public int id;
         public string name_business;
-        private static readonly object _lock = new();
+
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
+            // Cierra la aplicación al cerrar el formulario principal
             Application.Exit();
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            lock (_lock)
-            {
-                new Thread(() => MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString())).Start();
-            }
+            // Muestra un mensaje con el ID de usuario y el nombre del negocio
+            MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString());
         }
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
+            // Abre el formulario de facturación
             Facturar form = new()
             {
                 _id = id
@@ -37,11 +37,13 @@ namespace WindowsFormsApp1
 
         private void fecha_Tick(object sender, EventArgs e)
         {
-            L_Fecha.Text = DateTime.Now.ToString();
+            // Actualiza la etiqueta con la fecha y hora actual
+            L_Fecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // Abre el formulario de entrada
             Entrada form = new()
             {
                 id_empleado = id
@@ -51,28 +53,32 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            // Limpia el contenido del panel
             new Menus().Limpiar(splitContainer1.Panel2);
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            // Guarda las configuraciones del usuario al cargar el formulario
             Settings.Default.Idusuario = id;
             Settings.Default.Namesbusiness = name_business;
             Settings.Default.Save();
+
+            // Inicia el temporizador para actualizar la fecha y hora
             fecha.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            controdegastos form = new();
-            //form.id_empleado = id;
+            // Abre el formulario de control de gastos
+            Controdegastos form = new();
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            // Abre el formulario de control de servicios
             ctlservicios form = new();
-            //form.id_empleado = id;
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
     }

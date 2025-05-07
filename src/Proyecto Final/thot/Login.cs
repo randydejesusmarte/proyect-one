@@ -25,6 +25,7 @@ namespace thot
 
         private void LoadUserSettings()
         {
+            // Carga las configuraciones guardadas del usuario
             txt_Nombre.Text = Settings.Default.Uname;
             txt_Contraseña.Text = Settings.Default.Pass;
             checkit.Checked = Settings.Default.checkit;
@@ -32,6 +33,7 @@ namespace thot
 
         private void SaveUserSettings()
         {
+            // Guarda las configuraciones del usuario
             Settings.Default.Uname = txt_Nombre.Text;
             Settings.Default.checkit = checkit.Checked;
             Settings.Default.Pass = checkit.Checked ? txt_Contraseña.Text : string.Empty;
@@ -40,11 +42,13 @@ namespace thot
 
         private void Checkit_CheckedChanged(object sender, EventArgs e)
         {
+            // Enfoca el campo de contraseña cuando se cambia el estado del checkbox
             txt_Contraseña.Focus();
         }
 
         private void Txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // Permite iniciar sesión al presionar Enter
             if (e.KeyChar == (char)Keys.Enter)
             {
                 HandleLogin();
@@ -53,39 +57,63 @@ namespace thot
 
         private void HandleLogin()
         {
-            string username = txt_Nombre.Text;
-            string password = txt_Contraseña.Text;
+            string username = txt_Nombre.Text.Trim();
+            string password = txt_Contraseña.Text.Trim();
 
-            int loginResult = login.Logear(username, password);
-            if (loginResult == 1)
+            // Validación de entradas
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                SaveUserSettings();
-                OpenMenu(username, password);
+                _ = MessageBox.Show("Por favor, ingrese un nombre de usuario y contraseña.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            try
             {
-                ShowLoginError();
+                int loginResult = login.Logear(username, password);
+                if (loginResult == 1)
+                {
+                    SaveUserSettings();
+                    OpenMenu(username, password);
+                }
+                else
+                {
+                    ShowLoginError();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                _ = MessageBox.Show($"Ocurrió un error durante el inicio de sesión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ShowLoginError()
         {
-            MessageBox.Show("Contraseña o Usuario son incorrecto", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            // Muestra un mensaje de error si las credenciales son incorrectas
+            _ = MessageBox.Show("Contraseña o Usuario son incorrectos", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void OpenMenu(string username, string password)
         {
-            string userNameDisplay = id_Login.get_name(username, password);
-
-            WindowsFormsApp1.Menu form = new()
+            try
             {
-                id = id_Login.get_id(username, password),
-                name_business = userNameDisplay,
-                Text = userNameDisplay
-            };
+                string userNameDisplay = id_Login.get_name(username, password);
 
-            form.Show();
-            Hide();
+                WindowsFormsApp1.Menu form = new()
+                {
+                    id = id_Login.get_id(username, password),
+                    name_business = userNameDisplay,
+                    Text = userNameDisplay
+                };
+
+                form.Show();
+                Hide();
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones al abrir el menú
+                _ = MessageBox.Show($"Ocurrió un error al abrir el menú: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

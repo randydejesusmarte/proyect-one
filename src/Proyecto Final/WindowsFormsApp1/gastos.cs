@@ -1,10 +1,15 @@
 ﻿namespace WindowsFormsApp1
 {
-    public partial class gastos : Form
+    public partial class Gastos : Form
     {
-        public gastos()
+        public Gastos()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class controdegastos
+    partial class Controdegastos
     {
         /// <summary>
         /// Required designer variable.

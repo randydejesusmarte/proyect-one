@@ -1,23 +1,55 @@
-﻿using Thot_Librery.Conexiones;
+﻿using System.Runtime.Versioning;
+using Thot_Librery.Conexiones;
+
 namespace Thot_Librery.Codigo_Factura
 {
-    public class textrefresh : Attribute
+    [AttributeUsage(AttributeTargets.All)]
+    public class TextrefreshAttribute : Attribute
     {
         private readonly Conexion conexion = new();
-        public void Textrefresh(TextBox text)
+
+        [SupportedOSPlatform("windows6.1")]
+        public void RefreshText(TextBox text)
         {
-            AutoCompleteStringCollection collection = [];
-            _ = conexion.Open();
-            SqlCommand command = new("sp_textrefresh", conexion.SqlConnectio)
+            if (text == null)
             {
-                CommandType = CommandType.StoredProcedure
-            };
-            SqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                _ = collection.Add(reader["Nom_cli"].ToString());
+                throw new ArgumentNullException(nameof(text), "El parámetro 'text' no puede ser nulo.");
             }
-            _ = conexion.Close();
+
+            AutoCompleteStringCollection collection = new();
+
+            try
+            {
+                conexion.Open();
+
+                using (SqlCommand command = new("sp_textrefresh", conexion.SqlConnectio)
+                {
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string? value = reader["Nom_cli"]?.ToString();
+                            if (!string.IsNullOrEmpty(value))
+                            {
+                                collection.Add(value);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones (puedes registrar el error o mostrar un mensaje al usuario)
+                MessageBox.Show($"Error al refrescar el texto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
             text.AutoCompleteCustomSource = collection;
         }
     }
