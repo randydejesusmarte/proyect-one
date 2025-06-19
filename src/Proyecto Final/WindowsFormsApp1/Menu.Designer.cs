@@ -28,188 +28,190 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.L_Fecha = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Bt_factura = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.fecha = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            splitContainer1 = new SplitContainer();
+            panel1 = new Panel();
+            button5 = new Button();
+            button2 = new Button();
+            L_Fecha = new Label();
+            button4 = new Button();
+            button3 = new Button();
+            Bt_factura = new Button();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
+            fecha = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
-            this.splitContainer1.Name = "splitContainer1";
+            splitContainer1.BorderStyle = BorderStyle.FixedSingle;
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Margin = new Padding(4);
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.panel1);
-            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
+            splitContainer1.Panel1.Controls.Add(panel1);
+            splitContainer1.Panel1.Controls.Add(pictureBox1);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.splitContainer1.Size = new System.Drawing.Size(930, 519);
-            this.splitContainer1.SplitterDistance = 118;
-            this.splitContainer1.SplitterWidth = 6;
-            this.splitContainer1.TabIndex = 0;
+            splitContainer1.Panel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            splitContainer1.Size = new Size(930, 519);
+            splitContainer1.SplitterDistance = 118;
+            splitContainer1.SplitterWidth = 6;
+            splitContainer1.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.L_Fecha);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.Bt_factura);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 86);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(116, 431);
-            this.panel1.TabIndex = 2;
+            panel1.Controls.Add(button5);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(L_Fecha);
+            panel1.Controls.Add(button4);
+            panel1.Controls.Add(button3);
+            panel1.Controls.Add(Bt_factura);
+            panel1.Controls.Add(button1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 86);
+            panel1.Margin = new Padding(4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(116, 431);
+            panel1.TabIndex = 2;
             // 
             // button5
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 229);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 49);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "control de\r\nServicios";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Dock = DockStyle.Top;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Location = new Point(0, 229);
+            button5.Margin = new Padding(4);
+            button5.Name = "button5";
+            button5.Size = new Size(116, 49);
+            button5.TabIndex = 6;
+            button5.Text = "control de\r\nServicios";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button2
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 180);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 49);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "control de\r\ngastos";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Dock = DockStyle.Top;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(0, 180);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(116, 49);
+            button2.TabIndex = 5;
+            button2.Text = "control de\r\ngastos";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // L_Fecha
             // 
-            this.L_Fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.L_Fecha.AutoSize = true;
-            this.L_Fecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.L_Fecha.Location = new System.Drawing.Point(-1, 412);
-            this.L_Fecha.Name = "L_Fecha";
-            this.L_Fecha.Size = new System.Drawing.Size(48, 16);
-            this.L_Fecha.TabIndex = 4;
-            this.L_Fecha.Text = "label1";
+            L_Fecha.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            L_Fecha.AutoSize = true;
+            L_Fecha.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            L_Fecha.Location = new Point(-1, 412);
+            L_Fecha.Name = "L_Fecha";
+            L_Fecha.Size = new Size(50, 16);
+            L_Fecha.TabIndex = 4;
+            L_Fecha.Text = "label1";
             // 
             // button4
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 135);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 45);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Limpiar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Dock = DockStyle.Top;
+            button4.Enabled = false;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Location = new Point(0, 135);
+            button4.Margin = new Padding(4);
+            button4.Name = "button4";
+            button4.Size = new Size(116, 45);
+            button4.TabIndex = 3;
+            button4.Text = "Limpiar";
+            button4.UseVisualStyleBackColor = true;
+            button4.Visible = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 90);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 45);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Entrada";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Dock = DockStyle.Top;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(0, 90);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(116, 45);
+            button3.TabIndex = 2;
+            button3.Text = "Entrada";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Bt_factura
             // 
-            this.Bt_factura.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Bt_factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_factura.Location = new System.Drawing.Point(0, 45);
-            this.Bt_factura.Margin = new System.Windows.Forms.Padding(4);
-            this.Bt_factura.Name = "Bt_factura";
-            this.Bt_factura.Size = new System.Drawing.Size(116, 45);
-            this.Bt_factura.TabIndex = 1;
-            this.Bt_factura.Text = "Facturar";
-            this.Bt_factura.UseVisualStyleBackColor = true;
-            this.Bt_factura.Click += new System.EventHandler(this.BtFactura_Click);
+            Bt_factura.Dock = DockStyle.Top;
+            Bt_factura.FlatStyle = FlatStyle.Flat;
+            Bt_factura.Location = new Point(0, 45);
+            Bt_factura.Margin = new Padding(4);
+            Bt_factura.Name = "Bt_factura";
+            Bt_factura.Size = new Size(116, 45);
+            Bt_factura.TabIndex = 1;
+            Bt_factura.Text = "Facturar";
+            Bt_factura.UseVisualStyleBackColor = true;
+            Bt_factura.Click += BtFactura_Click;
             // 
             // button1
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Inicio";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            button1.Dock = DockStyle.Top;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(0, 0);
+            button1.Margin = new Padding(4);
+            button1.Name = "button1";
+            button1.Size = new Size(116, 45);
+            button1.TabIndex = 0;
+            button1.Text = "Inicio";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += Button1_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.icons8_user_96px;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = Resources.icons8_user_96px;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(116, 86);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // fecha
             // 
-            this.fecha.Tick += new System.EventHandler(this.fecha_Tick);
+            fecha.Tick += fecha_Tick;
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 519);
-            this.Controls.Add(this.splitContainer1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Menu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tecnica 3";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
-            this.Load += new System.EventHandler(this.Menu_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(10F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(930, 519);
+            Controls.Add(splitContainer1);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            Margin = new Padding(4);
+            Name = "Menu";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Tecnica 3";
+            WindowState = FormWindowState.Maximized;
+            FormClosed += Form1_FormClosed;
+            Load += Menu_Load;
+            splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
 
         }
 

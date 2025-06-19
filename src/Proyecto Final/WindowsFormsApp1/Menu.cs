@@ -5,6 +5,14 @@ namespace WindowsFormsApp1
 {
     public partial class Menu : Form
     {
+        // Instancia única de Menus para reutilizar y reducir consumo de memoria
+        private readonly Menus menus = new();
+        // Referencias a formularios secundarios para reutilización y liberación de recursos
+        private Facturar? facturarForm;
+        private Entrada? entradaForm;
+        private Controdegastos? controdegastosForm;
+        private ctlservicios? ctlserviciosForm;
+
         public Menu()
         {
             InitializeComponent();
@@ -20,6 +28,11 @@ namespace WindowsFormsApp1
             // Detiene el temporizador y cierra la aplicación al cerrar el formulario principal
             fecha.Stop();
             fecha.Dispose();
+            // Liberar formularios secundarios
+            facturarForm?.Dispose();
+            entradaForm?.Dispose();
+            controdegastosForm?.Dispose();
+            ctlserviciosForm?.Dispose();
             Application.Exit();
         }
 
@@ -31,9 +44,10 @@ namespace WindowsFormsApp1
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de facturación sin using para evitar su disposición prematura
-            Facturar form = new() { _id = id };
-            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+            // Reutiliza el formulario si ya existe, si no lo crea
+            if (facturarForm == null || facturarForm.IsDisposed)
+                facturarForm = new Facturar { _id = id };
+            menus.Form_Heredado(facturarForm, splitContainer1.Panel2);
         }
 
         private void fecha_Tick(object sender, EventArgs e)
@@ -44,15 +58,24 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de entrada sin using para evitar su disposición prematura
-            Entrada form = new() { id_empleado = id };
-            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+            // Reutiliza el formulario si ya existe, si no lo crea
+            if (entradaForm == null || entradaForm.IsDisposed)
+                entradaForm = new Entrada { id_empleado = id };
+            menus.Form_Heredado(entradaForm, splitContainer1.Panel2);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            // Limpia el contenido del panel
-            new Menus().Limpiar(splitContainer1.Panel2);
+            // Limpia el contenido del panel y libera recursos de formularios secundarios
+            foreach (Control ctrl in splitContainer1.Panel2.Controls)
+            {
+                ctrl.Dispose();
+            }
+            splitContainer1.Panel2.Controls.Clear();
+            facturarForm?.Dispose(); facturarForm = null;
+            entradaForm?.Dispose(); entradaForm = null;
+            controdegastosForm?.Dispose(); controdegastosForm = null;
+            ctlserviciosForm?.Dispose(); ctlserviciosForm = null;
         }
 
         private void Menu_Load(object sender, EventArgs e)
@@ -68,16 +91,18 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de control de gastos sin using para evitar su disposición prematura
-            Controdegastos form = new();
-            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+            // Reutiliza el formulario si ya existe, si no lo crea
+            if (controdegastosForm == null || controdegastosForm.IsDisposed)
+                controdegastosForm = new Controdegastos();
+            menus.Form_Heredado(controdegastosForm, splitContainer1.Panel2);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de control de servicios sin using para evitar su disposición prematura
-            ctlservicios form = new();
-            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+            // Reutiliza el formulario si ya existe, si no lo crea
+            if (ctlserviciosForm == null || ctlserviciosForm.IsDisposed)
+                ctlserviciosForm = new ctlservicios();
+            menus.Form_Heredado(ctlserviciosForm, splitContainer1.Panel2);
         }
     }
 }

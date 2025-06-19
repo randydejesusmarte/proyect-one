@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF3E66BA-4DB5-4EB6-8A48-0F6D30A50E33}|thot\\thot.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF3E66BA-4DB5-4EB6-8A48-0F6D30A50E33}|thot\\thot.csproj|solutionrelative:thot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF3E66BA-4DB5-4EB6-8A48-0F6D30A50E33}|thot\\thot.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CF3E66BA-4DB5-4EB6-8A48-0F6D30A50E33}|thot\\thot.csproj|solutionrelative:thot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\thot\\Login.cs",
-              "RelativeDocumentMoniker": "thot\\Login.cs",
-              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\thot\\Login.cs",
-              "RelativeToolTip": "thot\\Login.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwHMAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Menu.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Menu.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv0QAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T23:15:25.797Z",
+              "WhenOpened": "2025-06-19T23:28:15.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\thot\\Login.cs",
-              "RelativeDocumentMoniker": "thot\\Login.cs",
-              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\thot\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "thot\\Login.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Menu.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T23:15:21.424Z",
+              "WhenOpened": "2025-06-19T23:28:13.458Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
