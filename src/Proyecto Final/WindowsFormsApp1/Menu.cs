@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
         private void Button1_Click(object sender, EventArgs e)
         {
             // Muestra un mensaje con el ID de usuario y el nombre del negocio
-            MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString());
+            MessageBox.Show(Settings.Default.Namesbusiness.ToString(), Settings.Default.Idusuario.ToString());
         }
 
         private void BtFactura_Click(object sender, EventArgs e)
