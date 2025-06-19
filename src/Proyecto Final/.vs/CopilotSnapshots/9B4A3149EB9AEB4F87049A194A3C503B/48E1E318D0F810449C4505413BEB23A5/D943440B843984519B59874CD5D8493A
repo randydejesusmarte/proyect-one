@@ -1,0 +1,38 @@
+﻿using Thot_Librery.Conexiones;
+
+namespace Thot_Librery.Codigo_del_Login
+{
+    public class Login_conect : Attribute
+    {
+        private readonly Conexion conexion = new();
+        public int Logear(string Nombre, string Contraceña)
+        {
+            try
+            {
+                _ = conexion.Open();
+                SqlCommand command = new("sp_Login", conexion.SqlConnectio)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                _ = command.Parameters.AddWithValue("@Nombre", Nombre);
+                _ = command.Parameters.AddWithValue("@Clave", Contraceña);
+
+                SqlDataReader dataReader = command.ExecuteReader();
+                if (dataReader.Read())
+                {
+                    return dataReader.GetInt32(0);
+                }
+            }
+            catch (Exception es)
+            {
+                _ = MessageBox.Show(es.Message);
+
+            }
+            finally
+            {
+                _ = conexion.Close();
+            }
+            return -1;
+        }
+    }
+}

@@ -4,18 +4,17 @@ namespace Thot_Librery.Entrada
 {
     public class Auto_increment : Attribute
     {
-        private readonly Conexion Conexiones = new();
-
         public int Cont()
         {
             try
             {
-                _ = Conexiones.Open();
-                SqlCommand command = new("SP_auto_increment_Id", Conexiones.SqlConnectio)
+                using Conexion conexion = new();
+                using SqlConnection conn = conexion.Open();
+                using SqlCommand command = new("SP_auto_increment_Id", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                SqlDataReader DataReader = command.ExecuteReader();
+                using SqlDataReader DataReader = command.ExecuteReader();
                 if (DataReader.Read())
                 {
                     return DataReader.GetInt32(0);
@@ -24,10 +23,6 @@ namespace Thot_Librery.Entrada
             catch (Exception es)
             {
                 _ = MessageBox.Show(es.Message);
-            }
-            finally
-            {
-                _ = Conexiones.Close();
             }
             return -1;
         }

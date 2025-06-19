@@ -3,31 +3,35 @@ global using System.Data.SqlClient;
 
 namespace Thot_Librery.Conexiones
 {
-    internal class Conexion : Attribute
+    internal class Conexion : Attribute, IDisposable
     {
-        internal SqlConnection SqlConnectio = new();
+        private SqlConnection? _sqlConnection;
         private readonly string cadena = Properties.Settings.Default.Conecctionstring;
 
         internal Conexion()
         {
-            SqlConnectio.ConnectionString = cadena;
+            _sqlConnection = new SqlConnection(cadena);
         }
         internal SqlConnection Open()
         {
-            if (SqlConnectio.State == ConnectionState.Closed)
+            if (_sqlConnection == null)
+                throw new ObjectDisposedException(nameof(SqlConnection));
+            if (_sqlConnection.State == ConnectionState.Closed)
             {
-                SqlConnectio.Open();
+                _sqlConnection.Open();
             }
-            return SqlConnectio;
+            return _sqlConnection;
         }
 
-        internal SqlConnection Close()
+        public void Dispose()
         {
-            if (SqlConnectio.State == ConnectionState.Open)
+            if (_sqlConnection != null)
             {
-                SqlConnectio.Close();
+                if (_sqlConnection.State != ConnectionState.Closed)
+                    _sqlConnection.Close();
+                _sqlConnection.Dispose();
+                _sqlConnection = null;
             }
-            return SqlConnectio;
         }
     }
 }

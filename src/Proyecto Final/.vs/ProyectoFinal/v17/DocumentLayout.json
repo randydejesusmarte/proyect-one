@@ -1,12 +1,172 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\conexiones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\conexiones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C6DD0E7-AC40-47D7-9734-48AA7FB4F84D}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\codigo factura\\textrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\codigo factura\\textrefresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\entrada\\auto_increment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\entrada\\auto_increment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\codigo factura\\auto_increment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\codigo factura\\auto_increment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\codigo factura\\agregar_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\codigo factura\\agregar_factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\entrada\\ventrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\entrada\\ventrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|c:\\users\\randy\\documents\\github\\proyect-one\\src\\proyecto final\\thot_librery\\codigo factura\\filldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92FBD9EE-A703-4928-8906-3011C91EFD52}|Thot_Librery\\Thot_Librery.csproj|solutionrelative:thot_librery\\codigo factura\\filldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Conexiones\\Conexion.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Conexiones\\Conexion.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Conexiones\\Conexion.cs",
+              "RelativeToolTip": "Thot_Librery\\Conexiones\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:52.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FillData.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\FillData.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Codigo Factura\\FillData.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\FillData.cs",
+              "RelativeToolTip": "Thot_Librery\\Codigo Factura\\FillData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:41.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ventrada.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Entrada\\Ventrada.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Entrada\\Ventrada.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Entrada\\Ventrada.cs",
+              "RelativeToolTip": "Thot_Librery\\Entrada\\Ventrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:41.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Agregar_Factura.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\Agregar_Factura.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Codigo Factura\\Agregar_Factura.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\Agregar_Factura.cs",
+              "RelativeToolTip": "Thot_Librery\\Codigo Factura\\Agregar_Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:41.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Auto_increment.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\Auto_increment.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Codigo Factura\\Auto_increment.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\Auto_increment.cs",
+              "RelativeToolTip": "Thot_Librery\\Codigo Factura\\Auto_increment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:41.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Auto_increment.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Entrada\\Auto_increment.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Entrada\\Auto_increment.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Entrada\\Auto_increment.cs",
+              "RelativeToolTip": "Thot_Librery\\Entrada\\Auto_increment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:41.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "textrefresh.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\textrefresh.cs",
+              "RelativeDocumentMoniker": "Thot_Librery\\Codigo Factura\\textrefresh.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\Thot_Librery\\Codigo Factura\\textrefresh.cs",
+              "RelativeToolTip": "Thot_Librery\\Codigo Factura\\textrefresh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:07:41.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Menu.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:05:23.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Menu.cs",
+              "ToolTip": "C:\\Users\\randy\\Documents\\GitHub\\proyect-one\\src\\Proyecto Final\\WindowsFormsApp1\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\Menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T22:05:21.504Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

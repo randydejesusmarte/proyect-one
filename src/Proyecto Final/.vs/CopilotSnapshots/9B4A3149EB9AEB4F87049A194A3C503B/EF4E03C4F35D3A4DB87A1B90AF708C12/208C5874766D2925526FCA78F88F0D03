@@ -1,0 +1,28 @@
+﻿namespace HttpNamespaceManager.UI
+{
+    public partial class InputBox : Form
+    {
+        public InputBox(string title = "", string prompt = "", string defaultValue = "")
+        {
+            InitializeComponent();
+            Text = title;
+            labelPrompt.Text = prompt;
+            textInput.Text = defaultValue;
+
+            // Calcula el tamaño dinámico basado en el texto del prompt
+            Size textSize = TextRenderer.MeasureText(prompt, labelPrompt.Font);
+            Size = new Size(Math.Max(textSize.Width + 50, 290), textSize.Height + 128);
+
+            // Centra el formulario en la pantalla
+            StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        public static DialogResult Show(string title, string prompt, out string result, string defaultValue = "")
+        {
+            using InputBox input = new(title, prompt, defaultValue);
+            DialogResult retval = input.ShowDialog();
+            result = input.textInput.Text;
+            return retval;
+        }
+    }
+}

@@ -3,18 +3,16 @@ namespace Thot_Librery.Codigo_Factura
 {
     public class Auto_increment : Attribute
     {
-        private readonly Conexion Conexiones = new();
-
         public int Cont()
         {
             try
             {
-                _ = Conexiones.Open();
-                SqlCommand command = new("SP_auto_increment_FacId", Conexiones.SqlConnectio)
+                using Conexion conexion = new();
+                using SqlCommand command = new("SP_auto_increment_FacId", conexion.Open())
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                SqlDataReader DataReader = command.ExecuteReader();
+                using SqlDataReader DataReader = command.ExecuteReader();
                 if (DataReader.Read())
                 {
                     return DataReader.GetInt32(0);
@@ -23,10 +21,6 @@ namespace Thot_Librery.Codigo_Factura
             catch (Exception es)
             {
                 _ = MessageBox.Show(es.Message);
-            }
-            finally
-            {
-                _ = Conexiones.Close();
             }
             return -1;
         }

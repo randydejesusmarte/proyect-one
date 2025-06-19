@@ -6,8 +6,6 @@ namespace Thot_Librery.Codigo_Factura
     [AttributeUsage(AttributeTargets.All)]
     public class TextrefreshAttribute : Attribute
     {
-        private readonly Conexion conexion = new();
-
         [SupportedOSPlatform("windows6.1")]
         public void RefreshText(TextBox text)
         {
@@ -20,22 +18,20 @@ namespace Thot_Librery.Codigo_Factura
 
             try
             {
-                conexion.Open();
-
-                using (SqlCommand command = new("sp_textrefresh", conexion.SqlConnectio)
+                using Conexion conexion = new();
+                using SqlConnection conn = conexion.Open();
+                using SqlCommand command = new("sp_textrefresh", conn)
                 {
                     CommandType = CommandType.StoredProcedure
-                })
+                };
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
+                        string? value = reader["Nom_cli"]?.ToString();
+                        if (!string.IsNullOrEmpty(value))
                         {
-                            string? value = reader["Nom_cli"]?.ToString();
-                            if (!string.IsNullOrEmpty(value))
-                            {
-                                collection.Add(value);
-                            }
+                            collection.Add(value);
                         }
                     }
                 }
@@ -44,10 +40,6 @@ namespace Thot_Librery.Codigo_Factura
             {
                 // Manejo de excepciones (puedes registrar el error o mostrar un mensaje al usuario)
                 MessageBox.Show($"Error al refrescar el texto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                conexion.Close();
             }
 
             text.AutoCompleteCustomSource = collection;

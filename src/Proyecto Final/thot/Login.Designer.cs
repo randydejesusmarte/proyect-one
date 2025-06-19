@@ -1,5 +1,4 @@
-﻿
-namespace thot
+﻿namespace thot
 {
     partial class Login
     {
@@ -47,7 +46,7 @@ namespace thot
             txt_Nombre.PlaceholderText = "Usuario";
             txt_Nombre.Size = new Size(367, 26);
             txt_Nombre.TabIndex = 0;
-            txt_Nombre.KeyPress += Txt_Nombre_KeyPress;
+            txt_Nombre.KeyPress += TxtFields_KeyPress;
             // 
             // txt_Contraseña
             // 
@@ -58,8 +57,8 @@ namespace thot
             txt_Contraseña.PlaceholderText = "Contraseña";
             txt_Contraseña.Size = new Size(367, 26);
             txt_Contraseña.TabIndex = 1;
+            txt_Contraseña.KeyPress += TxtFields_KeyPress;
             txt_Contraseña.UseSystemPasswordChar = true;
-            txt_Contraseña.KeyPress += Txt_Nombre_KeyPress;
             // 
             // label1
             // 

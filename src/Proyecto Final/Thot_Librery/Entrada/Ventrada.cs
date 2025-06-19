@@ -4,45 +4,54 @@ namespace Thot_Librery.Entrada
 {
     public class Ventrada : Attribute
     {
-        private readonly Conexion Conexiones = new();
+        public string num { get; set; }
+        public string clinte { get; set; }
+        public string atendido { get; set; }
+        public string trabajado { get; set; }
+        public string condicion { get; set; }
+        public string Servicio { get; set; }
 
-        public required string num { get; set; }
-        public required string clinte { get; set; }
-        public required string atendido { get; set; }
-        public required string trabajado { get; set; }
-        public required string condicion { get; set; }
-        public required string Servicio { get; set; }
-
-        public void Insetar(string num, string cliente, string atendido, string trabajado, string condicion, DataRow entrada)
+        public void Insetar(string num, string clinte, string atendido, string trabajado, string condicion, DataRow row)
         {
-            _ = Conexiones.Open();
-
-            SqlCommand command = new("SP_Entradas", Conexiones.SqlConnectio)
+            try
             {
-                CommandType = CommandType.StoredProcedure
-            };
-            _ = command.Parameters.AddWithValue("@Num", num);
-            _ = command.Parameters.AddWithValue("@Cliente", cliente);
-            _ = command.Parameters.AddWithValue("@Atendido", atendido);
-            _ = command.Parameters.AddWithValue("@Trabajado", trabajado);
-            _ = command.Parameters.AddWithValue("@Condicion", condicion);
-            _ = command.Parameters.AddWithValue("@Fecha", DateTime.Now.ToString());
-            _ = command.Parameters.AddWithValue("@Servicio", entrada["Servicio"]);
-            _ = command.ExecuteNonQuery();
-            command.Parameters.Clear();
-            _ = Conexiones.Close();
+                using Conexion conexion = new();
+                using SqlConnection conn = conexion.Open();
+                using SqlCommand command = new("sp_insertar_entrada", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                _ = command.Parameters.AddWithValue("@num", num);
+                _ = command.Parameters.AddWithValue("@clinte", clinte);
+                _ = command.Parameters.AddWithValue("@atendido", atendido);
+                _ = command.Parameters.AddWithValue("@trabajado", trabajado);
+                _ = command.Parameters.AddWithValue("@condicion", condicion);
+                _ = command.Parameters.AddWithValue("@Servicio", row["Servicio"]);
+                _ = command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                _ = MessageBox.Show(ex.Message);
+            }
         }
+
         public void cant(string num)
         {
-            _ = Conexiones.Open();
-            SqlCommand command = new("SP_CantEntradas", Conexiones.SqlConnectio)
+            try
             {
-                CommandType = CommandType.StoredProcedure
-            };
-            _ = command.Parameters.AddWithValue("@Num", Convert.ToInt32(num));
-            _ = command.ExecuteNonQuery();
-            command.Parameters.Clear();
-            _ = Conexiones.Close();
+                using Conexion conexion = new();
+                using SqlConnection conn = conexion.Open();
+                using SqlCommand command = new("sp_cant_entrada", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                _ = command.Parameters.AddWithValue("@num", num);
+                _ = command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                _ = MessageBox.Show(ex.Message);
+            }
         }
     }
 }

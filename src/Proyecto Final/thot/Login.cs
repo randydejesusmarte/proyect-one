@@ -8,6 +8,9 @@ namespace thot
         public Login()
         {
             InitializeComponent();
+            // Permite iniciar sesión con Enter en ambos campos
+            txt_Nombre.KeyPress += TxtFields_KeyPress;
+            txt_Contraseña.KeyPress += TxtFields_KeyPress;
         }
 
         private readonly Login_conect login = new();
@@ -15,7 +18,7 @@ namespace thot
 
         private void bt_Entrar_Click(object sender, EventArgs e)
         {
-            HandleLogin();
+            _ = HandleLoginAsync();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -46,16 +49,17 @@ namespace thot
             txt_Contraseña.Focus();
         }
 
-        private void Txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtFields_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permite iniciar sesión al presionar Enter
+            // Permite iniciar sesión al presionar Enter en usuario o contraseña
             if (e.KeyChar == (char)Keys.Enter)
             {
-                HandleLogin();
+                e.Handled = true;
+                _ = HandleLoginAsync();
             }
         }
 
-        private void HandleLogin()
+        private async Task HandleLoginAsync()
         {
             string username = txt_Nombre.Text.Trim();
             string password = txt_Contraseña.Text.Trim();
@@ -69,11 +73,12 @@ namespace thot
 
             try
             {
-                int loginResult = login.Logear(username, password);
+                // Ejecuta el login en un hilo aparte para no bloquear la UI
+                int loginResult = await Task.Run(() => login.Logear(username, password));
                 if (loginResult == 1)
                 {
                     SaveUserSettings();
-                    OpenMenu(username, password);
+                    await OpenMenuAsync(username, password);
                 }
                 else
                 {
@@ -93,15 +98,17 @@ namespace thot
             _ = MessageBox.Show("Contraseña o Usuario son incorrectos", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void OpenMenu(string username, string password)
+        private async Task OpenMenuAsync(string username, string password)
         {
             try
             {
-                string userNameDisplay = id_Login.get_name(username, password);
+                // Obtiene los datos del usuario en un hilo aparte
+                string userNameDisplay = await Task.Run(() => id_Login.get_name(username, password));
+                int userId = await Task.Run(() => id_Login.get_id(username, password));
 
                 WindowsFormsApp1.Menu form = new()
                 {
-                    id = id_Login.get_id(username, password),
+                    id = userId,
                     name_business = userNameDisplay,
                     Text = userNameDisplay
                 };

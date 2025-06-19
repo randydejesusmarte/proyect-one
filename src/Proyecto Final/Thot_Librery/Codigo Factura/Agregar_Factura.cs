@@ -3,13 +3,13 @@ namespace Thot_Librery.Codigo_Factura
 {
     public class Agregar_Factura
     {
-        private readonly Conexion conexion = new();
         public void Agregar(int id, int Id_cliente, string Nombre_producto, string Precio, string Cantidad, string Monto, string Precio_total, int ID_Empleado, string Fecha_del_Registro)
         {
-            _ = conexion.Open();
-            SqlCommand command = new()
+            using Conexion conexion = new();
+            using SqlConnection conn = conexion.Open();
+            using SqlCommand command = new()
             {
-                Connection = conexion.SqlConnectio,
+                Connection = conn,
                 CommandText = "sp_insertar_Factura",
                 CommandType = CommandType.StoredProcedure
             };
@@ -29,7 +29,6 @@ namespace Thot_Librery.Codigo_Factura
             _ = command.Parameters.AddWithValue("@Fecha_del_Registro", Fecha_del_Registro);
             _ = command.ExecuteNonQuery();
             command.Parameters.Clear();
-            _ = conexion.Close();
         }
     }
 }

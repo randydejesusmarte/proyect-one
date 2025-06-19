@@ -8,6 +8,8 @@ namespace WindowsFormsApp1
         public Menu()
         {
             InitializeComponent();
+            // Suscribirse al evento FormClosed para liberar recursos
+            FormClosed += Form1_FormClosed;
         }
 
         public int id;
@@ -15,7 +17,9 @@ namespace WindowsFormsApp1
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // Cierra la aplicación al cerrar el formulario principal
+            // Detiene el temporizador y cierra la aplicación al cerrar el formulario principal
+            fecha.Stop();
+            fecha.Dispose();
             Application.Exit();
         }
 
@@ -27,11 +31,8 @@ namespace WindowsFormsApp1
 
         private void BtFactura_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de facturación
-            Facturar form = new()
-            {
-                _id = id
-            };
+            // Abre el formulario de facturación sin using para evitar su disposición prematura
+            Facturar form = new() { _id = id };
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
@@ -43,11 +44,8 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de entrada
-            Entrada form = new()
-            {
-                id_empleado = id
-            };
+            // Abre el formulario de entrada sin using para evitar su disposición prematura
+            Entrada form = new() { id_empleado = id };
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
@@ -70,14 +68,14 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de control de gastos
+            // Abre el formulario de control de gastos sin using para evitar su disposición prematura
             Controdegastos form = new();
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Abre el formulario de control de servicios
+            // Abre el formulario de control de servicios sin using para evitar su disposición prematura
             ctlservicios form = new();
             new Menus().Form_Heredado(form, splitContainer1.Panel2);
         }

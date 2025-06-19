@@ -1,0 +1,83 @@
+﻿global using WindowsFormsApp1.Properties;
+using Thot_Librery.Menu;
+
+namespace WindowsFormsApp1
+{
+    public partial class Menu : Form
+    {
+        public Menu()
+        {
+            InitializeComponent();
+            // Suscribirse al evento FormClosed para liberar recursos
+            FormClosed += Form1_FormClosed;
+        }
+
+        public int id;
+        public string name_business;
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Detiene el temporizador y cierra la aplicación al cerrar el formulario principal
+            fecha.Stop();
+            fecha.Dispose();
+            Application.Exit();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            // Muestra un mensaje con el ID de usuario y el nombre del negocio
+            MessageBox.Show(Settings.Default.Idusuario.ToString(), Settings.Default.Namesbusiness.ToString());
+        }
+
+        private void BtFactura_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de facturación y gestiona recursos correctamente
+            using Facturar form = new() { _id = id };
+            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
+
+        private void fecha_Tick(object sender, EventArgs e)
+        {
+            // Actualiza la etiqueta con la fecha y hora actual
+            L_Fecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de entrada y gestiona recursos correctamente
+            using Entrada form = new() { id_empleado = id };
+            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Limpia el contenido del panel
+            new Menus().Limpiar(splitContainer1.Panel2);
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            // Guarda las configuraciones del usuario al cargar el formulario
+            Settings.Default.Idusuario = id;
+            Settings.Default.Namesbusiness = name_business;
+            Settings.Default.Save();
+
+            // Inicia el temporizador para actualizar la fecha y hora
+            fecha.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de control de gastos y gestiona recursos correctamente
+            using Controdegastos form = new();
+            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de control de servicios y gestiona recursos correctamente
+            using ctlservicios form = new();
+            new Menus().Form_Heredado(form, splitContainer1.Panel2);
+        }
+    }
+}
