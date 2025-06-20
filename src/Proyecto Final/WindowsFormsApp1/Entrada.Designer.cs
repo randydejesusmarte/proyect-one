@@ -29,238 +29,241 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Entrada));
-            this.IDEnt = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtmecanico = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.TxtCliente = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            IDEnt = new TextBox();
+            button1 = new Button();
+            printPreviewDialog1 = new PrintPreviewDialog();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
+            label1 = new Label();
+            label2 = new Label();
+            txtmecanico = new TextBox();
+            textBox3 = new TextBox();
+            label3 = new Label();
+            groupBox1 = new GroupBox();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
+            TxtCliente = new TextBox();
+            label4 = new Label();
+            dataGridView1 = new DataGridView();
+            button2 = new Button();
+            button3 = new Button();
+            label5 = new Label();
+            label6 = new Label();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // IDEnt
             // 
-            this.IDEnt.Location = new System.Drawing.Point(99, 29);
-            this.IDEnt.Margin = new System.Windows.Forms.Padding(4);
-            this.IDEnt.Name = "IDEnt";
-            this.IDEnt.ReadOnly = true;
-            this.IDEnt.Size = new System.Drawing.Size(106, 27);
-            this.IDEnt.TabIndex = 12;
+            IDEnt.Location = new Point(99, 29);
+            IDEnt.Margin = new Padding(4);
+            IDEnt.Name = "IDEnt";
+            IDEnt.ReadOnly = true;
+            IDEnt.Size = new Size(106, 26);
+            IDEnt.TabIndex = 12;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 363);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            button1.Location = new Point(18, 363);
+            button1.Margin = new Padding(4);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 6;
+            button1.Text = "Agregar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += Button1_Click;
             // 
             // printPreviewDialog1
             // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
+            printPreviewDialog1.AutoScrollMargin = new Size(0, 0);
+            printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
+            printPreviewDialog1.ClientSize = new Size(400, 300);
+            printPreviewDialog1.Enabled = true;
+            printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
+            printPreviewDialog1.Name = "printPreviewDialog1";
+            printPreviewDialog1.Visible = false;
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument1_PrintPage);
+            printDocument1.PrintPage += PrintDocument1_PrintPage;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Factura :";
+            label1.AutoSize = true;
+            label1.Location = new Point(17, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(81, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Factura :";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Mecanico:";
+            label2.AutoSize = true;
+            label2.Location = new Point(1, 77);
+            label2.Name = "label2";
+            label2.Size = new Size(90, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Mecanico:";
             // 
             // txtmecanico
             // 
-            this.txtmecanico.Location = new System.Drawing.Point(99, 74);
-            this.txtmecanico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtmecanico.Name = "txtmecanico";
-            this.txtmecanico.Size = new System.Drawing.Size(266, 27);
-            this.txtmecanico.TabIndex = 1;
+            txtmecanico.Location = new Point(99, 74);
+            txtmecanico.Margin = new Padding(4);
+            txtmecanico.Name = "txtmecanico";
+            txtmecanico.Size = new Size(266, 26);
+            txtmecanico.TabIndex = 1;
+            txtmecanico.KeyPress += uppercaseTextBox_KeyPress;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(99, 144);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(266, 27);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
+            textBox3.Location = new Point(99, 144);
+            textBox3.Margin = new Padding(4);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(266, 26);
+            textBox3.TabIndex = 3;
+            textBox3.KeyDown += textBox3_KeyDown;
+            textBox3.KeyPress += uppercaseTextBox_KeyPress;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 147);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 19);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Servicio:";
+            label3.AutoSize = true;
+            label3.Location = new Point(26, 147);
+            label3.Name = "label3";
+            label3.Size = new Size(77, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Servicio:";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 200);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 80);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Condicion";
+            groupBox1.Controls.Add(radioButton2);
+            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Location = new Point(12, 200);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(230, 80);
+            groupBox1.TabIndex = 7;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Condicion";
             // 
             // radioButton2
             // 
-            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 51);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(99, 23);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "A Credito";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(6, 50);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(102, 24);
+            radioButton2.TabIndex = 5;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "A Credito";
+            radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 26);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(113, 23);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Al contado";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.AutoSize = true;
+            radioButton1.Checked = true;
+            radioButton1.Location = new Point(6, 26);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(113, 24);
+            radioButton1.TabIndex = 4;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Al contado";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // TxtCliente
             // 
-            this.TxtCliente.Location = new System.Drawing.Point(99, 109);
-            this.TxtCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtCliente.Name = "TxtCliente";
-            this.TxtCliente.Size = new System.Drawing.Size(266, 27);
-            this.TxtCliente.TabIndex = 2;
+            TxtCliente.Location = new Point(99, 109);
+            TxtCliente.Margin = new Padding(4);
+            TxtCliente.Name = "TxtCliente";
+            TxtCliente.Size = new Size(266, 26);
+            TxtCliente.TabIndex = 2;
+            TxtCliente.KeyPress += uppercaseTextBox_KeyPress;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 112);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 19);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Cliente:";
+            label4.AutoSize = true;
+            label4.Location = new Point(26, 112);
+            label4.Name = "label4";
+            label4.Size = new Size(70, 20);
+            label4.TabIndex = 8;
+            label4.Text = "Cliente:";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(372, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(386, 348);
-            this.dataGridView1.TabIndex = 10;
+            dataGridView1.BackgroundColor = SystemColors.Control;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(372, 49);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(386, 348);
+            dataGridView1.TabIndex = 10;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(154, 362);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 34);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Dar Entrada";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(154, 362);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 34);
+            button2.TabIndex = 11;
+            button2.Text = "Dar Entrada";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(154, 320);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 34);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Dar Entrada";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Location = new Point(154, 320);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(112, 34);
+            button3.TabIndex = 11;
+            button3.Text = "Dar Entrada";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(265, 328);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 19);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "DB";
+            label5.AutoSize = true;
+            label5.Location = new Point(265, 328);
+            label5.Name = "label5";
+            label5.Size = new Size(34, 20);
+            label5.TabIndex = 12;
+            label5.Text = "DB";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(266, 371);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 19);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Print test";
+            label6.AutoSize = true;
+            label6.Location = new Point(266, 371);
+            label6.Name = "label6";
+            label6.Size = new Size(82, 20);
+            label6.TabIndex = 13;
+            label6.Text = "Print test";
             // 
             // Entrada
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 409);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.TxtCliente);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtmecanico);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.IDEnt);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Entrada";
-            this.Text = "Entrada";
-            this.Load += new System.EventHandler(this.Entrada_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(10F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(770, 409);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(dataGridView1);
+            Controls.Add(TxtCliente);
+            Controls.Add(label4);
+            Controls.Add(groupBox1);
+            Controls.Add(textBox3);
+            Controls.Add(label3);
+            Controls.Add(txtmecanico);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(IDEnt);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            Margin = new Padding(4);
+            Name = "Entrada";
+            Text = "Entrada";
+            Load += Entrada_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

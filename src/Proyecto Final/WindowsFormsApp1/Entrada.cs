@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using System.ComponentModel.Design;
+using System.ComponentModel.Design.Serialization;
+using System.Data;
 using System.Drawing.Printing;
 using Thot_Librery.Entrada;
 
@@ -148,6 +150,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show($"Error al guardar la entrada: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            LoaderAsync();
         }
 
         private void AgregarServicio()
@@ -168,21 +171,32 @@ namespace WindowsFormsApp1
 
         private void Entrada_Load(object sender, EventArgs e)
         {
+            LoaderAsync();
+        }
+        private async Task LoaderAsync()
+        {
             try
             {
-                IDEnt.Text = new Auto_increment().Cont().ToString();
+                IDEnt.Text = await Task.Run(() => new Auto_increment().Cont().ToString());
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al cargar la entrada: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al cargar el ID de entrada: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 AgregarServicio();
+            }
+        }
+        private void uppercaseTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Convierte el texto a mayúsculas al escribir en el TextBox
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.KeyChar = char.ToUpper(e.KeyChar);
             }
         }
     }

@@ -14,9 +14,9 @@ namespace Thot_Librery.Codigo_Factura
                 CommandType = CommandType.StoredProcedure
             };
 
-            int precio = Convert.ToInt32(Precio);
-            int cantidad = Convert.ToInt32(Cantidad);
-            int monto = Convert.ToInt32(Monto);
+            double precio = Convert.ToDouble(Precio);
+            double cantidad = Convert.ToDouble(Cantidad);
+            double monto = Convert.ToDouble(Monto);
 
             _ = command.Parameters.AddWithValue("@idfactura", id);
             _ = command.Parameters.AddWithValue("@Id_cliente", Id_cliente);

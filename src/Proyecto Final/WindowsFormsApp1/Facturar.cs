@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                await RefreshNomcliTextAsync(); // Refresca el campo de texto con datos del cliente
+                //await RefreshNomcliTextAsync(); // Refresca el campo de texto con datos del cliente
                 await SetNewFacturaIdAsync();   // Genera automáticamente el ID de la factura
             }
             catch (Exception ex)
@@ -133,13 +133,54 @@ namespace WindowsFormsApp1
             {
                 if (InputBox.Show("Buscar Entrada", "Número de Entrada", out string texto) == DialogResult.OK)
                 {
-                    idfactura.Text = texto;
+                    nomcli.Text = texto.ToUpperInvariant();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al buscar la entrada: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            producto.Focus();
+        }
+        private async void actualizarMonto_TextChanged(object sender, EventArgs e)
+        {
+            
+            // Este evento se dispara cuando el texto cambia en los campos de precio o cantidad
+            try
+            {
+                // Actualiza el monto automáticamente al cambiar el precio o la cantidad
+                if (decimal.TryParse(precio.Text, out decimal precioDecimal) && int.TryParse(cantidad.Text, out int cantidadInt))
+                {
+                    monto.Text = (precioDecimal * cantidadInt).ToString("F2");
+                }
+                else
+                {
+                    monto.Text = "0.00"; // Valor por defecto si la conversión falla
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar el monto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        // Método para filtrar la entrada y permitir solo números, puntos y comas
+        private void precio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir control (backspace, etc.)
+            if (char.IsControl(e.KeyChar))
+                return;
+
+            // Permitir números
+            if (char.IsDigit(e.KeyChar))
+                return;
+
+            // Permitir un solo punto o coma (no ambos, y solo uno de cada)
+            if ((e.KeyChar == '.' || e.KeyChar == ',') &&
+                !((sender as TextBox).Text.Contains('.') || (sender as TextBox).Text.Contains(',')))
+                return;
+
+            // Si no es permitido, cancelar la entrada
+            e.Handled = true;
         }
     }
 }

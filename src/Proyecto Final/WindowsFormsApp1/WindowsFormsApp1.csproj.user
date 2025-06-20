@@ -27,9 +27,6 @@
     <Compile Update="Facturar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="gastos.cs">
       <SubType>Form</SubType>
     </Compile>

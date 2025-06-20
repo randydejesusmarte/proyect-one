@@ -124,7 +124,6 @@
             // button4
             // 
             button4.Dock = DockStyle.Top;
-            button4.Enabled = false;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Location = new Point(0, 135);
             button4.Margin = new Padding(4);
@@ -133,7 +132,6 @@
             button4.TabIndex = 3;
             button4.Text = "Limpiar";
             button4.UseVisualStyleBackColor = true;
-            button4.Visible = false;
             button4.Click += button4_Click;
             // 
             // button3

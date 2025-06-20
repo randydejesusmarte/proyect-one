@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "thot": {
+      "commandName": "Project",
+      "nativeDebugging": true,
+      "sqlDebugging": false
+    }
+  }
+}

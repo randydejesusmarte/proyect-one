@@ -110,7 +110,7 @@ namespace thot
                 {
                     id = userId,
                     name_business = userNameDisplay,
-                    Text = userNameDisplay
+                    Text = "SGT: (" + userNameDisplay+")"
                 };
 
                 form.Show();
