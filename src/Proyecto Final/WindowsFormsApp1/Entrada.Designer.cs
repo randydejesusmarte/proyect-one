@@ -78,12 +78,15 @@
             printPreviewDialog1.AutoScrollMinSize = new Size(0, 0);
             printPreviewDialog1.ClientSize = new Size(400, 300);
             printPreviewDialog1.Enabled = true;
+            printPreviewDialog1.FormScreenCaptureMode = ScreenCaptureMode.HideContent;
             printPreviewDialog1.Icon = (Icon)resources.GetObject("printPreviewDialog1.Icon");
             printPreviewDialog1.Name = "printPreviewDialog1";
+            printPreviewDialog1.UseAntiAlias = true;
             printPreviewDialog1.Visible = false;
             // 
             // printDocument1
             // 
+            printDocument1.OriginAtMargins = true;
             printDocument1.PrintPage += PrintDocument1_PrintPage;
             // 
             // label1
@@ -157,7 +160,6 @@
             // 
             // radioButton1
             // 
-            radioButton1.AutoSize = true;
             radioButton1.Checked = true;
             radioButton1.Location = new Point(6, 26);
             radioButton1.Name = "radioButton1";
@@ -165,7 +167,6 @@
             radioButton1.TabIndex = 4;
             radioButton1.TabStop = true;
             radioButton1.Text = "Al contado";
-            radioButton1.UseVisualStyleBackColor = true;
             // 
             // TxtCliente
             // 
@@ -193,6 +194,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(386, 348);
             dataGridView1.TabIndex = 10;
+            dataGridView1.UseWaitCursor = true;
             // 
             // button2
             // 
@@ -275,18 +277,18 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox txtmecanico;
-        public System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        public System.Windows.Forms.TextBox TxtCliente;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        protected internal TextBox txtmecanico;
+        protected internal TextBox textBox3;
+        protected internal TextBox TxtCliente;
     }
 }

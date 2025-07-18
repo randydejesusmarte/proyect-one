@@ -111,3 +111,4 @@ C:\Users\randy\Documents\GitHub\proyect-one\src\Proyecto Final\WindowsFormsApp1\
 C:\Users\randy\Documents\GitHub\proyect-one\src\Proyecto Final\WindowsFormsApp1\obj\Debug\net10.0-windows7.0\WindowsFormsApp1.pdb
 C:\Users\randy\Documents\GitHub\proyect-one\src\Proyecto Final\WindowsFormsApp1\obj\Debug\net10.0-windows7.0\WindowsFormsApp1.genruntimeconfig.cache
 C:\Users\randy\Documents\GitHub\proyect-one\src\Proyecto Final\WindowsFormsApp1\obj\Debug\net10.0-windows7.0\ref\WindowsFormsApp1.dll
+C:\Users\randy\Documents\GitHub\proyect-one\src\Proyecto Final\WindowsFormsApp1\obj\Debug\net10.0-windows7.0\WindowsFormsApp1.Cliente.resources

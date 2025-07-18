@@ -39,6 +39,7 @@
             // 
             // txt_Nombre
             // 
+            txt_Nombre.AllowDrop = true;
             txt_Nombre.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txt_Nombre.Location = new Point(123, 14);
             txt_Nombre.Margin = new Padding(4);
@@ -50,6 +51,7 @@
             // 
             // txt_Contraseña
             // 
+            txt_Contraseña.AllowDrop = true;
             txt_Contraseña.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txt_Contraseña.Location = new Point(123, 62);
             txt_Contraseña.Margin = new Padding(4);
@@ -57,8 +59,8 @@
             txt_Contraseña.PlaceholderText = "Contraseña";
             txt_Contraseña.Size = new Size(367, 26);
             txt_Contraseña.TabIndex = 1;
-            txt_Contraseña.KeyPress += TxtFields_KeyPress;
             txt_Contraseña.UseSystemPasswordChar = true;
+            txt_Contraseña.KeyPress += TxtFields_KeyPress;
             // 
             // label1
             // 
@@ -84,7 +86,8 @@
             // 
             // bt_Entrar
             // 
-            bt_Entrar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            bt_Entrar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            bt_Entrar.AutoSize = true;
             bt_Entrar.FlatStyle = FlatStyle.Flat;
             bt_Entrar.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             bt_Entrar.Location = new Point(13, 141);
@@ -135,13 +138,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_Nombre;
-        private System.Windows.Forms.TextBox txt_Contraseña;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button bt_Entrar;
-        private System.Windows.Forms.CheckBox checkit;
+        protected internal TextBox txt_Nombre;
+        protected internal TextBox txt_Contraseña;
+        protected internal Button bt_Entrar;
+        protected internal CheckBox checkit;
     }
 }
 
